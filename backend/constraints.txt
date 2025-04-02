@@ -1,0 +1,3 @@
+# backend/constraints.txt
+pydantic
+docling-core[chunking]
