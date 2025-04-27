@@ -15,7 +15,11 @@ class Config:
     LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 
     # Google Slides Config
-    TEMPLATE_PRESENTATION_ID = os.getenv("TEMPLATE_PRESENTATION_ID", "your-template-id")
+    # Use an actual presentation ID from Google Slides
+    # Example: "1DxZNxfc9ONM8JXVqPOUy8zIwZ8xs_GJH-2xLJ5kLZA8"
+    TEMPLATE_PRESENTATION_ID = "1JPoTUOgnbHAJfh8kuLzeWtcnwlLzX_QeLCM1wW649T0"
+    DELETE_TEST_PRESENTATIONS = os.getenv("DELETE_TEST_PRESENTATIONS", "True").lower() == "true"
+    SLIDES_DEBUG_MODE = os.getenv("SLIDES_DEBUG_MODE", "True").lower() == "true"
     
     # Use absolute path for local development and relative path for production
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

@@ -158,13 +158,13 @@
   {
     "type": "section",
     "title": "",
-    "content": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
+    "content": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| $0 \\%$ | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
     "images": [
       {
         "id": "img_9_1",
         "posicao": {
           "top_left_x": 178,
-          "top_left_y": 898,
+          "top_left_y": 905,
           "bottom_right_x": 712,
           "bottom_right_y": 1370
         }
@@ -172,8 +172,8 @@
       {
         "id": "img_9_2",
         "posicao": {
-          "top_left_x": 851,
-          "top_left_y": 898,
+          "top_left_x": 843,
+          "top_left_y": 905,
           "bottom_right_x": 1425,
           "bottom_right_y": 1370
         }
@@ -182,9 +182,9 @@
         "id": "img_9_3",
         "posicao": {
           "top_left_x": 178,
-          "top_left_y": 1599,
+          "top_left_y": 1606,
           "bottom_right_x": 712,
-          "bottom_right_y": 1826
+          "bottom_right_y": 1913
         }
       }
     ]
@@ -319,7 +319,7 @@
       {
         "id": "img_19_1",
         "posicao": {
-          "top_left_x": 645,
+          "top_left_x": 648,
           "top_left_y": 1220,
           "bottom_right_x": 1022,
           "bottom_right_y": 1344
@@ -369,7 +369,7 @@
         "posicao": {
           "top_left_x": 539,
           "top_left_y": 1216,
-          "bottom_right_x": 1098,
+          "bottom_right_x": 1114,
           "bottom_right_y": 1349
         }
       }
@@ -378,7 +378,7 @@
   {
     "type": "section",
     "title": "Hipertrigliceridemia ",
-    "content": "\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
+    "content": "\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n| APOAS | APOC3 | LPL |\n| :--: | :--: | :--: |\n| PCSK9 | ZPR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
     "images": [
       {
         "id": "img_23_1",
@@ -387,6 +387,15 @@
           "top_left_y": 741,
           "bottom_right_x": 1043,
           "bottom_right_y": 933
+        }
+      },
+      {
+        "id": "img_23_2",
+        "posicao": {
+          "top_left_x": 618,
+          "top_left_y": 1148,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1277
         }
       }
     ]
@@ -415,7 +424,7 @@
   {
     "type": "section",
     "title": "Uerá ",
-    "content": "\nA varfarina é um medicamento da classe dos anticoagulantes orais, utilizada na profilaxia de doenças tromboembólicas. 0 conhecimento do seu genótipo na resposta ao uso de Varfarina pode auxiliar na indicação da dose adequada a cada indivíduo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :-- | :-- |\n| Regula o ciclo da vitamina K | VKORC111 | rs4072874 | C | T/T |\n| Metabolismo da Vlt K e varfarina | CYP4F2 | rs2108622 | TT | C/C |\n| Metabolismo de xenobióticos e fármacos | CYP2A6 | rs1801272 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere resposta favorável a Varfarina, o que pode indicar a necessidade de menores doses deste medicamento para se obter o efeito farmacológico esperado.",
+    "content": "\nA varfarina é um medicamento da classe dos anticoagulantes orais, utilizada na profilaxia de doenças tromboembólicas. 0 conhecimento do seu genótipo na resposta ao uso de Varfarina pode auxiliar na indicação da dose adequada a cada indivíduo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :--: | :--: |\n| Regula o ciclo da vitamina K | VKORC111 | rs4072874 | C | T/T |\n| Metabolismo da Vlt K e varfarina | CYP4F2 | rs2108622 | TT | C/C |\n| Metabolismo de xenobióticos e fármacos | CYP2A6 | rs1801272 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere resposta favorável a Varfarina, o que pode indicar a necessidade de menores doses deste medicamento para se obter o efeito farmacológico esperado.",
     "images": [
       {
         "id": "img_26_1",
@@ -431,15 +440,15 @@
   {
     "type": "section",
     "title": "Envelhecimento ",
-    "content": "\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
+    "content": "\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINGO1 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMM40 | UNC13A | XRCC1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
     "images": [
       {
         "id": "img_27_1",
         "posicao": {
-          "top_left_x": 193,
+          "top_left_x": 200,
           "top_left_y": 804,
           "bottom_right_x": 1465,
-          "bottom_right_y": 1113
+          "bottom_right_y": 1111
         }
       }
     ]
@@ -495,14 +504,14 @@
   {
     "type": "section",
     "title": "Intolerância à Lactose ",
-    "content": "\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilíbrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
+    "content": "\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilibrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
     "images": [
       {
         "id": "img_31_1",
         "posicao": {
           "top_left_x": 688,
           "top_left_y": 748,
-          "bottom_right_x": 987,
+          "bottom_right_x": 984,
           "bottom_right_y": 872
         }
       }
@@ -559,8 +568,8 @@
         "id": "img_36_1",
         "posicao": {
           "top_left_x": 620,
-          "top_left_y": 1256,
-          "bottom_right_x": 1045,
+          "top_left_y": 1258,
+          "bottom_right_x": 1043,
           "bottom_right_y": 1403
         }
       }
@@ -574,10 +583,10 @@
       {
         "id": "img_37_1",
         "posicao": {
-          "top_left_x": 691,
+          "top_left_x": 689,
           "top_left_y": 654,
           "bottom_right_x": 984,
-          "bottom_right_y": 764
+          "bottom_right_y": 762
         }
       }
     ]
@@ -630,7 +639,7 @@
           "top_left_x": 631,
           "top_left_y": 1167,
           "bottom_right_x": 1042,
-          "bottom_right_y": 1291
+          "bottom_right_y": 1288
         }
       }
     ]
@@ -644,7 +653,7 @@
         "id": "img_42_1",
         "posicao": {
           "top_left_x": 620,
-          "top_left_y": 851,
+          "top_left_y": 853,
           "bottom_right_x": 1043,
           "bottom_right_y": 1026
         }
@@ -677,7 +686,7 @@
         "posicao": {
           "top_left_x": 502,
           "top_left_y": 977,
-          "bottom_right_x": 1046,
+          "bottom_right_x": 1083,
           "bottom_right_y": 1075
         }
       }
@@ -765,15 +774,15 @@
   {
     "type": "section",
     "title": "Risco de menopausa precoce ",
-    "content": "\nA menopausa precoce ou falência ovariana prematura é uma condição caracterizada pela interrupção da ovulação em intervalos regulares que ocorre antes dos 40 anos de idade e acomete até $1 \\%$ das mulheres. As causas da menopausa precoce envolvem o fator genético associado com doenças autoimunes.\n\n## Tabela de Genótipos relevantes\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Replicação de DNA/Associado à duração da vida <br> reprodutiva | MCMB | rs16991615 | G | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere a presença de risco para o desenvolvimento de menopausa precoce, com correlação ao surgimento prematuro dos sintomas típicos até dois anos antes da média. Outros genes e fatores não genéticos podem estar associados ao risco, portanto, não é motivo de grande preocupação, a menos que você tenha menos de 40 anos e apresente menstruação irregular, com falhas por mais de três meses, neste caso recomenda-se o acompanhamento periódico com ginecologista.",
+    "content": "\nA menopausa precoce ou falência ovariana prematura é uma condição caracterizada pela interrupção da ovulação em intervalos regulares que ocorre antes dos 40 anos de idade e acomete até $1 \\%$ das mulheres. As causas da menopausa precoce envolvem o fator genético associado com doenças autoimunes.\n\n## Tabela de Genótipos relevantes\n\n\n\n## ComentÁritos\n\nSeu genótipo sugere a presença de risco para o desenvolvimento de menopausa precoce, com correlação ao surgimento prematuro dos sintomas típicos até dois anos antes da média. Outros genes e fatores não genéticos podem estar associados ao risco, portanto, não é motivo de grande preocupação, a menos que você tenha menos de 40 anos e apresente menstruação irregular, com falhas por mais de três meses, neste caso recomenda-se o acompanhamento periódico com ginecologista.",
     "images": [
       {
         "id": "img_52_1",
         "posicao": {
-          "top_left_x": 267,
-          "top_left_y": 1258,
-          "bottom_right_x": 1372,
-          "bottom_right_y": 1380
+          "top_left_x": 284,
+          "top_left_y": 1256,
+          "bottom_right_x": 1367,
+          "bottom_right_y": 1382
         }
       }
     ]
@@ -788,7 +797,7 @@
         "posicao": {
           "top_left_x": 691,
           "top_left_y": 858,
-          "bottom_right_x": 967,
+          "bottom_right_x": 970,
           "bottom_right_y": 1036
         }
       }
@@ -805,7 +814,7 @@
           "top_left_x": 396,
           "top_left_y": 912,
           "bottom_right_x": 1260,
-          "bottom_right_y": 1230
+          "bottom_right_y": 1227
         }
       }
     ]
@@ -834,7 +843,7 @@
       {
         "id": "img_56_1",
         "posicao": {
-          "top_left_x": 707,
+          "top_left_x": 702,
           "top_left_y": 851,
           "bottom_right_x": 967,
           "bottom_right_y": 1026
@@ -892,7 +901,7 @@
       {
         "id": "img_61_1",
         "posicao": {
-          "top_left_x": 631,
+          "top_left_x": 635,
           "top_left_y": 1146,
           "bottom_right_x": 1043,
           "bottom_right_y": 1274
@@ -911,7 +920,7 @@
           "top_left_x": 688,
           "top_left_y": 856,
           "bottom_right_x": 970,
-          "bottom_right_y": 1038
+          "bottom_right_y": 1036
         }
       }
     ]

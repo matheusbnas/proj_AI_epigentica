@@ -1,16 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, FileText, Loader2 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import UploadSection from './components/UploadSection';
 import SlideContainer from './components/SlideContainer';
-import SlideViewer from './components/SlideViewer';
+import SlideViewer from './components/SlideViewer'; 
+import LocalSlideViewer from './components/LocalSlideViewer'
 
 interface SlideData {
   id: string;
   content: string;
   url?: string;
   presentationUrl?: string;
+}
+
+interface WebSocketMessage {
+  type: 'status' | 'progress' | 'complete' | 'error';
+  stage?: keyof typeof PROGRESS_STAGES;
+  message?: string;
+  slides?: SlideData[];
+  presentation_url?: string;
+  progress?: number;
+}
+
+// Define progress stages
+const PROGRESS_STAGES = {
+  UPLOADING: { step: 1, progress: 10, message: 'Enviando arquivo...' },
+  PROCESSING_PDF: { step: 2, progress: 30, message: 'Processando PDF...' },
+  EXTRACTING_TEXT: { step: 3, progress: 50, message: 'Extraindo texto...' },
+  GENERATING_JSON: { step: 4, progress: 70, message: 'Gerando estrutura JSON...' },
+  CREATING_SLIDES: { step: 5, progress: 90, message: 'Criando apresentação...' },
+  COMPLETE: { step: 6, progress: 100, message: 'Processo concluído!' }
+};
+
+interface ProcessStatus {
+  stage: keyof typeof PROGRESS_STAGES;
+  message?: string;
+  error?: string;
 }
 
 function App() {
@@ -22,11 +48,68 @@ function App() {
   const [progress, setProgress] = useState(0);
   const [ws, setWs] = useState<WebSocket | null>(null);
   const [presentationUrl, setPresentationUrl] = useState<string | null>(null);
+  const [useLocalViewer, setUseLocalViewer] = useState(false);
+  const [processStatus, setProcessStatus] = useState<ProcessStatus>({ stage: 'UPLOADING' });
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files?.[0]) {
       setFile(event.target.files[0]);
       setError(null);
+    }
+  };
+
+  const handleWebSocketMessage = async (message: WebSocketMessage) => {
+    console.log('Mensagem recebida:', message);
+    
+    try {
+      switch (message.type) {
+        case 'status':
+          if (message.stage && PROGRESS_STAGES[message.stage]) {
+            setProcessStatus({
+              stage: message.stage,
+              message: message.message || PROGRESS_STAGES[message.stage].message
+            });
+            setProgress(PROGRESS_STAGES[message.stage].progress);
+          }
+          break;
+        
+        case 'progress':
+          if (message.stage && PROGRESS_STAGES[message.stage]) {
+            setProcessStatus({
+              stage: message.stage,
+              message: message.message || PROGRESS_STAGES[message.stage].message
+            });
+            setProgress(message.progress || PROGRESS_STAGES[message.stage].progress);
+          }
+          break;
+
+        case 'complete':
+          setProcessStatus({ stage: 'COMPLETE' });
+          if (message.slides?.length) {
+            setSlides(message.slides);
+          }
+          setProgress(100);
+          
+          if (message.presentation_url) {
+            setPresentationUrl(message.presentation_url);
+            setUseLocalViewer(false);
+          } else {
+            setUseLocalViewer(true);
+          }
+          setLoading(false);
+          break;
+
+        case 'error':
+          throw new Error(message.message || 'Erro desconhecido no processamento');
+      }
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Erro desconhecido';
+      setError(errorMessage);
+      setProcessStatus({
+        stage: 'UPLOADING',
+        error: errorMessage
+      });
+      setLoading(false);
     }
   };
 
@@ -39,22 +122,26 @@ function App() {
 
     setLoading(true);
     setError(null);
+    setSlides([]);
+    setPresentationUrl(null);
+    setProcessStatus({ stage: 'UPLOADING' });
 
     const formData = new FormData();
     formData.append('file', file);
 
     try {
       // Enviar o arquivo para o backend
-      const response = await fetch('http://localhost:8000/process-pdf', { // Certifique-se de que o URL está correto
+      const response = await fetch('http://localhost:8000/process-pdf', {
         method: 'POST',
         body: formData
       });
 
       if (!response.ok) {
-        throw new Error('Erro ao processar o arquivo');
+        const errorData = await response.json().catch(() => ({ message: 'Erro ao processar o arquivo' }));
+        throw new Error(errorData.message || 'Erro ao processar o arquivo');
       }
 
-      const { process_id } = await response.json(); // Obter o process_id do backend
+      const { process_id } = await response.json();
 
       // Configurar WebSocket para acompanhar o progresso
       const wsUrl = `ws://localhost:8000/ws/${process_id}`;
@@ -62,8 +149,9 @@ function App() {
       
       newWs.onerror = (error) => {
         console.error('WebSocket error:', error);
-        setError('Erro na conexão WebSocket');
+        setError('Erro na conexão WebSocket. Verifique se o servidor está rodando.');
         setLoading(false);
+        newWs.close();
       };
 
       newWs.onopen = () => {
@@ -71,54 +159,38 @@ function App() {
         setWs(newWs);
       };
 
-      newWs.onmessage = async (event) => {
-        const message = JSON.parse(event.data);
-        switch (message.type) {
-          case 'status':
-            setProgress(20);
-            break;
-          case 'progress':
-            setProgress(message.progress);
-            if (message.message.includes('JSON encontrados')) {
-              // Mostrar mensagem específica quando usar JSON existente
-              setError(null);
-            }
-            break;
-          case 'complete':
-            setSlides(message.slides);
-            setProgress(100);
-
-            // Após o processamento, chamar o endpoint para criar os slides
-            try {
-              const slidesResponse = await fetch('/create-slides', {
-                method: 'POST',
-              });
-
-              if (!slidesResponse.ok) {
-                throw new Error('Erro ao criar slides');
-              }
-
-              const { presentation_url } = await slidesResponse.json();
-              setPresentationUrl(presentation_url);
-            } catch (err) {
-              setError('Erro ao criar slides. Tente novamente.');
-            }
-
-            setLoading(false);
-            break;
-          case 'error':
-            setError(message.message);
-            setLoading(false);
-            break;
+      newWs.onmessage = (event) => {
+        try {
+          const message = JSON.parse(event.data) as WebSocketMessage;
+          handleWebSocketMessage(message);
+        } catch (err) {
+          console.error('Erro ao processar mensagem do WebSocket:', err);
+          setError('Erro ao processar mensagem do servidor');
+          setLoading(false);
+          newWs.close();
         }
+      };
+
+      newWs.onclose = () => {
+        console.log('WebSocket desconectado');
+        setWs(null);
       };
 
       setProgress(50); // Atualizar o progresso inicial
     } catch (err) {
-      setError('Erro ao processar o arquivo. Tente novamente.');
+      console.error('Erro ao enviar arquivo:', err);
+      if (err instanceof Error) {
+        setError(`Erro ao enviar arquivo: ${err.message}`);
+      } else {
+        setError('Erro ao processar o arquivo. Tente novamente.');
+      }
       setLoading(false);
       ws?.close();
     }
+  };
+
+  const toggleViewerMode = () => {
+    setUseLocalViewer(!useLocalViewer);
   };
 
   useEffect(() => {
@@ -126,6 +198,34 @@ function App() {
       ws?.close();
     };
   }, [ws]);
+
+  const renderProgress = () => {
+    if (!loading) return null;
+
+    const currentStage = PROGRESS_STAGES[processStatus.stage];
+    return (
+      <div className="mt-8 bg-white rounded-lg shadow-sm p-6">
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2 mb-2">
+            <Loader2 className="h-4 w-4 animate-spin text-blue-600" />
+            <span className="text-sm font-medium text-gray-700">
+              {processStatus.message || currentStage.message}
+            </span>
+          </div>
+          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-blue-600 transition-all duration-500"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
+          <div className="flex justify-between text-xs text-gray-500">
+            <span>Progresso: {progress}%</span>
+            <span>Etapa {currentStage.step} de {Object.keys(PROGRESS_STAGES).length}</span>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -141,56 +241,41 @@ function App() {
             error={error}
           />
 
-          {loading && (
-            <div className="mt-8 bg-white rounded-lg shadow-sm p-6">
-              <div className="space-y-4">
-                <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-blue-600 transition-all duration-500"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
-                <p className="text-center text-sm text-gray-600">
-                  Processando... {progress}%
-                </p>
-              </div>
-            </div>
-          )}
+          {renderProgress()}
 
-          {presentationUrl && (
+          {(presentationUrl || slides.length > 0) && (
             <div className="mt-8">
-              <h2 className="text-lg font-bold">Apresentação Gerada</h2>
-              <SlideViewer presentationUrl={presentationUrl} />
-            </div>
-          )}
-
-          {slides.length > 0 && (
-            <SlideContainer
-              currentSlide={currentSlide}
-              totalSlides={slides.length}
-              onPrev={() => setCurrentSlide(curr => Math.max(0, curr - 1))}
-              onNext={() => setCurrentSlide(curr => Math.min(slides.length - 1, curr + 1))}
-            >
-              <div className="bg-white rounded-lg shadow-sm p-6">
-                {slides[currentSlide].url ? (
-                  <img 
-                    src={slides[currentSlide].url} 
-                    alt={`Slide ${currentSlide + 1}`}
-                    className="w-full h-auto"
-                  />
-                ) : (
-                  <div className="prose max-w-none">
-                    {slides[currentSlide].content}
-                  </div>
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-lg font-bold">Apresentação Gerada</h2>
+                {presentationUrl && (
+                  <button
+                    onClick={toggleViewerMode}
+                    className="text-sm px-3 py-1 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200 transition-colors"
+                  >
+                    {useLocalViewer ? 'Usar Visualizador Google' : 'Usar Visualizador Local'}
+                  </button>
                 )}
               </div>
-            </SlideContainer>
+              
+              {presentationUrl && !useLocalViewer ? (
+                <SlideViewer presentationUrl={presentationUrl} />
+              ) : (
+                slides.length > 0 && <LocalSlideViewer slides={slides} />
+              )}
+            </div>
           )}
 
           {error && (
             <div className="mt-4 p-4 bg-red-50 rounded-md flex items-center space-x-2">
               <AlertCircle className="h-5 w-5 text-red-500" />
-              <p className="text-red-700">{error}</p>
+              <div className="flex-1">
+                <p className="text-red-700">{error}</p>
+                {(presentationUrl || slides.length > 0) && (
+                  <p className="text-sm text-red-600 mt-1">
+                    Ocorreu um erro, mas você ainda pode visualizar os slides gerados.
+                  </p>
+                )}
+              </div>
             </div>
           )}
         </div>
