@@ -1,0 +1,928 @@
+[
+  {
+    "type": "section",
+    "title": "PAINEL NUTRIGENÉTICO ADVANCED PLUS",
+    "content": "",
+    "images": [
+      {
+        "id": "img_1_1",
+        "posicao": {
+          "top_left_x": 330,
+          "top_left_y": 788,
+          "bottom_right_x": 1316,
+          "bottom_right_y": 1277
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "ÍNDICE ",
+    "content": "\nIntrodução ..... 04\nResumo do Perfil ..... 05\n\n- Metabolismo ..... 05\n- Cardio ..... 05\n- Envelhecimento ..... 06\n- Inflamação, Intolerâncias e Trato Intestinal ..... 06\n- Vitaminas e Minerais ..... 06\n- Saúde Mental ..... 07\n- Hormônios e Saúde da Mulher ..... 07\n- Desempenho Esportivo ..... 08\n- Saúde Cutânea ..... 08\nResultado Genético Detalhado ..... 09\n- Metabolismo ..... 09\nGasto Energético\nComportamento Alimentar\nMetabolismo, Obesidade e Resistência à perda de peso\nResistência à Insulina e Diabetes tipo 2\nRisco para Diabetes tipo 1\nDoença Hepática Gordurosa Não Alcoólica\nMetabolismo de álcool\n- Cardio ..... 17\nRisco Cardiovascular"
+  },
+  {
+    "type": "section",
+    "title": "",
+    "content": "Risco para Hipertensão Arterial\nAumento de Colesterol Total\nLDL Colesterol\nHDL Colesterol\nHipertrigliceridemia\nMetabolismo de ômega 3 e resposta à suplementação\nEfeitos adversos do uso de Estatinas\nVarfarina\n\n- Envelhecimento ..... 26\nLongevidade\nDegeneração Macular\nEstresse Oxidativo e Detox\n- Inflamação, Intolerâncias e Trato Intestinal ..... 29\nInflamação e Doenças Inflamatórias Intestinais\nIntolerância à Lactose\nIntolerância ao Glúten e Doença celíaca\nIntolerância à Histamina\nMetabolismo de Omeprazol\n- Vitaminas e Minerais ..... 34\nVitamina A\nVitamina $D$\nVitamina B6\nColina\nMetabolismo do Folato\nVitamina B12\nMinerais\n- Saúde Mental ..... 42\nCiclo Circadiano e Sono\nTranstornos de Humor e Resposta ao Estresse"
+  },
+  {
+    "type": "section",
+    "title": "",
+    "content": "Comportamentos de dependência\nEnxaqueca\nMetabolismo de canabinoides\nSensibilidade à dor\n\n- Hormônios e Saúde da Mulher. ..... 48\nReceptores de Estrogênio\nFunção Tireoidiana\nRisco para endometriose\nRisco para Menopausa precoce\nRisco de Pré-eclâmpsia\n- Desempenho Esportivo. ..... 53\nAptidão Física\nProdução de energia no exercício físico\nFadiga e Lesões musculares\nLesões tendíneas, ligamentares e articulares\nMetabolismo da Cafeína\n- Saúde Cutânea. ..... 59\nEnvelhecimento Cutâneo\nDermatites e Sensibilidade Dérmica\nDesordens Estéticas"
+  },
+  {
+    "type": "section",
+    "title": "",
+    "content": "Paciente: GISELE XARÃO FERREIRA\nPrescritor: Ciera\nNascimento: 13/11/1997\nIdade: 26\n\nCódigo do Paciente: 800000046363\nColeta realizada em: 17/10/2024\nAmostra recebida em: 17/10/2024\nResultado liberado em: 12/11/2024\n\n# LAUDO NUTRIGENÉTICO \n\n## Introdução\n\nEste teste genético apresenta variantes associadas a condições de saúde e bem-estar, que irão fornecer informações sobre seus riscos e potencialidades. É uma ferramenta preditiva e preventiva, altamente personalizada para auxiliá-lo na busca por mais saúde e qualidade de vida.\n\nMetodologia: Sequenciamento de Nova Geração (NGS) na plataforma Illumina. Alinhamento em relação ao genoma de referência (hg38) e chamada de variantes realizados em pipelines desenvolvidos in house. Os SNPs são representados segundo a orientação \"forward/positiva\" do genoma.\n\n## Aviso Legal\n\nEsse laudo não é um exame diagnóstico e a utilização da informação sobre a predisposição genética na definição de um planejamento nutricional e/ou de suplementação, deve ser acompanhada de profissional capacitado.\n\nAs alegações feitas neste exame são pautadas em estudos indexados e validados pela comunidade científica, com base robusta e correlacionada à nossa população.\n\nAs características avaliadas neste teste genético são, em sua maioria, poligênicas e o impacto do conjunto de variantes genéticas para determinada característica será representado por meio de gráficos de barra, apresentando o percentual de risco para o indivíduo de maneira proporcional ao impacto das variantes genéticas presentes no genoma.\n\n## RESPONSÁVEL CIENTÍFICO\n\nThiago Salla\nCRN 3: 28936"
+  },
+  {
+    "type": "section",
+    "title": "RESUMO DO PERFIL GENÉTICO ",
+    "content": "\n\n\n## Cardio\n\nRisco Cardiovascular\n\n\nRisco para Hipertensão Arterial\n\n\n## Hipertrigliceridemia\n\nEfeitos adversos do uso de Estatinas\n\n| $0 \\%$ | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco <br> Baixo | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n|  |  |  |  | Risco <br> Alto |\n| LDL Colesterol |  |  |  |  |\n|  |  |  |  |  |\n| $0 \\%$ | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| Risco <br> Baixo | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n|  |  |  |  | Risco <br> Alto |\n| Efeitos adversos do uso de Estatinas |  |  |  |  |",
+    "images": [
+      {
+        "id": "img_6_1",
+        "posicao": {
+          "top_left_x": 176,
+          "top_left_y": 491,
+          "bottom_right_x": 1430,
+          "bottom_right_y": 1256
+        }
+      },
+      {
+        "id": "img_6_2",
+        "posicao": {
+          "top_left_x": 198,
+          "top_left_y": 1496,
+          "bottom_right_x": 752,
+          "bottom_right_y": 2100
+        }
+      },
+      {
+        "id": "img_6_3",
+        "posicao": {
+          "top_left_x": 888,
+          "top_left_y": 1496,
+          "bottom_right_x": 1447,
+          "bottom_right_y": 2100
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Envelhecimento ",
+    "content": "\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| Baixo |  |  |  |  |\n\nIntolerância à Histamina\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco |  |  |  |  |\n| Baixo |  |  |  |  |\n\n## Vitaminas e Minerais",
+    "images": [
+      {
+        "id": "img_7_1",
+        "posicao": {
+          "top_left_x": 229,
+          "top_left_y": 388,
+          "bottom_right_x": 785,
+          "bottom_right_y": 547
+        }
+      },
+      {
+        "id": "img_7_2",
+        "posicao": {
+          "top_left_x": 178,
+          "top_left_y": 785,
+          "bottom_right_x": 711,
+          "bottom_right_y": 1082
+        }
+      },
+      {
+        "id": "img_7_3",
+        "posicao": {
+          "top_left_x": 876,
+          "top_left_y": 785,
+          "bottom_right_x": 1412,
+          "bottom_right_y": 1082
+        }
+      },
+      {
+        "id": "img_7_4",
+        "posicao": {
+          "top_left_x": 178,
+          "top_left_y": 1335,
+          "bottom_right_x": 711,
+          "bottom_right_y": 1789
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Saúde Mental ",
+    "content": "\n\n\n## Hormônios e Saúde da Mulher\n\nReceptores de Estrogênio\n\n\nFunção Tireoidiana",
+    "images": [
+      {
+        "id": "img_8_1",
+        "posicao": {
+          "top_left_x": 181,
+          "top_left_y": 360,
+          "bottom_right_x": 1429,
+          "bottom_right_y": 984
+        }
+      },
+      {
+        "id": "img_8_2",
+        "posicao": {
+          "top_left_x": 196,
+          "top_left_y": 1225,
+          "bottom_right_x": 1443,
+          "bottom_right_y": 1698
+        }
+      },
+      {
+        "id": "img_8_3",
+        "posicao": {
+          "top_left_x": 198,
+          "top_left_y": 1927,
+          "bottom_right_x": 727,
+          "bottom_right_y": 2065
+        }
+      },
+      {
+        "id": "img_8_4",
+        "posicao": {
+          "top_left_x": 893,
+          "top_left_y": 1927,
+          "bottom_right_x": 1443,
+          "bottom_right_y": 2065
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "",
+    "content": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporativo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDesordens Estéticas\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n## Saúde Cutânea",
+    "images": [
+      {
+        "id": "img_9_1",
+        "posicao": {
+          "top_left_x": 176,
+          "top_left_y": 905,
+          "bottom_right_x": 711,
+          "bottom_right_y": 1372
+        }
+      },
+      {
+        "id": "img_9_2",
+        "posicao": {
+          "top_left_x": 843,
+          "top_left_y": 905,
+          "bottom_right_x": 1427,
+          "bottom_right_y": 1372
+        }
+      },
+      {
+        "id": "img_9_3",
+        "posicao": {
+          "top_left_x": 176,
+          "top_left_y": 1599,
+          "bottom_right_x": 711,
+          "bottom_right_y": 1786
+        }
+      },
+      {
+        "id": "img_9_4",
+        "posicao": {
+          "top_left_x": 843,
+          "top_left_y": 1639,
+          "bottom_right_x": 1427,
+          "bottom_right_y": 1786
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "RESULTADO GENÉTICO DETALHADO ",
+    "content": "\n## Metabolismo\n\n## Gasto Energético\n\n0 risco de obesidade é influenciado por marcadores genéticos associados a tendência de redução do gasto energético. 0 quadro abaixo indica quais dos genes avaliados para essa condição encontram-se com variantes alteradas no seu genoma.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptores de catecolaminas | ADRB2 | rs1042713 | A | G/A |\n| Receptores de catecolaminas | ADRB2 | rs1042714 | G | G/C |\n| Ativação de hormônios esteroidogênicos | ETV5 | rs7647305 | CC | T/C |\n| Ativação de hormônios | PCSK1 | rs6234 | G | G/G |\n| Termogênese | UCP1 | rs1800592 | T | T/C |\n| Termogênese | UCP2 | rs659366 | T | C/T |\n| Regulação do apetite e gasto energético | MC4R | rs17782313 | C | T/T |\n| Regulação do apetite e gasto energético | MC4R | rs12970134 | A | G/A |\n| Controle central da saciedade e do gasto | BDNF | rs925946 | T | T/G |\n| energético | PPARG | rs1801282 | G | C/C |\n| Adipogênese e homeostase de glicose |  |  |  |  |\n\n## COMENTÁRIOS\n\nSeu resultado indica predisposição moderada à redução do gasto energético, sobretudo por influência das alterações associadas com a atividade hormonal, regulação central do dispêndio calórico e termogênese. A prática de atividade física é fator essencial para a modulação deste risco. Em caso de variantes de risco em MC4R recomenda-se redução da ingesta de carboidratos.",
+    "images": [
+      {
+        "id": "img_10_1",
+        "posicao": {
+          "top_left_x": 539,
+          "top_left_y": 828,
+          "bottom_right_x": 1114,
+          "bottom_right_y": 1003
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Comportamento Alimentar ",
+    "content": "\n0 comportamento alimentar resulta da interação de fatores genéticos, fisiológicos e sociais que influenciam a busca por alimento, as nossas preferências e volume alimentar ingerido. São muitas as variantes genéticas que afetam o comportamento alimentar e os sinais de fome e saciedade, influenciando o consumo alimentar e o controle do peso corporal.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Controle central da saciedade e do gasto <br> energético | BDNF | rs6265 | T | C/T |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Supressão de Grelina | FTO | rs8050136 | A | C/A |\n| Leptina / Controle da saciedade | LEP | rs7799039 | AA | G/A |\n| Receptor de leptina / Controle da saciedade | LEPR | rs1805094 | GG | G/C |\n| Transportador de glicose/Predileção por doces | SLC2A2 | rs5400 | A | G/A |\n| Receptor de sabor/Percepção do sabor doce | TAS1R3 | rs35744813 | CC | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Receptor de sabor/Percepção do sabor amargo | TAS2R3B | rs1726866 | AA | G/A |\n| Receptor de sabor/Percepção do sabor amargo | TAS2R3B | rs10246939 | TT | T/C |\n\n## COMENTÁRIOS\n\n0 resultado deste perfil sugere baixa predisposição genética para um comportamento alimentar disfuncional, ainda assim os fatores ambientais podem estimular a um consumo alimentar exagerado e/ou inadequado, impactando no peso corporal, portanto, é recomendado vigilância constante na manutenção da alimentação saudável e atividade física.",
+    "images": [
+      {
+        "id": "img_11_1",
+        "posicao": {
+          "top_left_x": 545,
+          "top_left_y": 743,
+          "bottom_right_x": 1099,
+          "bottom_right_y": 935
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Metabolismo, Obesidade e Resistência à perda de peso ",
+    "content": "\n0 metabolismo de nutrientes exerce influência sobre a obesidade e a tendência a perda de peso. Entender as variantes genéticas relacionadas com a forma como seu organismo metaboliza gorduras e açucares é importante para a definição das estratégias alimentares que irão reduzir a resistência em perder peso e auxiliar na manutenção de um peso saudável e adequado.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulador do ciclo circadiano | CLOCK | rs1801260 | G | A/A |\n| Regulador do ciclo circadiano | CRY1 | rs2287161 | CC | C/C |\n| Regulação do metabolismo lipídico e absorção de <br> gorduras | FABP2 | rs1799883 | T | C/C |\n| Transdução de sinal intracelular | GNB3 | rs5443 | T | C/T |\n| Metabolismo de açúcares/Acúmulo gordura <br> abdominal | GNPDA2 | rs10938397 | G | A/G |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | G | C/C |\n\n## COMENTÁRIOS\n\nRisco baixo para alterações genéticas associadas a dificuldades no metabolismo de gorduras e açúcares, também associado a menor resistência à perda de peso. No entanto, é importante considerar fatores ambientais como a prática regular de atividade física e alimentação adequada para a manutenção do peso saudável.",
+    "images": [
+      {
+        "id": "img_12_1",
+        "posicao": {
+          "top_left_x": 615,
+          "top_left_y": 694,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 874
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Resistência à Insulina e Diabetes tipo 2 ",
+    "content": "\nA insulina tem a função de realizar o transporte de glicose para o interior das células, controlando o seu nível plasmático. A resistência à insulina é descrita como a incapacidade de resposta adequada dos receptores de insulina nos tecidos, impactando no aumento da glicemia, configurando fator de risco para o desenvolvimento de Diabetes tipo 2.\n\n| ADIPOQ | CLOCK | CRY1 | FABP2 | FTO | IGF2BP2 | MTNR1B |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| IRS1 | KCNJ11 | SH2B1 | SLC30A8 | TCF7L2 | ENPP1 | PPARG |\n\n\n\n## Tabela de Genotipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Produção de adiponectina/Homeostase de glicose | ADIPOQ | rs17300539 | A | G/G |\n| Regulador do ciclo circadiano | CLOCK | rs1801260 | G | A/A |\n| Regulador do ciclo circadiano | CRY1 | rs2287161 | CC | C/C |\n| Regulação do metabolismo lipídico e absorção de gorduras | FABP2 | rs1799883 | T | C/C |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Fator de crescimento semelhante a insulina | IGF2BP2 | rs4402960 | TT | G/T |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1B | rs10830963 | G | C/C |\n| Substrato do Receptor de Insulina | IRS1 | rs2943641 | C | C/C |\n| Regulação da secreção de insulina | KCNJ11 | rs5219 | T | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Transportador de zinco, regula secreção de insulina | SLC30A8 | rs13266634 | C | C/C |\n| Homeostase de glicose | TCF7L2 | rs7903146 | T | T/T |\n| Homeostase de glicose | TCF7L2 | rs12255372 | TT | T/T |\n| Regula a sensibilidade à insulina | ENPP1 | rs1044498 | CC | A/A |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | CC | C/C |",
+    "images": [
+      {
+        "id": "img_13_1",
+        "posicao": {
+          "top_left_x": 615,
+          "top_left_y": 701,
+          "bottom_right_x": 1042,
+          "bottom_right_y": 865
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Patientários ",
+    "content": "\nSeu perfil genético indica risco moderado ao desenvolvimento de resistência à insulina e diabetes do tipo 2. Atenção às variantes genéticas relacionadas ao aumento do peso corporal e acúmulo de gordura abdominal, pois tais condições configuram risco de incremento à resistência dos receptores de insulina. Regular os horários das refeições, evitando grandes volumes de alimento no período noturno tardio, pode auxiliar na modulação das variantes relacionadas ao ciclo circadiano ligadas ao risco de diabetes tipo 2.0 prejuízo na secreção de insulina também influencia o risco de diabetes tipo 2, neste caso o maior fracionamento de refeições pode ser interessante. A dieta mediterrânea pode ser recomendada em caso de variantes de risco no gene TCF7LZ."
+  },
+  {
+    "type": "section",
+    "title": "Diabetes tipo 1 ",
+    "content": "\nA diabetes tipo 1 é uma doença autoimune, influenciada por predisposição genética e caracterizada pela incapacidade do organismo de produzir insulina, acarretando níveis constantemente altos de glicose no sangue. Geralmente acomete os indivíduos antos dos 20 anos de idade.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Atividade Imuno regulatória | IL2 | rs2069763 | AA | C/A |\n| Regula autofagia celular e a saúde mitocondrial | CLEC16A | rs12708716 | A | A/A |\n| Produção de Insulina | INS | rs3741208 | AA | A/A |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere alto risco para o desenvolvimento de diabetes do tipo 1. Atenção ao monitoramento metabólico, sobretudo entre crianças e jovens, em caso de sintomas como excesso de sede, aumento do volume e frequência urinária, fadiga e perda de peso acentuada, procure um especialista.",
+    "images": [
+      {
+        "id": "img_15_1",
+        "posicao": {
+          "top_left_x": 694,
+          "top_left_y": 732,
+          "bottom_right_x": 969,
+          "bottom_right_y": 914
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Esteatose Hepática não alcoólica ",
+    "content": "\nA esteatose hepática é caracterizada pela deposição de gorduras no interior dos hepatócitos, resultado do acúmulo de triglicerídeos. Estima-se que essa condição acometa cerca de $20 \\%$ dos indivíduos adultos no mundo. a. A etiologia da esteatose hepática é multifatorial, envolvendo fatores ambientais, como alimentação desequilibrada, e predisposição genética para estresse oxidativo, dislipidemias e inflamação. A inflamação presente na esteatose pode resultar em lesão peroxidativa lipídica às membranas celulares e consequentemente estimular células estreladas hepáticas, levando à fibrose e ao risco de esteatohepatite.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801131 | GG | T/G |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801133 | AA | G/A |\n| Regula a homeostase de glicose e triglicerídeos | GCKR | rs780094 | T | C/C |\n| Regula a homeostase de glicose e triglicerídeos | GCKR | rs1260326 | T | C/C |\n| Biossintese de fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Remodelação de triglicerídeos e fosfolipídios | PNPLA3 | rs738409 | G | C/C |\n| Regulação da resposta inflamatória | TNF-alfa | rs361525 | A | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco baixo para o desenvolvimento de esteatose hepática não alcoólica, de qualquer forma se recomenda cuidado em relação aos fatores ambientais, sobretudo ao controle do peso corporal, à prática de atividades físicas e ao consumo adequado de alimentos fontes de colina.",
+    "images": [
+      {
+        "id": "img_16_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 818,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 998
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Metabolismo de Álcool ",
+    "content": "\nA enzima aldeído-desidrogenase 2 possui importante papel no metabolismo do álcool no organismo. A função da enzima ALDH2 é catalisar a oxidação de acetaldeído, resultante da metabolização do etanol, para acetato, diminuindo a toxicidade. Indivíduos com a presença de polimorfismo em ALDH2 apresentam diminuição da atividade enzimática, causando rubor facial após o consumo de bebidas alcoólicas.\n\nALDH2\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Oxidação de acetaldeído em acetato | ALDH2 | rs671 | A | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo indica metabolismo normal de álcool, associado a ausência de rubor facial decorrente do consumo. É importante avaliar o perfil de \"Comportamentos de Dependência\", descrito neste mesmo laudo, para a decisão consciente do risco de exposição e consumo de tal substância."
+  },
+  {
+    "type": "section",
+    "title": "Cierá́s ",
+    "content": "\n## Risco Cardiovascular\n\nOs principais eventos cardiovasculares causadores de morbidades e mortalidade são os chamados eventos tromboembólicos, caracterizados pela obstrução parcial ou total de vasos sanguíneos ocasionada por coágulo. 0 estilo de vida pouco saudável em combinação com certas características genéticas pode contribuir para o aumento do risco.\n\n|  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Fator de coagulação | B-Fibrinogenio | rs1800790 | AA | G/A |\n| Regulação do ciclo celular | CDKN2A | rs10757278 | G | A/G |\n| Regulação de sistemas de coagulação | Fator V de Leiden | rs6025 | T | C/C |\n| Estabilização da fibrina | FKIII V34L | rs5985 | CC | C/C |\n| Regula ativação plaquetária | ITGB3/HPAL | rs5918 | T | T/T |\n| Regula o transporte reverso de colesterol | LIPC | rs2070895 | A | G/A |\n| Adesão celular e regeneração de tecidos | NINJ2 | rs12425791 | AA | G/G |\n| Conversão de fibrinogênio em fibrina | Protrombina | rs1799963 | A | G/G |\n| Estimula fator de transcrição NRF2 | SIRT1 | rs7069102 | C | G/G |\n| Estimula fator de transcrição NRF2 | SIRT1 | rs7896005 | GG | G/G |\n| Sinalização e regulação da ativação da JAK2 | SH2B3 | rs3184504 | T | C/C |\n| Biogênese ribossomal e controle da proliferação celular | WDR12 | rs6725887 | C | T/C |\n\n## COMENTÁRIOS\n\nSua genética sugere um risco moderado para eventos cardiovasculares tromboembólicos como, infarto agudo do miocárdio, acidente vascular encefálico e trombose venosa. Recomenda-se o monitoramento da saúde cardiovascular e fatores ambientais relacionados.",
+    "images": [
+      {
+        "id": "img_18_1",
+        "posicao": {
+          "top_left_x": 401,
+          "top_left_y": 820,
+          "bottom_right_x": 512,
+          "bottom_right_y": 977
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Hipertensão Arterial ",
+    "content": "\nA hipertensão arterial é uma doença crônica caracterizada pelos níveis elevados da pressão sanguínea de maneira sustentada, acima dos 140/90 mmHg. Constitui um fator de risco importante para o desenvolvimento de doenças cardiovasculares. As alterações da pressão arterial são influenciadas pelo estilo de vida (sedentarismo, dieta) e por fatores genéticos.\n\n| AGTR | ECA |\n| :-- | :-- |\n| EDN | ENOS |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptor tipo I da angiotensina II | AGTR1 | rsS186 | C | A/C |\n| Enzima conversora de angiotensina | ECA | rs4343 | G | G/A |\n| Endotelina-1/Vasoconstrição | EDN | rs5370 | T | G/G |\n| Sintese de óxido nítrico/Vasodilatação | ENOS | rs1799983 | T | T/G |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco moderado para hipertensão arterial. Atenção em relação aos fatores ambientais que impactam no controle da pressão arterial. A prática de atividades físicas supervisionadas, bem como o consumo adequado de nutrientes e compostos bioativos com propriedades vasodilatadoras, são recomendadas. Em caso de risco associado ao gene ECA, pode ocorrer maior sensibilidade ao sódio, sendo recomendada a redução do consumo.",
+    "images": [
+      {
+        "id": "img_19_1",
+        "posicao": {
+          "top_left_x": 648,
+          "top_left_y": 1220,
+          "bottom_right_x": 1022,
+          "bottom_right_y": 1344
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Aumento de Colesterol Total ",
+    "content": "\nAlterações do perfil lipídico, como nas concentrações de colesterol total, estão associadas a aumento do risco de doenças cardiovasculares. A população brasileira apresenta alta incidência de alterações de colesterol total e frações, dada a influência do fator genético associada aos hábitos alimentares inadequados. 0 colesterol é precursor de hormônios e ácidos biliares, além de participar da regulação metabólica. Pode ser obtido na alimentação ou produzido de maneira endógena.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Transportadores ABC/Absoŗ́ão intestinal de <br> colesterol | ABCG5 | rs6756629 | GG | G/A |\n| Transportadores ABC/Absoŗ́ão intestinal de <br> colesterol | ABCG8 | rs4299376 | G | G/T |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs693 | A | G/G |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs5742904 | T | C/C |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs515135 | T | T/C |\n| Inibe IPI e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Limitante da síntese de colesterol | HMGCR | rs3846662 | GG | A/A |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs6511720 | GG | G/G |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs688 | T | C/C |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere um baixo risco para aumento das concentrações plasmáticas de colesterol total. Ainda assim, recomenda-se monitoramento, visto que a alimentação ocidental é, em geral, rica em gorduras saturadas, que apresentam associação com a hipercolesterolemia, consequentemente com o risco cardiovascular.",
+    "images": [
+      {
+        "id": "img_20_1",
+        "posicao": {
+          "top_left_x": 555,
+          "top_left_y": 820,
+          "bottom_right_x": 1098,
+          "bottom_right_y": 998
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Aumento de LDL ",
+    "content": "\nAs lipoproteínas de baixa densidade (LDL) são carreadoras de colesterol pela corrente sanguínea. Hábitos alimentares inadequados, associados a fator genético de risco, podem predispor à oxidação dessas partículas, levando a obstrução de artérias e veias e aumentando o risco cardiovascular.\n\n| ABCG | ABCG2 | APOA4 | APOB | CELSR2 |\n| :--: | :--: | :--: | :--: | :--: |\n| LDLR | PCSK9 | PSRC1 | 2PR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Transportadores ABC/Absoŗ̧ão intestinal de <br> colesterol | ABCG5 | rs6756629 | GG | G/A |\n| Transportadores ABC/Absoŗ̧ão intestinal de <br> colesterol | ABCG8 | rs4299376 | G | G/T |\n| Regula o transporte lipídico transcelular de <br> enterócitos | APOA4 | rs675 | AA | T/T |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs693 | A | G/G |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs5742904 | T | C/C |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs515135 | T | T/C |\n| Codifica para proteína da família das Caderinas | CELSR2 | rs12740374 | TT | G/G |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs6511720 | GG | G/G |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs688 | T | C/C |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11206510 | T | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11591147 | GG | G/G |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Desempenha papel na mitose | PSRC1 | rs599839 | AA | G/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado indica um baixo risco para aumento de concentrações plasmáticas de LDL. Ainda assim, recomenda-se monitoramento dos exames bioquímicos e moderação no consumo de gorduras saturadas.",
+    "images": [
+      {
+        "id": "img_21_1",
+        "posicao": {
+          "top_left_x": 564,
+          "top_left_y": 1094,
+          "bottom_right_x": 1081,
+          "bottom_right_y": 1216
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Niveis Reduzidos de HDL ",
+    "content": "\nAs lipoproteínas de alta densidade (HDL) são responsáveis pelo transporte reverso de colesterol, impedindo que ocorra acúmulo na parede vascular. Sendo assim, concentrações mais altas de HDL são desejáveis e conferem proteção cardiovascular.\n\n| APOAI | APOA4 | CETP | LIPC | LIPG |\n| :--: | :--: | :--: | :--: | :--: |\n| LPL | PONI | PCSK9 | 2PRI/APOM |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Codifica para apolipoproteína A1 | APOA1 | rs1799837 | CC | C/C |\n| Regula o transporte lipídico transcelular de <br> enterócitos | APOA4 | rs675 | AA | T/T |\n| Transferência de éster de colesterol do HDL | CETP | rs708272 | GG | G/A |\n| Codifica lipase hepática de triacilgliceróis | LIPC | rs1800588 | CC | C/T |\n| Hidrolisa triglicerídeos e HDL | LIPG | rs4939883 | TT | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Regula a capacidade antioxidante de HDL | PON1 | rs854560 | AA | A/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para baixas concentrações de HDL. Concentrações adequadas de HDL auxiliam no controle do risco cardiovascular pois atenua a progressão das placas ateroscleróticas. A prática de atividades físicas e o consumo adequado de gorduras monoinsaturadas e polinsaturadas podem ajudar na manutenção de bons níveis plasmáticos de HDL.",
+    "images": [
+      {
+        "id": "img_22_1",
+        "posicao": {
+          "top_left_x": 539,
+          "top_left_y": 1216,
+          "bottom_right_x": 1098,
+          "bottom_right_y": 1349
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Hipertrigliceridemia ",
+    "content": "\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
+    "images": [
+      {
+        "id": "img_23_1",
+        "posicao": {
+          "top_left_x": 618,
+          "top_left_y": 741,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 933
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Metabolismo de ômega 3 e resposta à suplementação ",
+    "content": "\n0 ômega-3 é um ácido graxos polinsaturado essencial, ou seja, precisa ser ingerido pela alimentação. Seu metabolismo é dependente de enzimas cuja atividade é influenciada por fatores genéticos. A depender do genótipo individual, o tipo e a quantidade de ômega-3 irão variar, bem como a resposta à suplementação. Antes de realizar qualquer intervenção com o uso de suplementos, procure um médico ou nutricionista.\n\n| APOE | CD36 | FADIII | FADS2 |\n| :--: | :--: | :--: | :--: |\n| MYRF | ELOVL2 | ENOS | PPARG |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica para glicoproteína plaquetária/Resposta à suplementação de ômega-3 | CD36 | rs1527483 | A | G/A |\n| Atividade de dessaturases de ácidos graxos | FADS1 | rs174546 | T | C/T |\n| Atividade de dessaturases de ácidos graxos | FADS2 | rs174616 | A | G/A |\n| Codifica fator de transcrição | MYRF | rs174537 | G | G/T |\n| Atividade de Elongase | ELOVL2 | rs953413 | A | G/A |\n| Resposta à suplementação de ômega-3 | ENOS | rs1799983 | T | T/G |\n| Regula adipogênese/Influencia a resposta ao ômega-3 | PPARG | rs1801282 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco moderado para prejuízos na metabolização do ômega 3. Pode ser necessário adequar ingestão alimentar e/ou a suplementação visando melhor aproveitamento deste nutriente e melhor biodisponibilidade de EPA e DHA. A suplementação de ômega-3 pode ser benéfica para regular a atividade inflamatória.",
+    "images": [
+      {
+        "id": "img_24_1",
+        "posicao": {
+          "top_left_x": 557,
+          "top_left_y": 1096,
+          "bottom_right_x": 1076,
+          "bottom_right_y": 1227
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Efeitos adversos do uso de Estatinas ",
+    "content": "\nAs estatinas são medicamentos utilizados para o tratamento de hipercolesterolemia e na prevenção da aterosclerose, sobretudo para redução dos níveis de LDL e consequente redução do risco cardiovascular. As estatinas inibem a enzima responsável pela formação de colesterol no fígado. Embora na maioria das vezes não causem maiores problemas, alguns indivíduos apresentam certa hipersensibilidade ao consumo, ocasionando efeitos colaterais desagradáveis.\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Codifica enzima transportadora na cadeia <br> respiratória mitocondrial | COQ2 | rs4693075 | 66 | $6 / \\mathrm{C}$ |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere risco reduzido de desenvolver efeitos adversos com o uso de Estatinas. Apesar do baixo risco, as reações adversas ocorrem não apenas pelos fatores genéticos, mas por questões como idade e presença de outras comorbidades, o que não descarta a possibilidade de ocorrência de efeitos secundários do uso de Estatinas. Não é recomendada a interrupção do uso de Estatinas sem a devida orientação médica."
+  },
+  {
+    "type": "section",
+    "title": "Uerá ",
+    "content": "\nA varfarina é um medicamento da classe dos anticoagulantes orais, utilizada na profilaxia de doenças tromboembólicas. 0 conhecimento do seu genótipo na resposta ao uso de Varfarina pode auxiliar na indicação da dose adequada a cada indivíduo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :-- | :-- |\n| Regula o ciclo da vitamina K | VKORC111 | rs4072874 | C | T/T |\n| Metabolismo da Vlt K e varfarina | CYP4F2 | rs2108622 | TT | C/C |\n| Metabolismo de xenobióticos e fármacos | CYP2A6 | rs1801272 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere resposta favorável a Varfarina, o que pode indicar a necessidade de menores doses deste medicamento para se obter o efeito farmacológico esperado.",
+    "images": [
+      {
+        "id": "img_26_1",
+        "posicao": {
+          "top_left_x": 688,
+          "top_left_y": 839,
+          "bottom_right_x": 984,
+          "bottom_right_y": 1012
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Envelhecimento ",
+    "content": "\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINGO1 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMM40 | UNC13A | XRCC1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
+    "images": [
+      {
+        "id": "img_27_1",
+        "posicao": {
+          "top_left_x": 200,
+          "top_left_y": 804,
+          "bottom_right_x": 1465,
+          "bottom_right_y": 1111
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Degeneração Macular ",
+    "content": "\nA degeneração macular é uma condição que afeta os olhos, mais precisamente uma parte da retina denominada mácula, levando à perda progressiva da visão. É mais frequente em pessoas acima dos 75 anos, e está associado a fatores ambientais e genéticas.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Codifica proteína componente da matriz extra <br> celular coroidal | ARMS2 | rs10490924 | T | G/G |\n| Manutenção da resposta imunológica e de defesa <br> a infecções | CFH | rs1061170 | T | C/T |\n| Regulação de crescimento celular | HTRA1 | rs11200638 | AA | G/G |\n| Regulação da resposta inflamatória | TNF-alfa | rs1800629 | A | G/G |\n| Regulação da resposta inflamatória | TNF-alfa | rs361525 | A | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere um baixo risco para o desenvolvimento de degeneração macular relacionada à idade. A dieta inadequada, doenças cardiovasculares e o abuso de substâncias como álcool e tabaco influenciam no risco de degeneração macular, por isso é importante manter os cuidados e o monitoramento, sobretudo na idade avançada.",
+    "images": [
+      {
+        "id": "img_28_1",
+        "posicao": {
+          "top_left_x": 691,
+          "top_left_y": 746,
+          "bottom_right_x": 1008,
+          "bottom_right_y": 933
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Estresse Oxidativo e Detox ",
+    "content": "\n0 estresse oxidativo é caracterizado pela produção desequilibrada de espécies reativas de oxigênio (ROS). Em condições fisiológicas, há um equilíbrio entre a promoção e a remoção de radicais livres, e o desequilíbrio está associado a redução da expectativa de vida saudável. Já o processo de destoxificação (detox) envolve a remoção de xenobióticos e metabólitos aos quais o organismo é exposto e que podem reagir com o DNA, gerando alterações no material genéticos das células. Variações genéticas associadas a alterações na atividade antioxidante e de destoxificação podem induzir desequilíbrio metabólico e aumentar o risco de doenças.\n\n| Efíriti | GSTM1 | GSTP1 | GSTT1 | NAD2 |\n| :--: | :--: | :--: | :--: | :--: |\n| CAT | GPX1 | NQO1 | SOD2 | SOD3 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Destoxificação de epóxidos | EPHX1 | rs1051740 | C | T/C |\n| Destoxificação de epóxidos | EPHX1 | rs2234922 | GG | A/G |\n| Destoxificação de xenobióticos | GSTM1 | rs2071487 | C | T/T |\n| Destoxificação de xenobióticos | GSTM1 | rs74837985 | C | G/G |\n| Destoxificação de xenobióticos | GSTP1 | rs1695 | GG | A/G |\n| Destoxificação de xenobióticos | GSTP1 | rs1138272 | T | C/T |\n| Destoxificação de xenobióticos | GSTT1 | rs2266633 | T | C/C |\n| Destoxificação de xenobióticos | GSTT1 | rs2266637 | T | T/T |\n| Ativação e desativação de fármacos | NAT2 | rs1495741 | A | A/A |\n| Catalase, regula atividade antioxidante | CAT | rs1001179 | TT | C/C |\n| Glutationa Peroxidase 1, regula atividade antioxidante | GPX1 | rs1050450 | A | G/G |\n| Conversão da coenzima Q10 em Ubiquinol | NQO1 | rs1131341 | A | G/G |\n| Conversão da coenzima Q10 em Ubiquinol | NQO1 | rs1800566 | A | G/G |\n| Conversão de ânions superóxido | SOD2 | rs4880 | AA | A/G |\n| Conversão de ânions superóxido | SOD3 | rs1799895 | G | C/C |\n| Conversão de ânions superóxido | SOD3 | rs8192288 | TT | G/G |\n\n## COMENTÁRIOS\n\nSeu resultado sugere baixo risco de prejuízos na capacidade antioxidante e nos processos de destoxificação. Tenha uma alimentação saudável, rica em hortaliças, legumes e frutas. 0 consumo de brássicas e compostos bioativos com propriedades antioxidantes pode auxiliar na manutenção de uma atividade antioxidante e destoxificante adequada.",
+    "images": [
+      {
+        "id": "img_29_1",
+        "posicao": {
+          "top_left_x": 598,
+          "top_left_y": 1108,
+          "bottom_right_x": 1080,
+          "bottom_right_y": 1216
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Inflamação, Intolerâncias e Trato Intestinal ",
+    "content": "\n## Inflamação e Doenças Inflamatórias Intestinais\n\nVariações genéticas em genes que codificam citocinas inflamatórias interferem na expressão dessas citocinas e consequentemente no risco metabólico, pois a ativação de cascatas inflamatórias medi das por citocinas é evento chave na gênese de doenças metabólicas e do intestino. A identificação da presença de alelos de risco, possibilita direcionar intervenções no estilo de vida e alimentação, que possam auxiliar na modulação do risco genético.\n\n| FIT2 | IL1- $\\beta$ | IL23A | IL23B |\n| :--: | :--: | :--: | :--: |\n| IL6 | NOD2 | STAT3 | TNF-alfa |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Absorção de vitamina B12 | FUT2 | rs602662 | A | G/A |\n| Mediação de diferenciação celular e apoptose | IL1-beta | rs1143634 | A | G/G |\n| Mediação de diferenciação celular e apoptose | IL1-beta | rs1143643 | T | C/C |\n| Conduz resposta imunológica | IL12B | rs2082412 | GG | G/G |\n| Resposta aguda à infecções e imunidade inata e | IL23R | rs2201841 | G | A/G |\n| adaptativa | IL6 | rs1800795 | G | G/G |\n| Regulação de resposta pró-inflamatória | NOD2 | rs2066845 | C | G/G |\n| Regulação da resposta imune a LPS | STAT3 | rs744166 | AA | A/G |\n| Regulação da resposta inflamatória e | TNF-alfa | rs1800629 | A | G/G |\n| diferenciação de células T CD4+ | TNF-alfa | rs361525 | A | G/G |\n| Regulação da resposta inflamatória |  |  |  |  |\n| Regulação da resposta inflamatória |  |  |  |  |\n\n## COMENTÁRIOS\n\nSua genética sugere baixo risco para alterações pró-inflamatórias e DII. A alimentação saudável, a modulação da microbiota intestinal, a prática de exercícios físicos regulares e o controle emocional ajudam a promover o equilíbrio da resposta inflamatória e auxiliam na manutenção da saúde intestinal.",
+    "images": [
+      {
+        "id": "img_30_1",
+        "posicao": {
+          "top_left_x": 564,
+          "top_left_y": 1181,
+          "bottom_right_x": 1083,
+          "bottom_right_y": 1309
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Intolerância à Lactose ",
+    "content": "\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilíbrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
+    "images": [
+      {
+        "id": "img_31_1",
+        "posicao": {
+          "top_left_x": 688,
+          "top_left_y": 748,
+          "bottom_right_x": 987,
+          "bottom_right_y": 867
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Intolerância ao Glúten e Doença celíaca ",
+    "content": "\nA doença celíaca é um distúrbio mediado pelo sistema imune, cujo gatilho é a ingestão de glúten em indivíduos geneticamente susceptíveis. A análise do haplótipo DQ2/DQ8 é utilizada para predizer o risco de desenvolvimento da doença celíaca, seu valor preditivo negativo é muito relevante, visto que aproximadamente $97 \\%$ dos portadores de doença celíaca apresentam o haplótipo.\n\nHLA\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação do sistema imunológico | HLA | rs2187668 | T | C/C |\n| Regulação do sistema imunológico | HLA | rs2395182 | T | T/T |\n| Regulação do sistema imunológico | HLA | rs7775228 | C | T/T |\n| Regulação do sistema imunológico | HLA | rs4639334 | A | G/G |\n| Regulação do sistema imunológico | HLA | rs7454108 | C | T/C |\n\n## COMENTÁRIOS\n\nHLA DQ8: Seu genótipo indica risco intermediário para doença celíaca e intolerância ao glúten. Segundo estudos com população brasileira, portadores de DQ8 possuem risco menor do que os indivíduos com DQ2.2, ainda assim recomenda-se monitoramento e observação de eventuais sintomas. Em caso de desconforto intestinal decorrente do consumo de glúten pode ser recomendada a exclusão da dieta, de acordo com indicação do nutricionista ou médico."
+  },
+  {
+    "type": "section",
+    "title": "Intolerância à Histamina ",
+    "content": "\nA histamina é uma substância envolvida em diversos processos biológicos, como a estimulação da secreção gástrica, inflamação e neurotransmissão. Está presente em muitos alimentos, seja naturalmente ou produzidas por fermentação bacteriana. A metabolização da histamina pelo organismo humano é dependente das enzimas histamina-Nmetiltransferase (HNMT) e diaminaoxidase (DAO). Na intolerância à histamina a atividades dessas enzimas é reduzida, causando manifestações clínicas intestinais e extra intestinais. Genes envolvidos com a atividade de HNMT e DAO estão associados ao risco de desenvolvimento de intolerância a histamina e sua avaliação pode auxiliar a modulação da alimentação para redução de eventuais sintomas.\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Codifica a enzima diaminaoxidase | DAO | rs10156191 | T | C/C |\n| Codifica a enzima diaminaoxidase | DAO | rs1049742 | T | C/C |\n| Codifica a enzima diaminaoxidase | DAO | rs2268999 | TT | A/A |\n| Codifica a enzima diaminaoxidase | DAO | rs2052129 | TT | G/G |\n| Codifica a enzima histamina-N-metiltransferase | HNMT | rs11558538 | TT | C/C |\n| Codifica a enzima histamina-N-metiltransferase | HNMT | rs12995000 | TT | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere baixo risco genético de intolerância à histamina. Pessoas com seu genótipo tendem a degradá-la adequadamente, reduzindo o risco do aparecimento de sintomas desagradáveis decorrentes do consumo de alimentos que contém este componente."
+  },
+  {
+    "type": "section",
+    "title": "Metabolismo de Omeprazol ",
+    "content": "\n0 Omeprazol compõe uma classe de fármacos utilizados no tratamento de refluxo gastresofágico, gastrite e úlceras gástricas e duodenais. Seu metabolismo ocorre no fígado quase que inteiramente pela CYP2C19, e a eliminação ocorre majoritariamente via urina. Fatores genéticos associados a CYP2C19 podem influenciar no metabolismo deste fármaco, afetando sua atividade.\n\n## $\\underline{\\text { CYP2C19 }}$\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Metabolização de fármacos | CYP2C19 | rs4986893 | A | G/G |\n\n## COMENTÁRIOS\n\nSeu resultado sugere metabolismo adequado de Omeprazol, o que pode favorecer sua resposta no tratamento de doenças gástricas. A manutenção de uma alimentação saudável e adequada é essencial para minimizar sintomas gástricos desagradáveis e auxiliar no tratamento.",
+    "images": [
+      {
+        "id": "img_34_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 1181,
+          "bottom_right_x": 1030,
+          "bottom_right_y": 1300
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Vitaminas e Minerais ",
+    "content": "\n## Vitamina A\n\nA Vitamina A é um micronutriente lipossolúvel, disponível na forma de retinol em alimentos de origem animal e na forma de carotenoides nos alimentos vegetais. O gene BCMO1 está associado a atividade de enzima que realiza a conversão de betacaroteno, o carotenoide mais abundante nos vegetais, em vitamina A na forma ativa, variantes neste gene podem afetar a biodisponibilidade deste nutriente.\n\n## BOMOT\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :--: | :--: |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs7501331 | T | C/C |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs12934922 | T | A/T |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs11645428 | G | G/A |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs6420424 | A | G/A |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere risco moderado de alterações no metabolismo da vitamina A, o que indica prejuízos na capacidade de conversão do betacaroteno na forma ativa da vitamina. Você pode se beneficiar de um maior consumo de vitamina A pré-formada.",
+    "images": [
+      {
+        "id": "img_35_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 1256,
+          "bottom_right_x": 1045,
+          "bottom_right_y": 1370
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Vitamina D ",
+    "content": "\nA vitamina D e um micronutriente cuja função principal é a atuação no sistema osteomuscular, atuando diretamente nas concentrações de cálcio e fósforo no organismo. Porém, este nutriente é ainda muito importante em diversas outras funções, como atividade imuno reguladora, antiproliferativa e diferenciação celular. A vitamina D circula no sangue ligada à sua proteína de ligação, codificada pelo gene GC, sua conversão biológica à sua forma ativa depende da atividade da CYP27B1 e a efetiva ação nos órgãos-alvo são mediadas por sua ligação com o receptor VDR. Conhecer as variantes genéticas associadas ao metabolismo da Vitamina D pode auxiliar na indicação de intervenções alimentares e de suplementação, com o intuito de evitar a deficiência vitamínica, a qual pode ser prejudicial a diversos sistemas do organismo.\n\n| CYP27B1 | GC | VDR FokI |\n| :--: | :--: | :--: |\n| VDR TaqI | VDR BsmI | VDR ApaI |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Conversão biológica em Vitamina D ativa | CYP27B1 | rs10877012 | 6 | $6 / 6$ |\n| Transporte de Vitamina D para tecidos-alvo | GC | rs2282679 | 6 | T/T |\n| Codifica para receptor de Vitamina D | VDR FokI | rs2228570 | A | $6 / 6$ |\n| Codifica para receptor de Vitamina D | VDR TaqI | rs731236 | 66 | A/G |\n| Codifica para receptor de Vitamina D | VDR BsmI | rs1544410 | T | C/T |\n| Codifica para receptor de Vitamina D | VDR ApaI | rs7975232 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de Vitamina D, podendo causar impacto negativo nos níveis plasmáticos. A presença de variantes genéticas associadas a vitamina D pode prejudicar o metabolismo ósseo, o risco cardiovascular, e a resposta imunológica e inflamatória, sendo assim, é importante o monitoramento bioquímico e, se necessária, a intervenção com suplementação, de acordo com as orientações de seu médico ou nutricionista.",
+    "images": [
+      {
+        "id": "img_36_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 1256,
+          "bottom_right_x": 1045,
+          "bottom_right_y": 1403
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Uera ",
+    "content": "\n## Vitamina B6\n\nA Vitamina B6 ou Piridoxina é um micronutriente importante para o metabolismo, atuando como coenzima em diversas reações, como por exemplo, na síntese de substâncias essenciais no funcionamento do sistema nervoso e no ciclo da homocisteína.\n\n\n## Tabela de Genútipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula concentrações de vitamina B6 | NBPF3 | rs4654748 | C | C/C |\n| Absorção de vitamina B6 | ALPL | rs1697421 | TT | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para deficiência de Vitamina B6. É importante o monitoramento bioquímico e garantir o consumo adequado de fontes alimentares deste nutriente.",
+    "images": [
+      {
+        "id": "img_37_1",
+        "posicao": {
+          "top_left_x": 689,
+          "top_left_y": 654,
+          "bottom_right_x": 984,
+          "bottom_right_y": 762
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Colina ",
+    "content": "\nA colina é um micronutriente essencial com diversas funções no organismo, estando ligada por exemplo com a saúde hepática e desenvolvimento cerebral. Variantes genéticas associadas a colina em conjunto com a deficiência na ingestão alimentar podem afetar a saúde humana e o bom funcionamento de músculos e fígado.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidicolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipídios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de colina. É importante garantir o consumo adequado de fontes alimentares deste nutriente para reduzir o risco de disfunções musculares e hepáticas, visto que a presença do risco genético é significativa apenas entre indivíduos com restrição dietética, ou seja, que possuem consumo insuficiente de colina.",
+    "images": [
+      {
+        "id": "img_38_1",
+        "posicao": {
+          "top_left_x": 618,
+          "top_left_y": 715,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 888
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Folato ",
+    "content": "\n0 folato, também chamado de vitamina B9, é um micronutriente essencial envolvido com reparação de DNA, divisão e crescimento celular, formação de hemácias e desenvolvimento cerebral. 0 folato participa diretamente do metabolismo de homocisteína. A hiperhomocisteinemia é uma condição associada a distúrbios metabólicos que aumentam, sobretudo, o risco cardiovascular. As concentrações de homocisteína são reguladas por enzimas dependentes de vitaminas do complexo B, principalmente folato e B12. Variantes nos genes associados ao transporte e metabolismo de folato representam risco para concentrações aumentadas de homocisteína e consequentes alterações metabólicas que elevam o risco cardiovascular.\n\n| CIS | FOLHI | MTHFR | MTHFDIL |\n| :--: | :--: | :--: | :--: |\n| MTR | MTRR | SLC7A9 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Conversão de homocisteína em cistationina | CBS | rs234706 | GG | G/G |\n| Absorção intestinal de folato dietético | FOLH1 | rs61886492 | AA | G/G |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801131 | GG | T/G |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801133 | A | G/A |\n| Codifica a enzima C1-Tetrahidrofolato Sintase | MTHFD1L | rs6922269 | A | G/A |\n| Remetilação de homocisteína em metionina | MTR | rs1805087 | AA | A/G |\n| Biossíntese de metionina | MTRR | rs1801394 | GG | A/G |\n| Transporte de folato | SLC19A1 | rs1051266 | T | T/T |",
+    "images": [
+      {
+        "id": "img_39_1",
+        "posicao": {
+          "top_left_x": 582,
+          "top_left_y": 1167,
+          "bottom_right_x": 1080,
+          "bottom_right_y": 1288
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Patientários ",
+    "content": "\nSeu genétipo indica risco moderado de alterações no metabolismo de folato. Tal associação pode aumentar a predisposição para o desenvolvimento de hiperhomocisteinemia. Sugere-se avaliação do consumo de alimentos fonte de vitaminas do complexo B e o monitoramento bioquímico de folato, 812 e homocisteína. A intervenção com suplementação personalizada pode ser indicada, à critério do seu médico ou nutricionista. Variantes em MTHFR podem afetar de 30 a $70 \\%$ a capacidade de conversão do ácido fólico para sua forma ativa metilfolato e merecem atenção caso estejam presentes."
+  },
+  {
+    "type": "section",
+    "title": "Uera ",
+    "content": "\n## Vitamina B12\n\nA vitamina B12 ou cobalamina é um micronutriente essencial que apresenta atuação na síntese de DNA, manutenção e desenvolvimento do sistema nervoso e formação de hemácias. Além disso, este nutriente participa do ciclo da metionina/homocisteína e é importante para a manutenção da saúde intestinal. A Cobalamina está presente naturalmente em alimentos de origem animal, sendo assim, os vegetarianos e veganos devem ficar atentos ao risco de deficiência, sobretudo se forem portadores de variantes genéticas associadas a prejuízos no metabolismo de B12.\n\n## B12\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Absorção de vitamina B12 | FUT2 | rs602662 | GG | G/A |\n| Absorção de vitamina B12 | FUT2 | rs601338 | G | G/A |\n| Transporte de vitamina B12 | TCN2 | rs9606756 | G | A/G |\n| Transporte de vitamina B12 | TCN2 | rs1801198 | GG | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado indica baixo risco de alterações no metabolismo de vitamina B12. É importante garantir o consumo de alimentos fonte. A dosagem periódica de B12 é recomendada para garantir a manutenção de concentrações plasmáticas adequadas, sobretudo se vegetariano ou vegano, visto que as fontes alimentares são essencialmente de origem animal.",
+    "images": [
+      {
+        "id": "img_41_1",
+        "posicao": {
+          "top_left_x": 631,
+          "top_left_y": 1167,
+          "bottom_right_x": 1042,
+          "bottom_right_y": 1288
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Minerais ",
+    "content": "\n0 conhecimento do perfil genético de cálcio e ferro é importante para elucidar as necessidades individuaisdesses nutrientes e avaliar o risco para deficiência ou excesso. A manutenção de níveis adequados destes micronutrientes é fundamental para a saúde. 0 cálcio participa da manutenção óssea, regulação da atividade muscular e nervosa, enquanto o ferro é indispensável para o transporte de oxigênio e síntese de DNA, em contrapartida, o excesso pode ser prejudicial e está relacionado com risco de alterações pró-oxidativas e acúmulo de ferro nos tecidos.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Homeostase de cálcio | CaSR | rs17251221 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs6776158 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs7652589 | A | G/G |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs1501899 | A | G/G |\n| Absorção de ferro | HFE | rs1799945 | G | C/G |\n| Absorção de ferro | HFE | rs1800562 | A | G/G |\n| Transferrina, responsável pelo transporte de ferro | TF | rs1049296 | TT | C/C |\n| Transferrina, responsável pelo transporte de ferro | TF | rs3811647 | AA | G/G |\n| Captação celular de ferro | TRF | rs3817672 | TT | C/C |\n| Regulador da síntese de hepcidina | TMPRSS6 | rs4820268 | GG | G/A |\n\n## COMENTÁRIOS\n\nSeu resultado indica baixo risco para alterações no metabolismo minerais. Ainda que, em linhas gerais, a genética seja favorável, deve-se ter atenção em relação a eventuais alterações na atividade de receptores de cálcio e no metabolismo do ferro.",
+    "images": [
+      {
+        "id": "img_42_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 853,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1026
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Saúde Mental ",
+    "content": "\n## Ciclo Circadiano e Sono\n\nCiclo circadiano é a denominação dada ao ritmo do organismo e suas funções ao longo de um dia, conhecido popularmente como \"relógio biológico\". Influencia muitos aspectos da fisiologia e do comportamento, incluindo a atividade cardiovascular, o sistema endócrino e o sono. Os distúrbios do sono atrelados ao ciclo circadiano ocorrem quando este não se alinha com os ciclos de claro-escuro. 0 ritmo circadiano de um indivíduo é influenciado por fatores genéticos, e alterações nos genes envolvidos podem prejudicar a qualidade do sono e aumentar o risco de doenças metabólicas.\n\n| CLOCK | CRY1 | CRY2 | MTHR1A |\n| :--: | :--: | :--: | :--: |\n| MTHR1B | PCR2 | PER3 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação dos ritmos circadianos | CLOCK | rs1801260 | G | A/A |\n| Regulação do padrão de sono | CRY1 | rs2287161 | CC | C/C |\n| Regulação do padrão de sono | CRY2 | rs11605924 | C | A/C |\n| Regulação do padrão de sono | CRY2 | rs7123390 | A | G/G |\n| Receptor de Melatonina/Regulador do ciclo | MTHR1A | rs12506228 | A | A/A |\n| Circadiano | MTHR1B | rs10830963 | G | C/C |\n| Receptor de Melatonina/Regulador do ciclo | PER2 | rs4663302 | TT | T/T |\n| Circadiano | PER2 | rs934945 | C | C/T |\n| Marca-passo circadiano | PER3 | rs228697 | G | C/C |\n| Marca-passo circadiano |  |  |  |  |\n\n## COMENTÁRIOS\n\nSeu resultado indica risco moderado para disfunções no ciclo circadiano e distúrbios do sono. Pessoas com sua genética tendem a apresentar hábitos mais noturnos, o que predispõe a alterações metabólicas. Adequar os horários de alimentação e dos exercícios pode auxiliar na regulação do ritmo circadiano e melhorar a qualidade do sono.",
+    "images": [
+      {
+        "id": "img_43_1",
+        "posicao": {
+          "top_left_x": 565,
+          "top_left_y": 1256,
+          "bottom_right_x": 1080,
+          "bottom_right_y": 1389
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Transtornos de Humore Resposta ao Estresse ",
+    "content": "\nOs transtornos de humor e a resposta do organismo frente às situações de estresse ocorrem por associação de fatores ambientais e genéticos. Diferentes estados comportamentais, respostas emocionais e desempenho cognitivo estão envolvidas com alterações na regulação dos neurotransmissores. 0 conhecimento das variantes genéticas associadas ao comportamento permite uma melhor modulação da saúde mental, melhorando a qualidade de vida.\n\n| BDNF | CNRI | COMT | DIO1 | DIO2 | HTR2A |\n| :--: | :--: | :--: | :--: | :--: | :--: |\n| IL1- $\\beta$ | MAOA | MAOB | NOF | OXR | SIRT1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Manutenção da neuroplasticidade e regulação das sinapses | BDNF | rs6265 | T | C/T |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs1049353 | TT | C/C |\n| Regulação de Dopamina e Epinefrina | COMT | rs4680 | AA | G/A |\n| Regulação de Dopamina e Epinefrina | COMT | rs4633 | TT | C/T |\n| Catalisa a ativação e inativação de T3 | DIO1 | rs11206244 | T | C/C |\n| Produção local de T3 na tireoide e cérebro | DIO2 | rs225014 | CC | T/T |\n| Produção local de T3 na tireoide e cérebro | DIO2 | rs12885300 | CC | C/C |\n| Codifica receptor de serotonina | HTR2A | rs6311 | C | T/T |\n| Codifica receptor de serotonina | HTR2A | rs6314 | A | G/G |\n| Mediação de diferenciação celular | IL1B | rs16944 | G | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOA | rs1137070 | T | T/C |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Proliferação, diferenciação e reparo neuronal | NGF | rs6330 | AA | A/A |\n| Receptor de ocitocina, modula comportamento social | OXR | rs2254298 | A | G/G |\n| Coordenação de funções celulares, metabolismo e reparo de DNA | SIRT1 | rs3758391 | TT | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere baixo risco para transtornos de humor.",
+    "images": [
+      {
+        "id": "img_44_1",
+        "posicao": {
+          "top_left_x": 502,
+          "top_left_y": 977,
+          "bottom_right_x": 1083,
+          "bottom_right_y": 1075
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Comportamentos de dependência ",
+    "content": "\nA dependência é caracterizada por uma perturbação crônica que conduz o indivíduo a repetição compulsiva e involuntária de um comportamento que gera efeito nervoso recompensador, mas que produzem efeitos danosos no longo prazo. Entre os comportamentos disfuncionais podemos citar o consumo alcoólico, tabagismo e uso de drogas ilícitas. Conhecer a genética de risco para dependência vai auxiliar na escolha consciente em relação à exposição a essas substâncias e até mesmo a outros comportamentos aditivos.\n\n| CNRI | DRDI |\n| :-- | :-- |\n| DRD2 | OPRM! |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs806380 | AA | A/G |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs806368 | CC | T/C |\n| Mediação de respostas comportamentais | DRD1 | rs686 | AA | G/A |\n| Mediação de respostas comportamentais | DRD2 | rs1076560 | AA | C/A |\n| Mediação de respostas comportamentais | DRD2 | rs1800497 | AA | G/A |\n| Receptor de opioides | DPRM1 | rs1799971 | G | A/A |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere baixo risco de desenvolver comportamentos de dependência. Mesmo com a genética favorável, não é descartado o risco, visto que fatores ambientais também podem influenciar no desenvolvimento de tais comportamentos.",
+    "images": [
+      {
+        "id": "img_45_1",
+        "posicao": {
+          "top_left_x": 650,
+          "top_left_y": 865,
+          "bottom_right_x": 1008,
+          "bottom_right_y": 1036
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Enxsequece ",
+    "content": "\nA Enxaqueca é um distúrbio neurológico caracterizado por episódios pontuais e intensos de dores de cabeça pulsantes, de intensidade moderada ou intensa, geralmente associadas a náuseas e fotofobia. Apresenta componente genético importante, engatilhado por fatores ambientais como privação de sono, alimentação desregrada, estresse, entre outros.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptor de Glutamato para neurotransmissores <br> excitatórios | GRIA1 | rs2195450 | AA | G/G |\n| Receptor de Glutamato para neurotransmissores <br> excitatórios | GRIA3 | rs3761555 | T | T/C |\n| Receptor para detecção de estimulos dolorosos e <br> nocivos | TRPV1 | rs8065080 | CC | T/T |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere baixo risco para enxaquecas. Mantenha um sono de qualidade, module a exposição ao estresse e siga uma alimentação saudável, isso ajuda a reduzir ainda mais o risco e minimiza a ocorrência e intensidade dos episódios.",
+    "images": [
+      {
+        "id": "img_46_1",
+        "posicao": {
+          "top_left_x": 688,
+          "top_left_y": 837,
+          "bottom_right_x": 984,
+          "bottom_right_y": 1008
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Metabolismo de canabinoides ",
+    "content": "\nCanabinoides são uma classe de compostos químicos que ativam receptores do sistema endocanabinoide, que atua na regulação e equilíbrio de uma série de processos fisiológicos do organismo, modulando por exemplo dor, inflamação, sono, humor, entre outros. Indivíduos apresentam respostas diferentes ao metabolismo e risco para efeitos colaterais e toxicidade, por isso o conhecimento da genética é essencial para a eventual indicação terapêutica.\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs806380 | AA | A/G |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs806368 | CC | T/C |\n| Medeia efeitos induzidos por canabinoides | CNR1 | rs1049353 | TT | C/C |\n| Regulação da sobrevivência neuronal | ART1 | rs2494732 | C | T/C |\n| Regulação da sobrevivência neuronal | ART1 | rs1130233 | CC | C/T |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere metabolismo normal de canabinoides."
+  },
+  {
+    "type": "section",
+    "title": "Sensibilidade a dor ",
+    "content": "\nA sensibilidade a dor é um mecanismo de proteção frente às situações potencialmente danosas para o organismo. 0 fator genético exerce influência sobre a capacidade de resistir a dor, ou apresentar maior vulnerabilidade a ela. Acredita-se que a maior sensibilidade à dor pode ser herança genética Neandertal, que compõe de 1 a $4 \\%$ do genoma do ser humano moderno, indicando a existência de cruzamento genético Neandertal com o Homo Sapiens antigo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptor de opioides | OPRM1 | rs1799971 | G | A/A |\n| Receptor para detecção de estímulos dolorosos e <br> nocivos | TRPV1 | rs8065080 | CC | T/T |\n| Regulação de Dopamina e Epinefrina | COMT | rs4680 | AA | G/A |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere maior resistência a dor. Fatores ambientais também podem influenciar na percepção de dor de um indivíduo, portanto, não está descartada a possibilidade queixas em relação a essa questão.",
+    "images": [
+      {
+        "id": "img_48_1",
+        "posicao": {
+          "top_left_x": 691,
+          "top_left_y": 856,
+          "bottom_right_x": 970,
+          "bottom_right_y": 1036
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Hormônios e Saúde da Mulher ",
+    "content": "\n## Receptores de Estrógeno\n\nEstrógeno ou estrogênio é o nome dado a um grupo de hormônios esteroides cuja função no metabolismo e funções reprodutivas é importantíssima para a manutenção de um organismo saudável. Além de estar envolvido com as características sexuais e comportamento feminino, este hormônio também é produzido por homens e apresenta papel na fertilidade. A atividade do estrógeno é dependente da ação de seus receptores nos tecidos- alvo e sua atividade está relacionada comcomponentes genéticos.\n\nESR\n$1 / 10$\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Codifica para receptores alfa de estrógeno | ESR1 | rs2234693 | C | C/C |\n| Codifica para receptores alfa de estrógeno | ESR1 | rs9340799 | G | G/G |\n| Codifica para receptores alfa de estrógeno | ESR1 | rs2228480 | A | G/G |\n| Codifica para receptores beta de estrógeno | ERB | rs2987983 | G | A/A |\n| Codifica para receptores beta de estrógeno | ERB | rs1271572 | A | A/A |\n| Codifica para receptores beta de estrógeno | ERB | rs4986938 | T | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado indica risco moderado para alterações na atividade de receptores de estrógeno, o que pode afetar a regulação dos processos de proliferação e divisão celular."
+  },
+  {
+    "type": "section",
+    "title": "Função Tireoidiana ",
+    "content": "\n0 perfil genético referente a função tireoidiana está associado com a atividade de deiodinases, envolvidas na conversão dos hormônios tireoidianos para a forma ativa.\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Catalina a ativação e inativação de hormônios <br> tireoidianos | DIO1 | rs2235544 | C | C/C |\n| Catalina a ativação e inativação de hormônios <br> tireoidianos | DIO1 | rs11206244 | T | C/C |\n| Catalina a conversão intratireoidiana de T4 em T3 | DIO2 | rs225014 | CC | T/T |\n| Catalina a conversão intratireoidiana de T4 em T3 | DIO2 | rs12885300 | CC | C/C |\n\n## ComentÁritos\n\nSeu resultado indica risco moderado de alterações na atividade de deiodinases. Tal associação pode influenciar negativamente o metabolismo de hormônios da tireoide e consequentemente na regulação da diversos sistemas do organismo. As deiodinases são dependentes de selênio e podem ser moduladas também por iodo e zinco, sendo assim, é importante manter uma alimentação saudável e variada, garantindo as necessidades diárias desses nutrientes."
+  },
+  {
+    "type": "section",
+    "title": "Endometriose ",
+    "content": "\nA endometriose é uma condição inflamatória provocada por células do endométrio. Pode ser assintomática, mas geralmente é caracterizada por cólicas menstruais muitos intensas e alterações no fluxo menstrual. A causa da endometriose não está bem estabelecida, mas sugere-se que tenha envolvimento com a predisposição genética relacionada com alterações imunológicas.\n\n| CYP3A4 | ESR1 | ERBB2 |\n| :--: | :--: | :--: |\n| FN1 | GREB1 | WNT4 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Catalina biossintese de esteroides | CYP1A1 | rs1048943 | C | T/C |\n| Codifica para receptores alfa de estrógeno | ESR1 | rs9340799 | G | G/G |\n| Codifica para receptores beta de estrógeno | ERB | rs2987983 | G | A/A |\n| Codifica fibronectina, envolvida na adesão e <br> migração celular | FN1 | rs1250248 | A | G/G |\n| Regulação de crescimento responsivo ao <br> estrogênio | GREB1 | rs11674184 | G | T/T |\n| Regulação do desenvolvimento, destino celular e <br> embriogênese | WNT4 | rs7521902 | A | C/C |\n\n## COMENTÁRIOS\n\nSua genética sugere um baixo risco para Endometriose. Fatores ambientais também podem estar associados ao desenvolvimento desta doença, portanto, não se descarta a possibilidade de ocorrência. Em caso de sintomas, busque orientação especializada.",
+    "images": [
+      {
+        "id": "img_51_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 1258,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1387
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Risco de menopausa precoce ",
+    "content": "\nA menopausa precoce ou falência ovariana prematura é uma condição caracterizada pela interrupção da ovulação em intervalos regulares que ocorre antes dos 40 anos de idade e acomete até $1 \\%$ das mulheres. As causas da menopausa precoce envolvem o fator genético associado com doenças autoimunes.\n\n## Tabela de Genótipos relevantes\n\n\n\n## ComentÁritos\n\nSeu genótipo sugere a presença de risco para o desenvolvimento de menopausa precoce, com correlação ao surgimento prematuro dos sintomas típicos até dois anos antes da média. Outros genes e fatores não genéticos podem estar associados ao risco, portanto, não é motivo de grande preocupação, a menos que você tenha menos de 40 anos e apresente menstruação irregular, com falhas por mais de três meses, neste caso recomenda-se o acompanhamento periódico com ginecologista.",
+    "images": [
+      {
+        "id": "img_52_1",
+        "posicao": {
+          "top_left_x": 284,
+          "top_left_y": 1256,
+          "bottom_right_x": 1367,
+          "bottom_right_y": 1382
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Risco de Pré-eclâmpsia ",
+    "content": "\nA pré-ecâmpsia consiste no aparecimento de hipertensão arterial durante a gravidez. Começa geralmente após 20 semanas de gestação em mulheres com pressão arterial normal. Estudos familiares demonstram que a genética apresenta grande influência no desenvolvimento de pré-eclampsia, podendo aumentar em até 5 vezes o risco.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Mediação de diferenciação celular e apoptose | IL1B | rs1143634 | A | G/G |\n| Enzima conversora de angiotensina | ECA | rs4343 | G | G/A |\n| Sintese de óxido nítrico/Vasodilatação | ENOS | rs1799983 | T | T/G |\n\n## COMENTÁRIOS\n\nSua genética sugere um baixo risco de pré-eclâmpsia. Fatores ambientais associados a alimentação desregrada e doença crônica pregressa podem influenciar no desenvolvimento desta condição, por isso, é de suma importância o adequado acompanhamento médico gestacional.",
+    "images": [
+      {
+        "id": "img_53_1",
+        "posicao": {
+          "top_left_x": 691,
+          "top_left_y": 858,
+          "bottom_right_x": 969,
+          "bottom_right_y": 1036
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Desempenho Esporivo ",
+    "content": "\n## Aptidão Física\n\nA aptidão física de um indivíduo respeito à capacidade de desempenhar uma atividade esportiva no melhor rendimento, evitando desgaste físico excessivo. 0 desempenho de resistência é definido pela capacidade de resistir a uma atividade esportiva em determinada potência durante um tempo prolongado, enquanto o desempenho de força e potência muscular se dá pela capacidade de exercer movimento específico a partir da geração de contração muscular combinada com velocidade de movimento e coordenação. A avaliação de genes envolvidos com a aptidão física e visa otimizar o direcionamento do treinamento esportivo e promover melhor adaptação e adesão ao esporte. Neste perfil, os genes indicados abaixo em azul representam os seus genótipos cuja associação é compatível com atividades de força, em contrapartida, os indicados em branco (neutro) representam os genótipos compatíveis com resistência. Assim sendo, quanto maior o percentual indicado na barra de risco, maior será a sua aptidão física para atividades de força e potência muscular, e quanto menor o percentual, melhor o desempenho em atividades mais prolongadas e de resistência física.\n\n| ACTN3 | AST | ADP | BDKRB2 | CNTF | ENOG |\n| :--: | :--: | :--: | :--: | :--: | :--: |\n| carme | GALNTL6 | MSTN | NFIA-AS2 | NRF2 | TFAM |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Codifica para alfa-actinina 3, expressa em fibras de contração rápida | ACTN3 | rs1815739 | C | C/C |\n| Regulação da pressão arterial | AGT | rs699 | G | G/G |\n| Transporte de fluidos no meio celular | AQP1 | rs1049305 | G | G/C |\n| Regulação da vasodilatação | BDKRB2 | rs1799722 | C | C/T |\n| Sintese de neurotransmissores e manutenção de neurônios motores | CNTF | rs1800169 | A | G/A |\n| Sintese de óxido nítrico | ENOS | rs2070744 | T | C/C |\n| Controle da função mitocondrial | GABPB1 | rs7181866 | AA | A/A |\n| Regulação da atividade de N- <br> acetilgalactosaminiltransferase | GALNTL6 | rs558129 | A | G/G |\n| Codifica para Miostatina, reguladora de hipertrofia muscular | MSTN | rs1805086 | C | T/T |\n| Eritropoiese | NFIA-AS2 | rs1572312 | T | G/G |\n| Fator de transcrição de proteínas antioxidantes | NRF2 | rs12594956 | C | C/A |\n| Fator de transcrição de proteínas antioxidantes | NRF2 | rs8031031 | C | C/C |\n| Estabilidade mitocondrial | TFAM | rs1937 | G | G/G |\n\n## COMENTÁRIOS\n\nSeu resultado está associado a predisposição genética favorável a um melhor desempenho de força. Atividades de curta duração e alta intensidade, como musculação, HIIT, corridas de curta distância e salto, podem apresentar melhores resultados e facilitar a adesão a prática esportiva. Caso você prefira atividades mais longas a alternativa pode ser buscar os exercícios intermitentes, que associam força e resistência, como o crossfit e as artes marciais.",
+    "images": [
+      {
+        "id": "img_54_1",
+        "posicao": {
+          "top_left_x": 396,
+          "top_left_y": 912,
+          "bottom_right_x": 1260,
+          "bottom_right_y": 1230
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Produção de energia no exercício físico ",
+    "content": "\nA produção de energia adequada durante a prática de atividade física é essencial para a manutenção do exercício com qualidade. 0 termo energia é definido como a habilidade de gerar trabalho, neste caso muscular. A fonte de energia do corpo humano provém dos nutrientes obtidos em nossa alimentação. A variabilidade genética relacionada à produção energética influencia diretamente a capacidade de desempenhar a atividade física e manter o desempenho de maneira prolongada. Este perfil indica as variantes de risco para eventuais prejuízos na produção de energia na atividade física, o que pode predispor a fadiga precoce e menor desempenho.\n\n| ADRB3 | CKMM | PPAR-alfa |\n| :--: | :--: | :--: |\n| PPARC- | PGC1-alfa | PPARG |\n\n\n\n## Tabela de cenótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptor de catecolaminas | ADRB3 | rs4994 | G | A/A |\n| Regulação da homeostase energética | CKMM | rs8111989 | C | T/T |\n| Regulação do metabolismo de lipídios | PPAR-Alfa | rs4253778 | C | G/G |\n| Regulação da biogênese mitocondrial | PPARD | rs2016520 | TT | T/T |\n| Regulação da biogênese mitocondrial | PPARD | rs2267668 | G | A/A |\n| Regulação da expressão de genes ligados ao <br> metabolismo | PGC1-alfa | rs8192678 | T | C/C |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere produção energética adequada durante os exercícios físicos. Tal associação indica baixa predisposição a apresentar queda brusca no desempenho esportivo.",
+    "images": [
+      {
+        "id": "img_55_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 1216,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1344
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Fadiga precoce e lesões musculares ",
+    "content": "\nA fadiga precoce é determinada pela incapacidade de dar continuidade à atividade física, por limitação cardiovascular e/ou muscular. Fatores genéticos e ambientais influenciam no desenvolvimento desta condição, e a insistência na prática da atividade em situações de fadiga extrema pode levar a lesões musculares incapacitantes que conduzem a uma perda da aptidão física e da adesão ao exercício.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Catalina a desaminação de AMP no músculo <br> esquelético | AMPD1 | rs17602729 | AA | G/A |\n| Transporte de lactato | SLC16A1 | rs1049434 | A | A/T |\n| Codificação da cadeia leve de miosina | MYLK | rs28497577 | TT | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere baixa predisposição ao desenvolvimento de fadiga precoce, o que por sua vez, também reduz o risco de lesões musculares, aumentando a capacidade de desempenhar adequadamente as atividades físicas, melhorando a adesão a prática esportiva.",
+    "images": [
+      {
+        "id": "img_56_1",
+        "posicao": {
+          "top_left_x": 707,
+          "top_left_y": 851,
+          "bottom_right_x": 967,
+          "bottom_right_y": 1026
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Lesões tendineas, ligamentares e articulares ",
+    "content": "\nAs lesões de tendões, ligamentos e articulações envolvem os genes que formam colágeno e, as metaloproteinases, secretadas para decompor elastina e colágeno, com o intuito de manter o equilibrio na renovação de tecidos.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :--: | :--: |\n| Produção de colágeno | COL1A1 | rs1800012 | C | C/C |\n| Produção de colágeno | COL5A1 | rs12722 | T | T/T |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Remodelação tecidual | MMP3 | rs679620 | C | T/T |\n| Remodelação tecidual | MMP10 | rs486055 | CC | C/C |\n| Remodelação tecidual | MMP12 | rs2276109 | TT | T/T |",
+    "images": [
+      {
+        "id": "img_57_1",
+        "posicao": {
+          "top_left_x": 620,
+          "top_left_y": 729,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 912
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Patientários ",
+    "content": "\nSeu resultado sugere alto risco de lesões tendineas, ligamentares e articulares, por estar associado a um desequilibrio entre a produção e degradação de fibras de colágeno e elastina nesses tecidos. Um adequado período de descanso entre as sessões de treinamento, bem como garantir o aporte de nutrientes e a regulação da atividade inflamatória, são capazes de atenuar o risco de lesões. 0 fortalecimento muscular de regiões que estabilizam o movimento articular também pode ser benéfico na redução da predisposição genética desfavorável. Procure orientação de profissionais capacitados para auxiliá-lo no manejo nutricional e esportivo."
+  },
+  {
+    "type": "section",
+    "title": "Caleína ",
+    "content": "\nA cafeína é uma substância química naturalmente presente em alimentos, como café e cacau, e que apresenta efeito estimulante para o sistema nervoso central, impactando no aumento do estado de alerta, e estado de concentração. Alterações no metabolismo deste composto podem predispor a maior incidência de efeitos adversos desagradáveis, como ansiedade e insônia. 0 metabolismo da cafeína é modulado pela presença de variantes genéticas envolvidas neste processo.\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Metabolização de xenobióticos, principalmente <br> cafeína | CYP1A2 | rs762551 | C | A/A |\n| Receptor de Adenosina | ADORA2A | rs5751876 | TT | T/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica metabolismo rápido para cafeína. Geralmente, indivíduos com essa característica são tolerantes ao consumo de café, outras bebidas com cafeína e suplementação, visto que o efeito estimulante não é duradouro. A utilização de cafeína pode contribuir na melhora aguda do desempenho esportivo."
+  },
+  {
+    "type": "section",
+    "title": "Saúde Cutânea ",
+    "content": "\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :-- | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de melanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
+    "images": [
+      {
+        "id": "img_60_1",
+        "posicao": {
+          "top_left_x": 618,
+          "top_left_y": 902,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1082
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Dermatites e Sensibilidade Dérmica ",
+    "content": "\nA sensibilidade dérmica a substâncias que podem provocar irritação e/ou dermatites varia segundo fatores genéticos relacionados a predisposição à inflamação e a atividade da filagrina, proteína necessária para a formação da camada córnea, barreira inicial de proteção da pele.\n\n| FLG | TNF-alfa |\n| :-- | :-- |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Formação e manutenção da camada córnea | FLG | rs61816761 | A | $6 / 6$ |\n| Regulação da resposta inflamatória cutânea | TNF-alfa | rs1800629 | A | $6 / 6$ |\n| Regulação da resposta inflamatória cutânea | TNF-alfa | rs361525 | A | $6 / 6$ |\n\n## COMENTÁRIOS\n\nSeu resultado sugere baixo risco de dermatites.",
+    "images": [
+      {
+        "id": "img_61_1",
+        "posicao": {
+          "top_left_x": 631,
+          "top_left_y": 1146,
+          "bottom_right_x": 1043,
+          "bottom_right_y": 1274
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Desordens estéticas ",
+    "content": "\nAs desordens ou disfunções estéticas são definidas por alterações orgânicas diversas e de caráter genético, engatilhado por fatores ambientais, que afetam a pele e/ou a composição corporal, deposição de gordura, entre outros, e que impacta de formas contundente na autoestima do indivíduo. Neste eixo são avaliados os marcadores genéticos associados às condições de predisposição ao desenvolvimento de hidrolipodistrofia ginóide (celulite), estrias e acne.\n\n\n## Tabela de Genotipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula homeostase celular e sistêmica à hipoxia | HIF1A | rs11549465 | CC | C/C |\n| Codifica Fibronectina-1, associada a remodelação <br> cutânea | FN1 | rs3910516 | GG | A/G |\n| Codifica para fator de crescimento, associado a <br> formação excessiva de queratinócitos | TGFB2 | rs1159268 | A | G/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para desordens estéticas. 0 estímulo a oxigenação tecidual por meio de atividades físicas regulares, dieta adequada com compostos bioativos de ação anti-inflamatória, além de evitar alterações bruscas de peso e manter a hidratação adequada da pele, podem ser alternativas efetivas na redução do risco associado.",
+    "images": [
+      {
+        "id": "img_62_1",
+        "posicao": {
+          "top_left_x": 688,
+          "top_left_y": 856,
+          "bottom_right_x": 970,
+          "bottom_right_y": 1038
+        }
+      }
+    ]
+  }
+]

@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 .credentials/
 node_modules/
+
+#files
+old_files/
+cache/

@@ -1,10 +1,16 @@
 import uuid
 import json
+import os
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 class GoogleSlidesClient:
-    def __init__(self, credentials_path, template_presentation_id):
+    def __init__(self, credentials_path, template_presentation_id=None):
+        if not os.path.exists(credentials_path):
+            raise FileNotFoundError(
+                f"Google credentials file not found at: {credentials_path}. "
+                "Make sure the credentials file exists and the path is correct."
+            )
         self.credentials_path = credentials_path
         self.template_presentation_id = template_presentation_id
         self.scopes = [
@@ -19,18 +25,76 @@ class GoogleSlidesClient:
         return build(service_name, version, credentials=creds)
 
     def create_new_slide_by_template(self):
+        """Create a new presentation instead of copying a template"""
+        slides_service = self._get_service('slides', 'v1')
         drive_service = self._get_service('drive', 'v3')
-        new_presentation = drive_service.files().copy(
-            fileId=self.template_presentation_id,
-            body={'name': f"Relatório Genético - {uuid.uuid4()}"}
+        
+        # Create a new blank presentation
+        presentation = slides_service.presentations().create(
+            body={'title': f"Relatório Genético - {uuid.uuid4()}"}
         ).execute()
         
+        # Set permissions to anyone with the link can view
         drive_service.permissions().create(
-            fileId=new_presentation['id'],
-            body={'type': 'anyone', 'role': 'writer'}
+            fileId=presentation['presentationId'],
+            body={'type': 'anyone', 'role': 'reader'}
         ).execute()
         
-        return new_presentation['id']
+        # Add initial slides and content
+        requests = [
+            {
+                'createSlide': {
+                    'objectId': 'titleSlide',
+                    'insertionIndex': '0',
+                    'slideLayoutReference': {
+                        'predefinedLayout': 'TITLE'
+                    }
+                }
+            },
+            {
+                'insertText': {
+                    'objectId': 'titleSlide',
+                    'insertionIndex': 0,
+                    'text': 'Relatório de Análise Genética'
+                }
+            }
+        ]
+        
+        # Create the slide first
+        response = slides_service.presentations().batchUpdate(
+            presentationId=presentation['presentationId'],
+            body={'requests': requests[:1]}  # Only create slide first
+        ).execute()
+        
+        # Get the title element ID from the created slide
+        slide = slides_service.presentations().pages().get(
+            presentationId=presentation['presentationId'],
+            pageObjectId='titleSlide'
+        ).execute()
+        
+        # Find the title element ID
+        title_element_id = None
+        for element in slide.get('pageElements', []):
+            if element.get('shape', {}).get('shapeType') == 'TEXT_BOX':
+                title_element_id = element['objectId']
+                break
+        
+        if title_element_id:
+            # Now insert the text into the title element
+            text_request = {
+                'insertText': {
+                    'objectId': title_element_id,
+                    'insertionIndex': 0,
+                    'text': 'Relatório de Análise Genética'
+                }
+            }
+            
+            slides_service.presentations().batchUpdate(
+                presentationId=presentation['presentationId'],
+                body={'requests': [text_request]}
+            ).execute()
+        
+        return presentation['presentationId']
 
     def add_slide(self, presentation_id, template_page_id):
         slides_service = self._get_service('slides', 'v1')
@@ -82,63 +146,57 @@ class GoogleSlidesClient:
         with open(json_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
-        # Cria uma nova apresentação a partir do template
+        # Cria nova apresentação
         presentation_id = self.create_new_slide_by_template()
-
-        # Adiciona slides com base no conteúdo do JSON
         slides_service = self._get_service('slides', 'v1')
+        
+        # Preparar requisições para criar slides
         requests = []
-
-        for page in data["pages"]:
-            slide_content = page["markdown"]
-            slide_images = page.get("images", [])
-
-            # Adiciona um slide em branco
+        
+        # Slide de título
+        requests.append({
+            "createSlide": {
+                "objectId": f"slide_title",
+                "slideLayoutReference": {"predefinedLayout": "TITLE"}
+            }
+        })
+        
+        # Criar slides para cada seção
+        for section in data:
             slide_id = f"slide_{uuid.uuid4().hex[:8]}"
+            
+            # Definir layout baseado no tipo de seção
+            layout = "TITLE_AND_BODY"
+            if section.get("type") == "genetic_section":
+                layout = "TWO_COLUMNS"
+            
+            # Criar slide
             requests.append({
                 "createSlide": {
                     "objectId": slide_id,
-                    "insertionIndex": "1",
-                    "slideLayoutReference": {
-                        "predefinedLayout": "TITLE_AND_BODY"
-                    }
+                    "slideLayoutReference": {"predefinedLayout": layout}
                 }
             })
-
-            # Adiciona texto ao slide
-            requests.append({
-                "insertText": {
-                    "objectId": slide_id,
-                    "text": slide_content,
-                    "insertionIndex": 0
-                }
-            })
-
-            # Adiciona imagens ao slide
-            for image in slide_images:
-                image_url = image.get("image_base64") or f"https://example.com/{image['id']}"
+            
+            # Adicionar título
+            if section.get("title"):
                 requests.append({
-                    "createImage": {
-                        "objectId": f"image_{uuid.uuid4().hex[:8]}",
-                        "url": image_url,
-                        "elementProperties": {
-                            "pageObjectId": slide_id,
-                            "size": {
-                                "height": {"magnitude": 3000000, "unit": "EMU"},
-                                "width": {"magnitude": 3000000, "unit": "EMU"}
-                            },
-                            "transform": {
-                                "scaleX": 1,
-                                "scaleY": 1,
-                                "translateX": 1000000,
-                                "translateY": 1000000,
-                                "unit": "EMU"
-                            }
-                        }
+                    "insertText": {
+                        "objectId": f"{slide_id}_title",
+                        "text": section["title"]
+                    }
+                })
+            
+            # Adicionar conteúdo
+            if section.get("content"):
+                requests.append({
+                    "insertText": {
+                        "objectId": f"{slide_id}_body",
+                        "text": section["content"]
                     }
                 })
 
-        # Executa as requisições para criar os slides
+        # Executar todas as requisições
         slides_service.presentations().batchUpdate(
             presentationId=presentation_id,
             body={"requests": requests}
