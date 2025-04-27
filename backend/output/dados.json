@@ -1,6 +1,6 @@
 {
     "arquivo": "dados.pdf",
-    "data_processamento": "2025-04-26 22:52:30",
+    "data_processamento": "2025-04-27 10:01:55",
     "paginas": [
         {
             "numero": 1,
@@ -11,7 +11,7 @@
                     "posicao": {
                         "top_left_x": 330,
                         "top_left_y": 788,
-                        "bottom_right_x": 1316,
+                        "bottom_right_x": 1314,
                         "bottom_right_y": 1277
                     }
                 }
@@ -45,7 +45,7 @@
                     "id": "img_6_1",
                     "posicao": {
                         "top_left_x": 175,
-                        "top_left_y": 493,
+                        "top_left_y": 491,
                         "bottom_right_x": 1429,
                         "bottom_right_y": 1256
                     }
@@ -55,7 +55,7 @@
                     "posicao": {
                         "top_left_x": 198,
                         "top_left_y": 1496,
-                        "bottom_right_x": 752,
+                        "bottom_right_x": 760,
                         "bottom_right_y": 2100
                     }
                 },
@@ -72,15 +72,15 @@
         },
         {
             "numero": 7,
-            "texto": "# Envelhecimento \n\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| Metabolismo de Omeprazol |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n\n## Vitaminas e Minerais",
+            "texto": "# Envelhecimento \n\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| Baixo |  |  |  |  |\n\nIntolerância à Histamina\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco |  |  |  |  |\n| Baixo |  |  |  |  |\n\n## Vitaminas e Minerais",
             "imagens": [
                 {
                     "id": "img_7_1",
                     "posicao": {
-                        "top_left_x": 228,
-                        "top_left_y": 397,
+                        "top_left_x": 229,
+                        "top_left_y": 388,
                         "bottom_right_x": 785,
-                        "bottom_right_y": 552
+                        "bottom_right_y": 547
                     }
                 },
                 {
@@ -97,7 +97,7 @@
                     "posicao": {
                         "top_left_x": 876,
                         "top_left_y": 785,
-                        "bottom_right_x": 1414,
+                        "bottom_right_x": 1412,
                         "bottom_right_y": 1082
                     }
                 },
@@ -105,7 +105,7 @@
                     "id": "img_7_4",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 1333,
+                        "top_left_y": 1335,
                         "bottom_right_x": 711,
                         "bottom_right_y": 1789
                     }
@@ -130,7 +130,7 @@
                     "posicao": {
                         "top_left_x": 196,
                         "top_left_y": 1225,
-                        "bottom_right_x": 1443,
+                        "bottom_right_x": 1445,
                         "bottom_right_y": 1698
                     }
                 },
@@ -139,8 +139,8 @@
                     "posicao": {
                         "top_left_x": 198,
                         "top_left_y": 1927,
-                        "bottom_right_x": 727,
-                        "bottom_right_y": 2065
+                        "bottom_right_x": 732,
+                        "bottom_right_y": 2105
                     }
                 },
                 {
@@ -148,21 +148,21 @@
                     "posicao": {
                         "top_left_x": 893,
                         "top_left_y": 1927,
-                        "bottom_right_x": 1443,
-                        "bottom_right_y": 2065
+                        "bottom_right_x": 1445,
+                        "bottom_right_y": 2062
                     }
                 }
             ]
         },
         {
             "numero": 9,
-            "texto": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| $0 \\%$ | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
+            "texto": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
             "imagens": [
                 {
                     "id": "img_9_1",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 905,
+                        "top_left_y": 898,
                         "bottom_right_x": 712,
                         "bottom_right_y": 1370
                     }
@@ -170,8 +170,8 @@
                 {
                     "id": "img_9_2",
                     "posicao": {
-                        "top_left_x": 843,
-                        "top_left_y": 905,
+                        "top_left_x": 851,
+                        "top_left_y": 898,
                         "bottom_right_x": 1425,
                         "bottom_right_y": 1370
                     }
@@ -180,9 +180,9 @@
                     "id": "img_9_3",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 1606,
+                        "top_left_y": 1599,
                         "bottom_right_x": 712,
-                        "bottom_right_y": 1913
+                        "bottom_right_y": 1826
                     }
                 }
             ]
@@ -224,7 +224,7 @@
                 {
                     "id": "img_12_1",
                     "posicao": {
-                        "top_left_x": 615,
+                        "top_left_x": 618,
                         "top_left_y": 694,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 874
@@ -239,7 +239,7 @@
                 {
                     "id": "img_13_1",
                     "posicao": {
-                        "top_left_x": 615,
+                        "top_left_x": 620,
                         "top_left_y": 701,
                         "bottom_right_x": 1042,
                         "bottom_right_y": 865
@@ -261,8 +261,8 @@
                     "posicao": {
                         "top_left_x": 694,
                         "top_left_y": 732,
-                        "bottom_right_x": 969,
-                        "bottom_right_y": 914
+                        "bottom_right_x": 970,
+                        "bottom_right_y": 916
                     }
                 }
             ]
@@ -334,14 +334,14 @@
         },
         {
             "numero": 21,
-            "texto": "# Aumento de LDL \n\nAs lipoproteínas de baixa densidade (LDL) são carreadoras de colesterol pela corrente sanguínea. Hábitos alimentares inadequados, associados a fator genético de risco, podem predispor à oxidação dessas partículas, levando a obstrução de artérias e veias e aumentando o risco cardiovascular.\n\n| ABCG | ABCG2 | APOA4 | APOB | CELSR2 |\n| :--: | :--: | :--: | :--: | :--: |\n| LDLR | PCSK9 | PSRC1 | 2PR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Transportadores ABC/Absoŗ̧ão intestinal de <br> colesterol | ABCG5 | rs6756629 | GG | G/A |\n| Transportadores ABC/Absoŗ̧ão intestinal de <br> colesterol | ABCG8 | rs4299376 | G | G/T |\n| Regula o transporte lipídico transcelular de <br> enterócitos | APOA4 | rs675 | AA | T/T |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs693 | A | G/G |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs5742904 | T | C/C |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs515135 | T | T/C |\n| Codifica para proteína da família das Caderinas | CELSR2 | rs12740374 | TT | G/G |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs6511720 | GG | G/G |\n| Receptor hepático de LDL, envolvido com a <br> endocitose | LDLR | rs688 | T | C/C |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11206510 | T | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11591147 | GG | G/G |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Desempenha papel na mitose | PSRC1 | rs599839 | AA | G/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado indica um baixo risco para aumento de concentrações plasmáticas de LDL. Ainda assim, recomenda-se monitoramento dos exames bioquímicos e moderação no consumo de gorduras saturadas.",
+            "texto": "# Aumento de LDL \n\nAs lipoproteínas de baixa densidade (LDL) são carreadoras de colesterol pela corrente sanguínea. Hábitos alimentares inadequados, associados a fator genético de risco, podem predispor à oxidação dessas partículas, levando a obstrução de artérias e veias e aumentando o risco cardiovascular.\n\n| ABCG | ABCG2 | APOA4 | APOB | CELSR2 |\n| :--: | :--: | :--: | :--: | :--: |\n| LDLR | PCSK9 | PSRC1 | 2PR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Transportadores ABC/Absoŕção intestinal de colesterol | ABCG5 | rs6756629 | GG | G/A |\n| Transportadores ABC/Absoŕção intestinal de colesterol | ABCG8 | rs4299376 | G | G/T |\n| Regula o transporte lipídico transcelular de enterócitos | APOA4 | rs675 | AA | T/T |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs693 | A | G/G |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs5742904 | T | C/C |\n| Apolipoproteína dos quilomicrons e das LDL | APOB | rs515135 | T | T/C |\n| Codifica para proteína da família das Caderinas | CELSR2 | rs12740374 | TT | G/G |\n| Receptor hepático de LDL, envolvido com a endocitose | LDLR | rs6511720 | GG | G/G |\n| Receptor hepático de LDL, envolvido com a endocitose | LDLR | rs688 | T | C/C |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11206510 | T | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs11591147 | GG | G/G |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Desempenha papel na mitose | PSRC1 | rs599839 | AA | G/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado indica um baixo risco para aumento de concentrações plasmáticas de LDL. Ainda assim, recomenda-se monitoramento dos exames bioquímicos e moderação no consumo de gorduras saturadas.",
             "imagens": [
                 {
                     "id": "img_21_1",
                     "posicao": {
-                        "top_left_x": 564,
-                        "top_left_y": 1094,
-                        "bottom_right_x": 1081,
+                        "top_left_x": 567,
+                        "top_left_y": 1096,
+                        "bottom_right_x": 1080,
                         "bottom_right_y": 1216
                     }
                 }
@@ -356,7 +356,7 @@
                     "posicao": {
                         "top_left_x": 539,
                         "top_left_y": 1216,
-                        "bottom_right_x": 1114,
+                        "bottom_right_x": 1098,
                         "bottom_right_y": 1349
                     }
                 }
@@ -364,24 +364,15 @@
         },
         {
             "numero": 23,
-            "texto": "# Hipertrigliceridemia \n\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n| APOAS | APOC3 | LPL |\n| :--: | :--: | :--: |\n| PCSK9 | ZPR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
+            "texto": "# Hipertrigliceridemia \n\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
             "imagens": [
                 {
                     "id": "img_23_1",
                     "posicao": {
                         "top_left_x": 618,
-                        "top_left_y": 741,
+                        "top_left_y": 743,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 933
-                    }
-                },
-                {
-                    "id": "img_23_2",
-                    "posicao": {
-                        "top_left_x": 618,
-                        "top_left_y": 1148,
-                        "bottom_right_x": 1043,
-                        "bottom_right_y": 1277
                     }
                 }
             ]
@@ -408,14 +399,14 @@
         },
         {
             "numero": 26,
-            "texto": "# Uerá \n\nA varfarina é um medicamento da classe dos anticoagulantes orais, utilizada na profilaxia de doenças tromboembólicas. 0 conhecimento do seu genótipo na resposta ao uso de Varfarina pode auxiliar na indicação da dose adequada a cada indivíduo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :--: | :--: |\n| Regula o ciclo da vitamina K | VKORC111 | rs4072874 | C | T/T |\n| Metabolismo da Vlt K e varfarina | CYP4F2 | rs2108622 | TT | C/C |\n| Metabolismo de xenobióticos e fármacos | CYP2A6 | rs1801272 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere resposta favorável a Varfarina, o que pode indicar a necessidade de menores doses deste medicamento para se obter o efeito farmacológico esperado.",
+            "texto": "# Uerá \n\nA varfarina é um medicamento da classe dos anticoagulantes orais, utilizada na profilaxia de doenças tromboembólicas. 0 conhecimento do seu genótipo na resposta ao uso de Varfarina pode auxiliar na indicação da dose adequada a cada indivíduo.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :-- | :-- | :-- | :-- |\n| Regula o ciclo da vitamina K | VKORC111 | rs4072874 | C | T/T |\n| Metabolismo da Vlt K e varfarina | CYP4F2 | rs2108622 | TT | C/C |\n| Metabolismo de xenobióticos e fármacos | CYP2A6 | rs1801272 | A | A/A |\n\n## COMENTÁRIOS\n\nSeu resultado sugere resposta favorável a Varfarina, o que pode indicar a necessidade de menores doses deste medicamento para se obter o efeito farmacológico esperado.",
             "imagens": [
                 {
                     "id": "img_26_1",
                     "posicao": {
                         "top_left_x": 688,
                         "top_left_y": 839,
-                        "bottom_right_x": 984,
+                        "bottom_right_x": 982,
                         "bottom_right_y": 1012
                     }
                 }
@@ -423,15 +414,15 @@
         },
         {
             "numero": 27,
-            "texto": "# Envelhecimento \n\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINGO1 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMM40 | UNC13A | XRCC1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
+            "texto": "# Envelhecimento \n\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
             "imagens": [
                 {
                     "id": "img_27_1",
                     "posicao": {
-                        "top_left_x": 200,
+                        "top_left_x": 193,
                         "top_left_y": 804,
                         "bottom_right_x": 1465,
-                        "bottom_right_y": 1111
+                        "bottom_right_y": 1113
                     }
                 }
             ]
@@ -474,7 +465,7 @@
                     "id": "img_30_1",
                     "posicao": {
                         "top_left_x": 564,
-                        "top_left_y": 1183,
+                        "top_left_y": 1181,
                         "bottom_right_x": 1080,
                         "bottom_right_y": 1309
                     }
@@ -515,7 +506,7 @@
                     "posicao": {
                         "top_left_x": 620,
                         "top_left_y": 1181,
-                        "bottom_right_x": 1030,
+                        "bottom_right_x": 1032,
                         "bottom_right_y": 1300
                     }
                 }
@@ -545,7 +536,7 @@
                     "posicao": {
                         "top_left_x": 620,
                         "top_left_y": 1258,
-                        "bottom_right_x": 1043,
+                        "bottom_right_x": 1045,
                         "bottom_right_y": 1403
                     }
                 }
@@ -568,15 +559,15 @@
         },
         {
             "numero": 38,
-            "texto": "# Colina \n\nA colina é um micronutriente essencial com diversas funções no organismo, estando ligada por exemplo com a saúde hepática e desenvolvimento cerebral. Variantes genéticas associadas a colina em conjunto com a deficiência na ingestão alimentar podem afetar a saúde humana e o bom funcionamento de músculos e fígado.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidicolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipídios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de colina. É importante garantir o consumo adequado de fontes alimentares deste nutriente para reduzir o risco de disfunções musculares e hepáticas, visto que a presença do risco genético é significativa apenas entre indivíduos com restrição dietética, ou seja, que possuem consumo insuficiente de colina.",
+            "texto": "# Colina \n\nA colina é um micronutriente essencial com diversas funções no organismo, estando ligada por exemplo com a saúde hepática e desenvolvimento cerebral. Variantes genéticas associadas a colina em conjunto com a deficiência na ingestão alimentar podem afetar a saúde humana e o bom funcionamento de músculos e fígado.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidicolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipídios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de colina. É importante garantir o consumo adequado de fontes alimentares deste nutriente para reduzir o risco de disfunções musculares e hepáticas, visto que a presença do risco genético é significativa apenas entre indivíduos com restrição dietética, ou seja, que possuem consumo insuficiente de colina.",
             "imagens": [
                 {
                     "id": "img_38_1",
                     "posicao": {
                         "top_left_x": 618,
-                        "top_left_y": 715,
+                        "top_left_y": 718,
                         "bottom_right_x": 1043,
-                        "bottom_right_y": 888
+                        "bottom_right_y": 893
                     }
                 }
             ]
@@ -588,10 +579,10 @@
                 {
                     "id": "img_39_1",
                     "posicao": {
-                        "top_left_x": 582,
+                        "top_left_x": 578,
                         "top_left_y": 1167,
-                        "bottom_right_x": 1078,
-                        "bottom_right_y": 1288
+                        "bottom_right_x": 1080,
+                        "bottom_right_y": 1286
                     }
                 }
             ]
@@ -624,7 +615,7 @@
                     "id": "img_42_1",
                     "posicao": {
                         "top_left_x": 620,
-                        "top_left_y": 853,
+                        "top_left_y": 851,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 1026
                     }
@@ -638,7 +629,7 @@
                 {
                     "id": "img_43_1",
                     "posicao": {
-                        "top_left_x": 565,
+                        "top_left_x": 564,
                         "top_left_y": 1256,
                         "bottom_right_x": 1080,
                         "bottom_right_y": 1389
@@ -790,8 +781,8 @@
                     "posicao": {
                         "top_left_x": 620,
                         "top_left_y": 1216,
-                        "bottom_right_x": 1043,
-                        "bottom_right_y": 1344
+                        "bottom_right_x": 1042,
+                        "bottom_right_y": 1347
                     }
                 }
             ]
@@ -803,7 +794,7 @@
                 {
                     "id": "img_56_1",
                     "posicao": {
-                        "top_left_x": 702,
+                        "top_left_x": 707,
                         "top_left_y": 851,
                         "bottom_right_x": 967,
                         "bottom_right_y": 1026
@@ -838,15 +829,15 @@
         },
         {
             "numero": 60,
-            "texto": "# Saúde Cutânea \n\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n| IRF4 | MACROH2A | MCIR |\n| :--: | :--: | :--: |\n| MARP | SLC23A1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de prelanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
+            "texto": "# Saúde Cutânea \n\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :-- | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de melanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
             "imagens": [
                 {
                     "id": "img_60_1",
                     "posicao": {
-                        "top_left_x": 620,
-                        "top_left_y": 1312,
+                        "top_left_x": 618,
+                        "top_left_y": 902,
                         "bottom_right_x": 1043,
-                        "bottom_right_y": 1433
+                        "bottom_right_y": 1082
                     }
                 }
             ]
@@ -858,7 +849,7 @@
                 {
                     "id": "img_61_1",
                     "posicao": {
-                        "top_left_x": 635,
+                        "top_left_x": 633,
                         "top_left_y": 1146,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 1274
@@ -876,7 +867,7 @@
                         "top_left_x": 688,
                         "top_left_y": 856,
                         "bottom_right_x": 970,
-                        "bottom_right_y": 1036
+                        "bottom_right_y": 1038
                     }
                 }
             ]

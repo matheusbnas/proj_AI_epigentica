@@ -94,9 +94,19 @@ export const uploadJsonToBackend = async (file: File): Promise<{ processId: stri
   });
 };
 
+const PRESENTATION_STAGES = {
+  'CREATING_PRESENTATION': { step: 1, message: 'Criando nova apresentação...' },
+  'CREATING_SLIDES': { step: 2, message: 'Criando estrutura dos slides...' },
+  'POPULATING_SLIDES': { step: 3, message: 'Populando conteúdo dos slides...' },
+  'FORMATTING_CONTENT': { step: 4, message: 'Formatando conteúdo...' },
+  'FINALIZING': { step: 5, message: 'Finalizando apresentação...' },
+  'COMPLETE': { step: 6, message: 'Apresentação concluída!' }
+};
+
 export const checkProcessStatus = async (processId: string): Promise<{
   status: string;
   progress: number;
+  stage: string;
   message?: string;
   result?: any;
 }> => {
@@ -104,5 +114,14 @@ export const checkProcessStatus = async (processId: string): Promise<{
   if (!response.ok) {
     throw new Error('Falha ao verificar status do processo');
   }
-  return response.json();
+  const data = await response.json();
+  
+  // Map backend stage to frontend stage
+  const stage = PRESENTATION_STAGES[data.stage] || { message: data.message };
+  
+  return {
+    ...data,
+    stage: stage.message,
+    message: stage.message || data.message
+  };
 };

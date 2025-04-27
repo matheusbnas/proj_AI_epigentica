@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { AlertCircle, FileText, Loader2 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -26,11 +26,14 @@ interface WebSocketMessage {
 // Define progress stages
 const PROGRESS_STAGES = {
   UPLOADING: { step: 1, progress: 10, message: 'Enviando arquivo...' },
-  PROCESSING_PDF: { step: 2, progress: 30, message: 'Processando PDF...' },
-  EXTRACTING_TEXT: { step: 3, progress: 50, message: 'Extraindo texto...' },
-  GENERATING_JSON: { step: 4, progress: 70, message: 'Gerando estrutura JSON...' },
-  CREATING_SLIDES: { step: 5, progress: 90, message: 'Criando apresentação...' },
-  COMPLETE: { step: 6, progress: 100, message: 'Processo concluído!' }
+  PROCESSING_PDF: { step: 2, progress: 20, message: 'Processando PDF...' },
+  EXTRACTING_TEXT: { step: 3, progress: 30, message: 'Extraindo texto...' },
+  CREATING_PRESENTATION: { step: 4, progress: 50, message: 'Criando apresentação...' },
+  CREATING_SLIDES: { step: 5, progress: 60, message: 'Criando slides...' },
+  POPULATING_SLIDES: { step: 6, progress: 70, message: 'Populando conteúdo...' },
+  FORMATTING_CONTENT: { step: 7, progress: 80, message: 'Formatando conteúdo...' },
+  FINALIZING: { step: 8, progress: 90, message: 'Finalizando...' },
+  COMPLETE: { step: 9, progress: 100, message: 'Processo concluído!' }
 };
 
 interface ProcessStatus {
@@ -50,6 +53,8 @@ function App() {
   const [presentationUrl, setPresentationUrl] = useState<string | null>(null);
   const [useLocalViewer, setUseLocalViewer] = useState(false);
   const [processStatus, setProcessStatus] = useState<ProcessStatus>({ stage: 'UPLOADING' });
+  const [wsRetries, setWsRetries] = useState(0);
+  const MAX_RETRIES = 3;
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files?.[0]) {
@@ -65,11 +70,12 @@ function App() {
       switch (message.type) {
         case 'status':
           if (message.stage && PROGRESS_STAGES[message.stage]) {
+            const stage = PROGRESS_STAGES[message.stage];
             setProcessStatus({
               stage: message.stage,
-              message: message.message || PROGRESS_STAGES[message.stage].message
+              message: message.message || stage.message
             });
-            setProgress(PROGRESS_STAGES[message.stage].progress);
+            setProgress(message.progress || stage.progress);
           }
           break;
         
@@ -88,14 +94,13 @@ function App() {
           if (message.slides?.length) {
             setSlides(message.slides);
           }
-          setProgress(100);
-          
           if (message.presentation_url) {
             setPresentationUrl(message.presentation_url);
             setUseLocalViewer(false);
-          } else {
-            setUseLocalViewer(true);
+            // Add small delay to ensure Google Slides is ready
+            await new Promise(resolve => setTimeout(resolve, 2000));
           }
+          setProgress(100);
           setLoading(false);
           break;
 
@@ -112,6 +117,47 @@ function App() {
       setLoading(false);
     }
   };
+
+  const connectWebSocket = useCallback((processId: string) => {
+    const wsUrl = `ws://localhost:8000/ws/${processId}`;
+    const newWs = new WebSocket(wsUrl);
+    
+    newWs.onerror = (error) => {
+      console.error('WebSocket error:', error);
+      if (wsRetries < MAX_RETRIES) {
+        setTimeout(() => {
+          setWsRetries(prev => prev + 1);
+          connectWebSocket(processId);
+        }, 1000 * (wsRetries + 1)); // Exponential backoff
+      } else {
+        setError('Erro na conexão WebSocket após várias tentativas.');
+        setLoading(false);
+      }
+    };
+
+    newWs.onopen = () => {
+      console.log('WebSocket conectado');
+      setWs(newWs);
+      setWsRetries(0); // Reset retries on successful connection
+    };
+
+    newWs.onmessage = (event) => {
+      try {
+        const message = JSON.parse(event.data) as WebSocketMessage;
+        handleWebSocketMessage(message);
+      } catch (err) {
+        console.error('Erro ao processar mensagem do WebSocket:', err);
+        setError('Erro ao processar mensagem do servidor');
+        setLoading(false);
+        newWs.close();
+      }
+    };
+
+    newWs.onclose = () => {
+      console.log('WebSocket desconectado');
+      setWs(null);
+    };
+  }, [wsRetries]);
 
   const handleUpload = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -142,40 +188,8 @@ function App() {
       }
 
       const { process_id } = await response.json();
-
-      // Configurar WebSocket para acompanhar o progresso
-      const wsUrl = `ws://localhost:8000/ws/${process_id}`;
-      const newWs = new WebSocket(wsUrl);
+      connectWebSocket(process_id);
       
-      newWs.onerror = (error) => {
-        console.error('WebSocket error:', error);
-        setError('Erro na conexão WebSocket. Verifique se o servidor está rodando.');
-        setLoading(false);
-        newWs.close();
-      };
-
-      newWs.onopen = () => {
-        console.log('WebSocket conectado');
-        setWs(newWs);
-      };
-
-      newWs.onmessage = (event) => {
-        try {
-          const message = JSON.parse(event.data) as WebSocketMessage;
-          handleWebSocketMessage(message);
-        } catch (err) {
-          console.error('Erro ao processar mensagem do WebSocket:', err);
-          setError('Erro ao processar mensagem do servidor');
-          setLoading(false);
-          newWs.close();
-        }
-      };
-
-      newWs.onclose = () => {
-        console.log('WebSocket desconectado');
-        setWs(null);
-      };
-
       setProgress(50); // Atualizar o progresso inicial
     } catch (err) {
       console.error('Erro ao enviar arquivo:', err);

@@ -174,7 +174,23 @@ class GoogleSlidesClient:
     def create_slides_from_json(self, json_data):
         """Cria slides no Google Slides com base no conteúdo do JSON."""
         try:
-            data = json.loads(json_data) if isinstance(json_data, str) else json_data
+            # Garantir que json_data seja um objeto Python
+            if isinstance(json_data, str):
+                try:
+                    data = json.loads(json_data)
+                except json.JSONDecodeError:
+                    raise ValueError("JSON inválido fornecido")
+            else:
+                data = json_data
+
+            # Validar estrutura dos dados
+            if not isinstance(data, (list, dict)):
+                raise ValueError("Dados devem ser uma lista ou dicionário")
+
+            # Converter para lista se for dicionário
+            if isinstance(data, dict):
+                data = [data]
+                
             presentation_id = self.create_new_slide_by_template()
             
             # First batch: Create all slides

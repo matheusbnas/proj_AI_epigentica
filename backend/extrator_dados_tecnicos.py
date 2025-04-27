@@ -3,7 +3,7 @@
 
 """
 Extrator de Dados Técnicos de Catálogos (Versão Ajustada)
-Projeto Xartam - Extração de dados técnicos de catálogos em PDF para JSON
+Projeto Epigenética - Extração de dados técnicos de catálogos em PDF para JSON
 
 Este script utiliza o Mistral OCR e técnicas de processamento de imagem para extrair 
 dados técnicos de catálogos em PDF, incluindo textos e imagens, e salvar em formato JSON.
@@ -18,7 +18,7 @@ import logging
 import re
 import base64
 import tempfile
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional, Tuple, Callable
 import argparse
 from mistralai import Mistral, DocumentURLChunk
 import cv2
@@ -42,7 +42,8 @@ class ExtratorDadosTecnicos:
     Versão ajustada para extrair textos e imagens de catálogos de peças e manuais técnicos.
     """
 
-    def __init__(self, api_key: str, output_dir: str = "output", figs_dir: str = "figs"):
+    def __init__(self, api_key: str, output_dir: str = "output", 
+                 figs_dir: str = "figs", progress_callback: Optional[Callable] = None):
         """
         Inicializa o extrator de dados técnicos.
 
@@ -50,10 +51,12 @@ class ExtratorDadosTecnicos:
             api_key: Chave de API do Mistral
             output_dir: Diretório de saída para os arquivos JSON
             figs_dir: Diretório de saída para as imagens extraídas
+            progress_callback: Função de callback para atualização de progresso
         """
         self.client = Mistral(api_key=api_key)
         self.output_dir = output_dir
         self.figs_dir = figs_dir
+        self.progress_callback = progress_callback
         os.makedirs(self.output_dir, exist_ok=True)
         os.makedirs(self.figs_dir, exist_ok=True)
 
@@ -76,6 +79,9 @@ class ExtratorDadosTecnicos:
 
         # Upload do arquivo para o Mistral OCR
         try:
+            if self.progress_callback:
+                self.progress_callback("PROCESSING_PDF", 10)
+
             uploaded_file = self.client.files.upload(
                 file={
                     "file_name": os.path.basename(arquivo_pdf),
@@ -84,6 +90,9 @@ class ExtratorDadosTecnicos:
                 purpose="ocr"
             )
             logger.info(f"Arquivo enviado com sucesso. ID: {uploaded_file.id}")
+
+            if self.progress_callback:
+                self.progress_callback("EXTRACTING_TEXT", 30)
 
             # Obter URL assinada para o arquivo enviado
             signed_url = self.client.files.get_signed_url(
@@ -100,6 +109,9 @@ class ExtratorDadosTecnicos:
             # Converter o resultado para um dicionário
             ocr_result_dict = ocr_result.model_dump()
 
+            if self.progress_callback:
+                self.progress_callback("GENERATING_JSON", 60)
+
             # Extrair e processar os dados
             dados_processados = self.processar_resultado_ocr(
                 ocr_result_dict, arquivo_pdf)
@@ -110,6 +122,9 @@ class ExtratorDadosTecnicos:
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(dados_processados, f, indent=4, ensure_ascii=False)
                 logger.info(f"Dados extraídos salvos em: {output_file}")
+
+            if self.progress_callback:
+                self.progress_callback("COMPLETE", 100)
 
             return dados_processados
 
@@ -129,106 +144,73 @@ class ExtratorDadosTecnicos:
             Dicionário com os dados processados
         """
         logger.info("Processando resultado do OCR...")
-        
-        sections = []
-        current_section = {
-            "type": "section",
-            "title": "",
-            "content": "",
-            "images": []
+
+        # Extrair informações básicas
+        nome_arquivo = os.path.basename(arquivo_pdf)
+
+        # Estrutura para armazenar os dados processados
+        dados_processados = {
+            "arquivo": nome_arquivo,
+            "data_processamento": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "paginas": []
         }
 
-        for page in ocr_result.get("pages", []):
+        # Processar cada página
+        for page_idx, page in enumerate(ocr_result.get("pages", [])):
+            logger.info(f"Processando página {page_idx+1}")
+
             # Extrair texto da página
-            text = page.get("markdown", "")
-            
-            # Processar seções
-            lines = text.split("\n")
-            for line in lines:
-                # Detectar títulos (texto em maiúsculas ou com ## no início)
-                if line.isupper() or line.startswith("#"):
-                    # Se já temos uma seção atual com conteúdo, salvá-la
-                    if current_section["content"].strip() or current_section["title"]:
-                        sections.append(current_section.copy())
-                    
-                    # Iniciar nova seção
-                    current_section = {
-                        "type": "section",
-                        "title": line.replace("#", "").strip(),
-                        "content": "",
-                        "images": []
-                    }
-                else:
-                    # Adicionar linha ao conteúdo da seção atual
-                    if line.strip():
-                        current_section["content"] += "\n" + line
+            texto_pagina = ""
+            if "markdown" in page:
+                # Remover referências a imagens do markdown
+                texto_pagina = re.sub(r'!\[.*?\]\(.*?\)', '', page["markdown"])
+
+            # Estrutura para armazenar informações da página
+            info_pagina = {
+                "numero": page_idx + 1,
+                "texto": texto_pagina.strip(),
+                "imagens": []
+            }
 
             # Processar imagens da página
             for img_idx, img in enumerate(page.get("images", [])):
-                if img.get("top_left_x"):
-                    img_info = {
-                        "id": f"img_{len(sections)+1}_{img_idx+1}",
-                        "posicao": {
-                            "top_left_x": img.get("top_left_x"),
-                            "top_left_y": img.get("top_left_y"),
-                            "bottom_right_x": img.get("bottom_right_x"),
-                            "bottom_right_y": img.get("bottom_right_y")
-                        }
+                # Extrair informações da imagem
+                img_info = {
+                    "id": f"img_{page_idx+1}_{img_idx+1}",
+                    "posicao": {
+                        "top_left_x": img.get("top_left_x", 0),
+                        "top_left_y": img.get("top_left_y", 0),
+                        "bottom_right_x": img.get("bottom_right_x", 0),
+                        "bottom_right_y": img.get("bottom_right_y", 0)
                     }
-                    current_section["images"].append(img_info)
+                }
 
-        # Adicionar última seção se houver
-        if current_section["content"].strip() or current_section["title"]:
-            sections.append(current_section)
+                # Se a imagem tiver dados base64, salvar a imagem e extrair texto
+                if img.get("image_base64"):
+                    # Salvar a imagem
+                    img_path = self.salvar_imagem(
+                        img["image_base64"],
+                        os.path.splitext(nome_arquivo)[0],
+                        page_idx,
+                        img_idx
+                    )
 
-        return sections
+                    if img_path:
+                        img_info["caminho_arquivo"] = os.path.relpath(
+                            img_path, start=os.getcwd())
 
-    def processar_tabelas(self, texto: str) -> str:
-        """
-        Processa e formata tabelas no texto.
+                        # Extrair texto da imagem
+                        texto_imagem = self.extrair_texto_imagem(img_path)
+                        if texto_imagem:
+                            img_info["texto_extraido"] = texto_imagem
 
-        Args:
-            texto: Texto contendo tabelas
+                # Adicionar informações da imagem à página
+                info_pagina["imagens"].append(img_info)
 
-        Returns:
-            Texto com tabelas formatadas
-        """
-        linhas = texto.split("\n")
-        tabela = []
-        in_table = False
-        
-        for linha in linhas:
-            if "|" in linha:
-                if not in_table:
-                    in_table = True
-                tabela.append(linha)
-            elif in_table:
-                in_table = False
-                if tabela:
-                    # Formatar tabela
-                    tabela_formatada = "\n".join(tabela)
-                    texto = texto.replace("\n".join(tabela), tabela_formatada)
-                tabela = []
+            # Adicionar informações da página aos dados processados
+            dados_processados["paginas"].append(info_pagina)
 
-        return texto
-
-    def formatar_texto_cientifico(self, texto: str) -> str:
-        """
-        Formata notação científica e fórmulas matemáticas.
-
-        Args:
-            texto: Texto a ser formatado
-
-        Returns:
-            Texto formatado
-        """
-        # Preservar fórmulas matemáticas entre $
-        texto = re.sub(r'\$([^$]+)\$', r'$\1$', texto)
-        
-        # Formatar porcentagens
-        texto = re.sub(r'(\d+)%', r'$\1\\%$', texto)
-        
-        return texto
+        return dados_processados
 
     def salvar_imagem(self, image_base64: str, nome_base: str, page_idx: int, img_idx: int) -> Optional[str]:
         """
