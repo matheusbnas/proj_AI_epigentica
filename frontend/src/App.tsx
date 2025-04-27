@@ -57,19 +57,32 @@ function App() {
       const { process_id } = await response.json(); // Obter o process_id do backend
 
       // Configurar WebSocket para acompanhar o progresso
-      const newWs = new WebSocket(`ws://${window.location.host}/ws`);
-      setWs(newWs);
+      const wsUrl = `ws://localhost:8000/ws/${process_id}`;
+      const newWs = new WebSocket(wsUrl);
+      
+      newWs.onerror = (error) => {
+        console.error('WebSocket error:', error);
+        setError('Erro na conexão WebSocket');
+        setLoading(false);
+      };
+
+      newWs.onopen = () => {
+        console.log('WebSocket conectado');
+        setWs(newWs);
+      };
 
       newWs.onmessage = async (event) => {
         const message = JSON.parse(event.data);
-        if (message.process_id !== process_id) return; // Ignorar mensagens de outros processos
-
         switch (message.type) {
           case 'status':
             setProgress(20);
             break;
           case 'progress':
             setProgress(message.progress);
+            if (message.message.includes('JSON encontrados')) {
+              // Mostrar mensagem específica quando usar JSON existente
+              setError(null);
+            }
             break;
           case 'complete':
             setSlides(message.slides);

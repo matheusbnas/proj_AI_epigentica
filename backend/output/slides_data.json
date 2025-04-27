@@ -43,9 +43,9 @@
       {
         "id": "img_6_1",
         "posicao": {
-          "top_left_x": 176,
-          "top_left_y": 491,
-          "bottom_right_x": 1430,
+          "top_left_x": 175,
+          "top_left_y": 493,
+          "bottom_right_x": 1429,
           "bottom_right_y": 1256
         }
       },
@@ -61,7 +61,7 @@
       {
         "id": "img_6_3",
         "posicao": {
-          "top_left_x": 888,
+          "top_left_x": 876,
           "top_left_y": 1496,
           "bottom_right_x": 1447,
           "bottom_right_y": 2100
@@ -72,15 +72,15 @@
   {
     "type": "section",
     "title": "Envelhecimento ",
-    "content": "\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| Baixo |  |  |  |  |\n\nIntolerância à Histamina\n\n| 0\\% | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :-- | :-- | :-- | :-- | :-- |\n| Risco |  |  |  |  |\n| Baixo |  |  |  |  |\n\n## Vitaminas e Minerais",
+    "content": "\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| Metabolismo de Omeprazol |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n\n## Vitaminas e Minerais",
     "images": [
       {
         "id": "img_7_1",
         "posicao": {
-          "top_left_x": 229,
-          "top_left_y": 388,
+          "top_left_x": 228,
+          "top_left_y": 397,
           "bottom_right_x": 785,
-          "bottom_right_y": 547
+          "bottom_right_y": 552
         }
       },
       {
@@ -97,7 +97,7 @@
         "posicao": {
           "top_left_x": 876,
           "top_left_y": 785,
-          "bottom_right_x": 1412,
+          "bottom_right_x": 1414,
           "bottom_right_y": 1082
         }
       },
@@ -105,7 +105,7 @@
         "id": "img_7_4",
         "posicao": {
           "top_left_x": 178,
-          "top_left_y": 1335,
+          "top_left_y": 1333,
           "bottom_right_x": 711,
           "bottom_right_y": 1789
         }
@@ -158,42 +158,33 @@
   {
     "type": "section",
     "title": "",
-    "content": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporativo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDesordens Estéticas\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n## Saúde Cutânea",
+    "content": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
     "images": [
       {
         "id": "img_9_1",
         "posicao": {
-          "top_left_x": 176,
-          "top_left_y": 905,
-          "bottom_right_x": 711,
-          "bottom_right_y": 1372
+          "top_left_x": 178,
+          "top_left_y": 898,
+          "bottom_right_x": 712,
+          "bottom_right_y": 1370
         }
       },
       {
         "id": "img_9_2",
         "posicao": {
-          "top_left_x": 843,
-          "top_left_y": 905,
-          "bottom_right_x": 1427,
-          "bottom_right_y": 1372
+          "top_left_x": 851,
+          "top_left_y": 898,
+          "bottom_right_x": 1425,
+          "bottom_right_y": 1370
         }
       },
       {
         "id": "img_9_3",
         "posicao": {
-          "top_left_x": 176,
+          "top_left_x": 178,
           "top_left_y": 1599,
-          "bottom_right_x": 711,
-          "bottom_right_y": 1786
-        }
-      },
-      {
-        "id": "img_9_4",
-        "posicao": {
-          "top_left_x": 843,
-          "top_left_y": 1639,
-          "bottom_right_x": 1427,
-          "bottom_right_y": 1786
+          "bottom_right_x": 712,
+          "bottom_right_y": 1826
         }
       }
     ]
@@ -208,7 +199,7 @@
         "posicao": {
           "top_left_x": 539,
           "top_left_y": 828,
-          "bottom_right_x": 1114,
+          "bottom_right_x": 1113,
           "bottom_right_y": 1003
         }
       }
@@ -328,7 +319,7 @@
       {
         "id": "img_19_1",
         "posicao": {
-          "top_left_x": 648,
+          "top_left_x": 645,
           "top_left_y": 1220,
           "bottom_right_x": 1022,
           "bottom_right_y": 1344
@@ -440,15 +431,15 @@
   {
     "type": "section",
     "title": "Envelhecimento ",
-    "content": "\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINGO1 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMM40 | UNC13A | XRCC1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
+    "content": "\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
     "images": [
       {
         "id": "img_27_1",
         "posicao": {
-          "top_left_x": 200,
+          "top_left_x": 193,
           "top_left_y": 804,
           "bottom_right_x": 1465,
-          "bottom_right_y": 1111
+          "bottom_right_y": 1113
         }
       }
     ]
@@ -494,8 +485,8 @@
         "id": "img_30_1",
         "posicao": {
           "top_left_x": 564,
-          "top_left_y": 1181,
-          "bottom_right_x": 1083,
+          "top_left_y": 1183,
+          "bottom_right_x": 1080,
           "bottom_right_y": 1309
         }
       }
@@ -504,7 +495,7 @@
   {
     "type": "section",
     "title": "Intolerância à Lactose ",
-    "content": "\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilíbrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
+    "content": "\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilíbrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
     "images": [
       {
         "id": "img_31_1",
@@ -512,7 +503,7 @@
           "top_left_x": 688,
           "top_left_y": 748,
           "bottom_right_x": 987,
-          "bottom_right_y": 867
+          "bottom_right_y": 872
         }
       }
     ]
@@ -583,10 +574,10 @@
       {
         "id": "img_37_1",
         "posicao": {
-          "top_left_x": 689,
+          "top_left_x": 691,
           "top_left_y": 654,
           "bottom_right_x": 984,
-          "bottom_right_y": 762
+          "bottom_right_y": 764
         }
       }
     ]
@@ -617,7 +608,7 @@
         "posicao": {
           "top_left_x": 582,
           "top_left_y": 1167,
-          "bottom_right_x": 1080,
+          "bottom_right_x": 1078,
           "bottom_right_y": 1288
         }
       }
@@ -639,7 +630,7 @@
           "top_left_x": 631,
           "top_left_y": 1167,
           "bottom_right_x": 1042,
-          "bottom_right_y": 1288
+          "bottom_right_y": 1291
         }
       }
     ]
@@ -653,7 +644,7 @@
         "id": "img_42_1",
         "posicao": {
           "top_left_x": 620,
-          "top_left_y": 853,
+          "top_left_y": 851,
           "bottom_right_x": 1043,
           "bottom_right_y": 1026
         }
@@ -686,7 +677,7 @@
         "posicao": {
           "top_left_x": 502,
           "top_left_y": 977,
-          "bottom_right_x": 1083,
+          "bottom_right_x": 1046,
           "bottom_right_y": 1075
         }
       }
@@ -718,8 +709,8 @@
         "posicao": {
           "top_left_x": 688,
           "top_left_y": 837,
-          "bottom_right_x": 984,
-          "bottom_right_y": 1008
+          "bottom_right_x": 982,
+          "bottom_right_y": 1012
         }
       }
     ]
@@ -740,7 +731,7 @@
           "top_left_x": 691,
           "top_left_y": 856,
           "bottom_right_x": 970,
-          "bottom_right_y": 1036
+          "bottom_right_y": 1033
         }
       }
     ]
@@ -774,15 +765,15 @@
   {
     "type": "section",
     "title": "Risco de menopausa precoce ",
-    "content": "\nA menopausa precoce ou falência ovariana prematura é uma condição caracterizada pela interrupção da ovulação em intervalos regulares que ocorre antes dos 40 anos de idade e acomete até $1 \\%$ das mulheres. As causas da menopausa precoce envolvem o fator genético associado com doenças autoimunes.\n\n## Tabela de Genótipos relevantes\n\n\n\n## ComentÁritos\n\nSeu genótipo sugere a presença de risco para o desenvolvimento de menopausa precoce, com correlação ao surgimento prematuro dos sintomas típicos até dois anos antes da média. Outros genes e fatores não genéticos podem estar associados ao risco, portanto, não é motivo de grande preocupação, a menos que você tenha menos de 40 anos e apresente menstruação irregular, com falhas por mais de três meses, neste caso recomenda-se o acompanhamento periódico com ginecologista.",
+    "content": "\nA menopausa precoce ou falência ovariana prematura é uma condição caracterizada pela interrupção da ovulação em intervalos regulares que ocorre antes dos 40 anos de idade e acomete até $1 \\%$ das mulheres. As causas da menopausa precoce envolvem o fator genético associado com doenças autoimunes.\n\n## Tabela de Genótipos relevantes\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Replicação de DNA/Associado à duração da vida <br> reprodutiva | MCMB | rs16991615 | G | G/G |\n\n## COMENTÁRIOS\n\nSeu genótipo sugere a presença de risco para o desenvolvimento de menopausa precoce, com correlação ao surgimento prematuro dos sintomas típicos até dois anos antes da média. Outros genes e fatores não genéticos podem estar associados ao risco, portanto, não é motivo de grande preocupação, a menos que você tenha menos de 40 anos e apresente menstruação irregular, com falhas por mais de três meses, neste caso recomenda-se o acompanhamento periódico com ginecologista.",
     "images": [
       {
         "id": "img_52_1",
         "posicao": {
-          "top_left_x": 284,
-          "top_left_y": 1256,
-          "bottom_right_x": 1367,
-          "bottom_right_y": 1382
+          "top_left_x": 267,
+          "top_left_y": 1258,
+          "bottom_right_x": 1372,
+          "bottom_right_y": 1380
         }
       }
     ]
@@ -790,14 +781,14 @@
   {
     "type": "section",
     "title": "Risco de Pré-eclâmpsia ",
-    "content": "\nA pré-ecâmpsia consiste no aparecimento de hipertensão arterial durante a gravidez. Começa geralmente após 20 semanas de gestação em mulheres com pressão arterial normal. Estudos familiares demonstram que a genética apresenta grande influência no desenvolvimento de pré-eclampsia, podendo aumentar em até 5 vezes o risco.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Mediação de diferenciação celular e apoptose | IL1B | rs1143634 | A | G/G |\n| Enzima conversora de angiotensina | ECA | rs4343 | G | G/A |\n| Sintese de óxido nítrico/Vasodilatação | ENOS | rs1799983 | T | T/G |\n\n## COMENTÁRIOS\n\nSua genética sugere um baixo risco de pré-eclâmpsia. Fatores ambientais associados a alimentação desregrada e doença crônica pregressa podem influenciar no desenvolvimento desta condição, por isso, é de suma importância o adequado acompanhamento médico gestacional.",
+    "content": "\nA pré-ecâmpsia consiste no aparecimento de hipertensão arterial durante a gravidez. Começa geralmente após 20 semanas de gestação em mulheres com pressão arterial normal. Estudos familiares demonstram que a genética apresenta grande influência no desenvolvimento de pré-eclampsia, podendo aumentar em até 5 vezes o risco.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Mediação de diferenciação celular e apoptose | IL1B | rs1143634 | A | G/G |\n| Enzima conversora de angiotensina | ECA | rs4343 | G | G/A |\n| Síntese de óxido nítrico/Vasodilatação | ENOS | rs1799983 | T | T/G |\n\n## COMENTÁRIOS\n\nSua genética sugere um baixo risco de pré-eclâmpsia. Fatores ambientais associados a alimentação desregrada e doença crônica pregressa podem influenciar no desenvolvimento desta condição, por isso, é de suma importância o adequado acompanhamento médico gestacional.",
     "images": [
       {
         "id": "img_53_1",
         "posicao": {
           "top_left_x": 691,
           "top_left_y": 858,
-          "bottom_right_x": 969,
+          "bottom_right_x": 967,
           "bottom_right_y": 1036
         }
       }
@@ -859,7 +850,7 @@
       {
         "id": "img_57_1",
         "posicao": {
-          "top_left_x": 620,
+          "top_left_x": 618,
           "top_left_y": 729,
           "bottom_right_x": 1043,
           "bottom_right_y": 912
@@ -880,15 +871,15 @@
   {
     "type": "section",
     "title": "Saúde Cutânea ",
-    "content": "\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :-- | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de melanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
+    "content": "\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n| IRF4 | MACROH2A | MCIR |\n| :--: | :--: | :--: |\n| MARP | SLC23A1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de prelanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
     "images": [
       {
         "id": "img_60_1",
         "posicao": {
-          "top_left_x": 618,
-          "top_left_y": 902,
+          "top_left_x": 620,
+          "top_left_y": 1312,
           "bottom_right_x": 1043,
-          "bottom_right_y": 1082
+          "bottom_right_y": 1433
         }
       }
     ]
