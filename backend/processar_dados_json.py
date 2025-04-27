@@ -1,6 +1,7 @@
 import json
 import re
 import pandas as pd
+from io import StringIO
 
 def extrair_tabelas(texto):
     tabelas = []
@@ -8,7 +9,12 @@ def extrair_tabelas(texto):
     for match in re.finditer(padrao_tabela, texto):
         tabela_md = match.group(1)
         try:
-            df = pd.read_csv(pd.compat.StringIO(tabela_md.replace('\n', '\n')), sep="|", engine="python", skipinitialspace=True)
+            # Remove linhas separadoras do markdown (ex: |---|---|)
+            linhas = [l for l in tabela_md.strip().splitlines() if not re.match(r"^\s*\|?\s*-+\s*\|", l)]
+            if len(linhas) < 2:
+                continue
+            tabela_str = "\n".join(linhas)
+            df = pd.read_csv(StringIO(tabela_str), sep="|", engine="python", skipinitialspace=True)
             df = df.dropna(axis=1, how='all')
             cabecalho = [c.strip() for c in df.columns if c.strip()]
             linhas = df.values.tolist()
@@ -43,7 +49,7 @@ def processar_json(input_path, output_path):
         titulo = extrair_titulo(texto)
         texto_limpo = limpar_texto(texto)
         novas_paginas.append({
-            "numero": pagina["numero"],
+            "numero": pagina.get("numero"),
             "titulo": titulo,
             "texto": texto_limpo,
             "tabelas": tabelas,
@@ -59,4 +65,4 @@ def carregar_json_estruturado(path):
         return json.load(f)
 
 # Exemplo de uso:
-processar_json("output/dados.json", "output/dados_estruturado.json")
+# processar_json("output/dados.json", "output/dados_estruturado.json")

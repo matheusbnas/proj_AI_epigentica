@@ -136,3 +136,82 @@ export const generateSlidesFromJSON = (data: SlideSection[]): any[] => {
 
   return slides;
 };
+
+// Função para converter tabela JSON em HTML
+const renderTable = (tabela: { cabecalho: string[]; linhas: any[][] }) => {
+  return `
+    <table class="min-w-full divide-y divide-gray-200 my-4 border">
+      <thead>
+        <tr>
+          ${tabela.cabecalho.map(cell => `<th class="px-4 py-2 bg-gray-100 text-xs font-semibold text-gray-700 border">${cell}</th>`).join('')}
+        </tr>
+      </thead>
+      <tbody>
+        ${tabela.linhas.map(linha => `
+          <tr>
+            ${linha.map(cell => `<td class="px-4 py-2 border">${cell}</td>`).join('')}
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+};
+
+export const generateSlidesFromStructuredJSON = (jsonData: any): any[] => {
+  if (!jsonData || !jsonData.paginas) return [];
+
+  const slides: any[] = [];
+
+  // Slide de capa
+  slides.push({
+    id: 'title-slide',
+    content: `
+      <div class="flex flex-col items-center justify-center h-full bg-gradient-to-br from-blue-50 to-white p-8 rounded-lg">
+        <h1 class="text-4xl font-bold text-blue-800 mb-4">PAINEL NUTRIGENÉTICO</h1>
+        <h2 class="text-2xl font-medium text-gray-700">Relatório Personalizado</h2>
+      </div>
+    `,
+    type: 'cover'
+  });
+
+  jsonData.paginas.forEach((pagina: any, idx: number) => {
+    let content = '';
+
+    if (pagina.titulo) {
+      content += `<h2 class="text-2xl font-bold text-blue-800 mb-4">${pagina.titulo}</h2>`;
+    }
+    if (pagina.texto) {
+      // Parágrafos
+      content += `<div class="prose prose-lg max-w-none mb-4">${pagina.texto.replace(/\n/g, '<br/>')}</div>`;
+    }
+    if (pagina.tabelas && pagina.tabelas.length > 0) {
+      pagina.tabelas.forEach((tabela: any) => {
+        content += renderTable(tabela);
+      });
+    }
+    if (pagina.imagens && pagina.imagens.length > 0) {
+      content += `<div class="flex flex-wrap gap-4 mt-4">`;
+      pagina.imagens.forEach((img: any) => {
+        content += `
+          <div class="flex flex-col items-center">
+            <div class="w-48 h-32 bg-gray-100 rounded flex items-center justify-center text-gray-400">
+              <span>Imagem ${img.id}</span>
+            </div>
+            <div class="text-xs text-gray-500 mt-1">
+              (${img.posicao.top_left_x}, ${img.posicao.top_left_y}) - (${img.posicao.bottom_right_x}, ${img.posicao.bottom_right_y})
+            </div>
+          </div>
+        `;
+      });
+      content += `</div>`;
+    }
+
+    slides.push({
+      id: `slide-${idx + 1}`,
+      content: `<div class="slide-content p-6">${content}</div>`,
+      type: 'content'
+    });
+  });
+
+  return slides;
+};

@@ -68,18 +68,10 @@ const LocalSlideViewer = ({ slides }: LocalSlideViewerProps) => {
           ${isFullscreen ? 'p-8' : ''}
         `}
       >
-        {slides[currentSlide].url ? (
-          <img 
-            src={slides[currentSlide].url} 
-            alt={`Slide ${currentSlide + 1}`}
-            className="max-w-full max-h-full object-contain"
-          />
-        ) : (
-          <div 
-            className="prose max-w-none p-8 overflow-auto max-h-full w-full"
-            dangerouslySetInnerHTML={{ __html: slides[currentSlide].content }}
-          />
-        )}
+        <div 
+          className="prose max-w-none p-8 overflow-auto max-h-full w-full"
+          dangerouslySetInnerHTML={{ __html: slides[currentSlide].content }}
+        />
       </div>
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow">

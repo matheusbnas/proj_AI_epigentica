@@ -641,11 +641,74 @@ class GoogleSlidesClient:
 
         return presentation['presentationId']
 
+    def _create_table_on_slide(self, slides_service, presentation_id, slide_id, tabela, start_x=100, start_y=200):
+        """
+        Cria uma tabela real no slide usando os dados do dicionário 'tabela'.
+        """
+        rows = len(tabela.get("linhas", [])) + (1 if tabela.get("cabecalho") else 0)
+        cols = len(tabela.get("cabecalho", []))
+        if rows == 0 or cols == 0:
+            return
+
+        table_id = f"{slide_id}_table_{uuid.uuid4().hex[:6]}"
+        # Cria a tabela
+        slides_service.presentations().batchUpdate(
+            presentationId=presentation_id,
+            body={'requests': [{
+                "createTable": {
+                    "objectId": table_id,
+                    "elementProperties": {
+                        "pageObjectId": slide_id,
+                        "size": {
+                            "height": {"magnitude": 150, "unit": "PT"},
+                            "width": {"magnitude": 400, "unit": "PT"}
+                        },
+                        "transform": {
+                            "scaleX": 1, "scaleY": 1,
+                            "translateX": start_x, "translateY": start_y, "unit": "PT"
+                        }
+                    },
+                    "rows": rows,
+                    "columns": cols
+                }
+            }]}
+        ).execute()
+
+        # Preenche cabeçalho
+        requests = []
+        if tabela.get("cabecalho"):
+            for col, valor in enumerate(tabela["cabecalho"]):
+                requests.append({
+                    "insertText": {
+                        "objectId": table_id,
+                        "cellLocation": {"rowIndex": 0, "columnIndex": col},
+                        "text": str(valor)
+                    }
+                })
+        # Preenche linhas
+        for row, linha in enumerate(tabela.get("linhas", [])):
+            for col, valor in enumerate(linha):
+                requests.append({
+                    "insertText": {
+                        "objectId": table_id,
+                        "cellLocation": {"rowIndex": row + (1 if tabela.get("cabecalho") else 0), "columnIndex": col},
+                        "text": str(valor)
+                    }
+                })
+        if requests:
+            slides_service.presentations().batchUpdate(
+                presentationId=presentation_id,
+                body={'requests': requests}
+            ).execute()
+
     def create_slides_from_structured_json(self, json_path: str) -> str:
         """
         Cria slides no Google Slides a partir de um arquivo JSON estruturado (dados_estruturado.json).
         Cada página do JSON vira um slide, com título, texto, tabelas e imagens.
+        Agora insere tabelas reais usando a API do Slides.
         """
+        import pandas as pd  # Garante que pandas está disponível
+
         # Carregar o JSON estruturado
         with open(json_path, encoding="utf-8") as f:
             dados = json.load(f)
@@ -675,7 +738,6 @@ class GoogleSlidesClient:
         # Cria slides para cada página do JSON
         for idx, pagina in enumerate(paginas):
             slide_id = f"slide_{uuid.uuid4().hex[:8]}"
-            # Escolhe layout: título + corpo se houver texto, senão só título
             layout = "TITLE_AND_BODY" if pagina.get("texto") else "TITLE"
             slides_service.presentations().batchUpdate(
                 presentationId=presentation['presentationId'],
@@ -729,48 +791,12 @@ class GoogleSlidesClient:
                     }]}
                 ).execute()
 
-            # Insere tabelas (como texto formatado, para simplicidade)
-            if body_id and pagina.get("tabelas"):
+            # Insere tabelas reais usando a API do Slides
+            if pagina.get("tabelas"):
                 for tabela in pagina["tabelas"]:
-                    tabela_txt = ""
-                    if tabela.get("cabecalho"):
-                        tabela_txt += " | ".join(tabela["cabecalho"]) + "\n"
-                        tabela_txt += "-|-".join(["-" for _ in tabela["cabecalho"]]) + "\n"
-                    for linha in tabela.get("linhas", []):
-                        tabela_txt += " | ".join(str(x) for x in linha) + "\n"
-                    slides_service.presentations().batchUpdate(
-                        presentationId=presentation['presentationId'],
-                        body={'requests': [{
-                            "insertText": {
-                                "objectId": body_id,
-                                "insertionIndex": 0,
-                                "text": tabela_txt + "\n"
-                            }
-                        }]}
-                    ).execute()
+                    self._create_table_on_slide(slides_service, presentation['presentationId'], slide_id, tabela)
 
             # Insere imagens (apenas se URLs públicas ou data URI, ajuste conforme necessário)
-            for img_idx, img in enumerate(pagina.get("imagens", [])):
-                image_id = f"{slide_id}_img_{img_idx}"
-                # Aqui espera-se que você tenha a URL da imagem ou data URI
-                # Exemplo: image_url = img["url"]
-                # Se não tiver, pule ou adapte para buscar a imagem localmente e fazer upload para um bucket público
-                # slides_service.presentations().batchUpdate(
-                #     presentationId=presentation['presentationId'],
-                #     body={'requests': [{
-                #         "createImage": {
-                #             "objectId": image_id,
-                #             "url": image_url,
-                #             "elementProperties": {
-                #                 "pageObjectId": slide_id,
-                #                 "size": {"height": {"magnitude": 200, "unit": "PT"}, "width": {"magnitude": 300, "unit": "PT"}},
-                #                 "transform": {
-                #                     "scaleX": 1, "scaleY": 1, "translateX": 100 + img_idx*320, "translateY": 420, "unit": "PT"
-                #                 }
-                #             }
-                #         }
-                #     }]}
-                # ).execute()
-                pass  # Implemente se tiver URLs de imagens
+            # ...existing code for images (comentado ou a implementar)...
 
         return presentation['presentationId']

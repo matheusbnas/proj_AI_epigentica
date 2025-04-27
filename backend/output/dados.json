@@ -1,6 +1,6 @@
 {
     "arquivo": "dados.pdf",
-    "data_processamento": "2025-04-27 14:11:51",
+    "data_processamento": "2025-04-27 14:18:17",
     "paginas": [
         {
             "numero": 1,
@@ -72,33 +72,33 @@
         },
         {
             "numero": 7,
-            "texto": "# Envelhecimento \n\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| 0\\% |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| 0\\% |  |  |  |  |\n| Metabolismo de Omeprazol |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| 0\\% |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |",
+            "texto": "# Envelhecimento \n\n\n\nDegeneração Macular\n\n\n## Inflamação, Intolerâncias e Trato Intestinal\n\n\n\nIntolerância à Lactose\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| Metabolismo de Omeprazol |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n| 0\\% |  |  |  |  |\n\n## Vitaminas e Minerais",
             "imagens": [
                 {
                     "id": "img_7_1",
                     "posicao": {
-                        "top_left_x": 229,
-                        "top_left_y": 388,
+                        "top_left_x": 228,
+                        "top_left_y": 397,
                         "bottom_right_x": 785,
-                        "bottom_right_y": 547
+                        "bottom_right_y": 552
                     }
                 },
                 {
                     "id": "img_7_2",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 783,
+                        "top_left_y": 785,
                         "bottom_right_x": 711,
-                        "bottom_right_y": 1078
+                        "bottom_right_y": 1082
                     }
                 },
                 {
                     "id": "img_7_3",
                     "posicao": {
                         "top_left_x": 876,
-                        "top_left_y": 783,
-                        "bottom_right_x": 1412,
-                        "bottom_right_y": 1078
+                        "top_left_y": 785,
+                        "bottom_right_x": 1414,
+                        "bottom_right_y": 1082
                     }
                 },
                 {
@@ -156,13 +156,13 @@
         },
         {
             "numero": 9,
-            "texto": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDesordens Estéticas\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n## Saúde Cutânea",
+            "texto": "|  | Risco para endometriose |  |  |  |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |  |  |  |\n| Risco |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% | 25\\% | 50\\% | 75\\% | 100\\% |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n\n# Desempenho Esporivo \n\n\n\nProdução de energia no exercício físico\n\n\n## Saúde Cutânea\n\n\n\nDermatites e Sensibilidade Dérmica\n\n| $0 \\%$ | $25 \\%$ | $50 \\%$ | $75 \\%$ | $100 \\%$ |\n| :--: | :--: | :--: | :--: | :--: |\n| Risco |  |  |  |  |\n|  |  |  |  |  |\n| 0\\% |  |  |  |  |\n| Risco |  |  |  |  |\n|  |  |  |  |  |",
             "imagens": [
                 {
                     "id": "img_9_1",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 898,
+                        "top_left_y": 905,
                         "bottom_right_x": 712,
                         "bottom_right_y": 1370
                     }
@@ -171,8 +171,8 @@
                     "id": "img_9_2",
                     "posicao": {
                         "top_left_x": 851,
-                        "top_left_y": 898,
-                        "bottom_right_x": 1425,
+                        "top_left_y": 905,
+                        "bottom_right_x": 1427,
                         "bottom_right_y": 1370
                     }
                 },
@@ -180,18 +180,9 @@
                     "id": "img_9_3",
                     "posicao": {
                         "top_left_x": 178,
-                        "top_left_y": 1599,
+                        "top_left_y": 1606,
                         "bottom_right_x": 712,
-                        "bottom_right_y": 1786
-                    }
-                },
-                {
-                    "id": "img_9_4",
-                    "posicao": {
-                        "top_left_x": 851,
-                        "top_left_y": 1639,
-                        "bottom_right_x": 1425,
-                        "bottom_right_y": 1786
+                        "bottom_right_y": 1913
                     }
                 }
             ]
@@ -243,15 +234,15 @@
         },
         {
             "numero": 13,
-            "texto": "# Resistência à Insulina e Diabetes tipo 2 \n\nA insulina tem a função de realizar o transporte de glicose para o interior das células, controlando o seu nível plasmático. A resistência à insulina é descrita como a incapacidade de resposta adequada dos receptores de insulina nos tecidos, impactando no aumento da glicemia, configurando fator de risco para o desenvolvimento de Diabetes tipo 2.\n\n| ADIPOQ | CLOCK | CRY1 | FABP2 | FTO | IGF2BP2 | MTNR1B |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| IRS1 | KCNJ11 | SH2B1 | SLC30A8 | TCF7L2 | ENPP1 | PPARG |\n\n\n\n## Tabela de Genotipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Produção de adiponectina/Homeostase de glicose | ADIPOQ | rs17300539 | A | G/G |\n| Regulador do ciclo circadiano | CLOCK | rs1801260 | G | A/A |\n| Regulador do ciclo circadiano | CRY1 | rs2287161 | CC | C/C |\n| Regulação do metabolismo lipídico e absorção de gorduras | FABP2 | rs1799883 | T | C/C |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Fator de crescimento semelhante a insulina | IGF2BP2 | rs4402960 | TT | G/T |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1B | rs10830963 | G | C/C |\n| Substrato do Receptor de Insulina | IRS1 | rs2943641 | C | C/C |\n| Regulação da secreção de insulina | KCNJ11 | rs5219 | T | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Transportador de zinco, regula secreção de insulina | SLC30A8 | rs13266634 | C | C/C |\n| Homeostase de glicose | TCF7L2 | rs7903146 | T | T/T |\n| Homeostase de glicose | TCF7L2 | rs12255372 | TT | T/T |\n| Regula a sensibilidade à insulina | ENPP1 | rs1044498 | CC | A/A |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | CC | C/C |",
+            "texto": "# Resistência à Insulina e Diabetes tipo 2 \n\nA insulina tem a função de realizar o transporte de glicose para o interior das células, controlando o seu nível plasmático. A resistência à insulina é descrita como a incapacidade de resposta adequada dos receptores de insulina nos tecidos, impactando no aumento da glicemia, configurando fator de risco para o desenvolvimento de Diabetes tipo 2.\n\n\n## Tabela de Genotipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Produção de adiponectina/Homeostase de glicose | ADIPOQ | rs17300539 | A | G/G |\n| Regulador do ciclo circadiano | CLOCK | rs1801260 | G | A/A |\n| Regulador do ciclo circadiano | CRY1 | rs2287161 | CC | C/C |\n| Regulação do metabolismo lipídico e absorção de gorduras | FABP2 | rs1799883 | T | C/C |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Fator de crescimento semelhante a insulina | IGF2BP2 | rs4402960 | TT | G/T |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1B | rs10830963 | G | C/C |\n| Substrato do Receptor de Insulina | IRS1 | rs2943641 | C | C/C |\n| Regulação da secreção de insulina | KCNJ11 | rs5219 | T | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Transportador de zinco, regula secreção de insulina | SLC30A8 | rs13266634 | C | C/C |\n| Homeostase de glicose | TCF7L2 | rs7903146 | T | T/T |\n| Homeostase de glicose | TCF7L2 | rs12255372 | TT | T/T |\n| Regula a sensibilidade à insulina | ENPP1 | rs1044498 | CC | A/A |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | CC | C/C |",
             "imagens": [
                 {
                     "id": "img_13_1",
                     "posicao": {
-                        "top_left_x": 615,
-                        "top_left_y": 701,
-                        "bottom_right_x": 1042,
-                        "bottom_right_y": 865
+                        "top_left_x": 190,
+                        "top_left_y": 659,
+                        "bottom_right_x": 1465,
+                        "bottom_right_y": 1043
                     }
                 }
             ]
@@ -318,7 +309,7 @@
                 {
                     "id": "img_19_1",
                     "posicao": {
-                        "top_left_x": 645,
+                        "top_left_x": 648,
                         "top_left_y": 1220,
                         "bottom_right_x": 1022,
                         "bottom_right_y": 1344
@@ -348,8 +339,8 @@
                 {
                     "id": "img_21_1",
                     "posicao": {
-                        "top_left_x": 567,
-                        "top_left_y": 1096,
+                        "top_left_x": 564,
+                        "top_left_y": 1094,
                         "bottom_right_x": 1083,
                         "bottom_right_y": 1216
                     }
@@ -373,7 +364,7 @@
         },
         {
             "numero": 23,
-            "texto": "# Hipertrigliceridemia \n\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n| APOAS | APOC3 | LPL |\n| :--: | :--: | :--: |\n| PCSK9 | ZPR1/APOA1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
+            "texto": "# Hipertrigliceridemia \n\nOs triglicerídeos são a forma principal de armazenamento de gordura no corpo humano e garante o fornecimento de energia em situações de privação. Porém, as altas concentrações de triglicerídeos plasmáticos (hipertrigliceridemia), configuram risco metabólico e predispõe a distúrbios cardiovasculares.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula a homeostase de TG e colesterol | APOA5 | rs662799 | G | A/A |\n| Inibe LPL e lipase hepática. Inibe a captação <br> hepática de TG | APOC3 | rs5128 | G | C/C |\n| Codifica lipase lipoproteica/Catalisa hidrólise de <br> TG | LPL | rs13702 | TT | T/T |\n| Degradação de receptores hepáticos de LDL | PCSK9 | rs505151 | G | A/A |\n| Interage com os genes das apolipoproteínas | ZPR1 | rs964184 | G | C/C |\n\n## COMENTÁRIOS\n\nSeu genótipo indica risco reduzido para hipertrigliceridemia. Contudo, é importante manter uma alimentação adequada e a prática frequente de atividades físicas.",
             "imagens": [
                 {
                     "id": "img_23_1",
@@ -382,15 +373,6 @@
                         "top_left_y": 741,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 933
-                    }
-                },
-                {
-                    "id": "img_23_2",
-                    "posicao": {
-                        "top_left_x": 618,
-                        "top_left_y": 1148,
-                        "bottom_right_x": 1043,
-                        "bottom_right_y": 1277
                     }
                 }
             ]
@@ -402,9 +384,9 @@
                 {
                     "id": "img_24_1",
                     "posicao": {
-                        "top_left_x": 557,
+                        "top_left_x": 559,
                         "top_left_y": 1096,
-                        "bottom_right_x": 1076,
+                        "bottom_right_x": 1075,
                         "bottom_right_y": 1227
                     }
                 }
@@ -432,15 +414,15 @@
         },
         {
             "numero": 27,
-            "texto": "# Envelhecimento \n\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINGO1 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMM40 | UNC13A | XRCC1 |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
+            "texto": "# Envelhecimento \n\n## Longevidade\n\nA longevidade é o termo que se utiliza para definir o tempo prolongado de vida de uma pessoa, mas não se limita apenas a isso, mas também à qualidade de vida. A capacidade de um indivíduo de ser mais longevo depende de fatores ambientais, como a prática de exercícios físico e uma dieta balanceada, aliadas a fatores genéticos. Alguns genes são candidatos a promover um prolongamento dos anos de vida, estes \"genes candidatos\" estão envolvidos com reparo de DNA, proteção às doenças neurodegenerativas e defesa contra as espécies reativas de oxigênio. Neste contexto, o uso de suplementos específicos, bem como a modulação de fatores ambientais, pode ser guiado pela genética.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2802292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glicosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco genético moderado de alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração. Mantenha uma alimentação saudável, um sono adequado, pratique atividades físicas, controle o estresse e evite o tabagismo e consumo excessivo de álcool.",
             "imagens": [
                 {
                     "id": "img_27_1",
                     "posicao": {
-                        "top_left_x": 200,
+                        "top_left_x": 193,
                         "top_left_y": 804,
                         "bottom_right_x": 1465,
-                        "bottom_right_y": 1111
+                        "bottom_right_y": 1113
                     }
                 }
             ]
@@ -483,8 +465,8 @@
                     "id": "img_30_1",
                     "posicao": {
                         "top_left_x": 564,
-                        "top_left_y": 1183,
-                        "bottom_right_x": 1080,
+                        "top_left_y": 1181,
+                        "bottom_right_x": 1083,
                         "bottom_right_y": 1309
                     }
                 }
@@ -492,7 +474,7 @@
         },
         {
             "numero": 31,
-            "texto": "# Intolerância à Lactose \n\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilibrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
+            "texto": "# Intolerância à Lactose \n\nA intolerância primária à lactose está associada a presença de marcador genético que resulta na diminuição da atividade da enzima lactase, acarretando aparecimento de sintomas gastrintestinais associados ao consumo de leite e derivados que contenham lactose.\n\n\n|  |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n|  |  |  |  |  |\n|  |  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\n## COMENTÁRIOS\n\nAusência de intolerância primária à lactose. Os alimentos contendo lactose são geralmente tolerados. Não está descartada a possibilidade do desenvolvimento de intolerância secundária, decorrente de fatores como, lesões teciduais do intestino por infecções ou desequilíbrio da microbiota. A intolerância secundária tende a ser reversível, diferentemente da intolerância primária.",
             "imagens": [
                 {
                     "id": "img_31_1",
@@ -524,7 +506,7 @@
                     "posicao": {
                         "top_left_x": 620,
                         "top_left_y": 1181,
-                        "bottom_right_x": 1030,
+                        "bottom_right_x": 1032,
                         "bottom_right_y": 1300
                     }
                 }
@@ -554,7 +536,7 @@
                     "posicao": {
                         "top_left_x": 620,
                         "top_left_y": 1258,
-                        "bottom_right_x": 1043,
+                        "bottom_right_x": 1045,
                         "bottom_right_y": 1403
                     }
                 }
@@ -567,25 +549,25 @@
                 {
                     "id": "img_37_1",
                     "posicao": {
-                        "top_left_x": 689,
+                        "top_left_x": 691,
                         "top_left_y": 654,
                         "bottom_right_x": 984,
-                        "bottom_right_y": 762
+                        "bottom_right_y": 764
                     }
                 }
             ]
         },
         {
             "numero": 38,
-            "texto": "# Colina \n\nA colina é um micronutriente essencial com diversas funções no organismo, estando ligada por exemplo com a saúde hepática e desenvolvimento cerebral. Variantes genéticas associadas a colina em conjunto com a deficiência na ingestão alimentar podem afetar a saúde humana e o bom funcionamento de músculos e fígado.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidicolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipídios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de colina. É importante garantir o consumo adequado de fontes alimentares deste nutriente para reduzir o risco de disfunções musculares e hepáticas, visto que a presença do risco genético é significativa apenas entre indivíduos com restrição dietética, ou seja, que possuem consumo insuficiente de colina.",
+            "texto": "# Colina \n\nA colina é um micronutriente essencial com diversas funções no organismo, estando ligada por exemplo com a saúde hepática e desenvolvimento cerebral. Variantes genéticas associadas a colina em conjunto com a deficiência na ingestão alimentar podem afetar a saúde humana e o bom funcionamento de músculos e fígado.\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidicolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipídios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidicolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## COMENTÁRIOS\n\nSeu resultado sugere risco moderado para alterações no metabolismo de colina. É importante garantir o consumo adequado de fontes alimentares deste nutriente para reduzir o risco de disfunções musculares e hepáticas, visto que a presença do risco genético é significativa apenas entre indivíduos com restrição dietética, ou seja, que possuem consumo insuficiente de colina.",
             "imagens": [
                 {
                     "id": "img_38_1",
                     "posicao": {
                         "top_left_x": 618,
-                        "top_left_y": 715,
+                        "top_left_y": 718,
                         "bottom_right_x": 1043,
-                        "bottom_right_y": 888
+                        "bottom_right_y": 893
                     }
                 }
             ]
@@ -627,15 +609,15 @@
         },
         {
             "numero": 42,
-            "texto": "# Minerais \n\n0 conhecimento do perfil genético de cálcio e ferro é importante para elucidar as necessidades individuaisdesses nutrientes e avaliar o risco para deficiência ou excesso. A manutenção de níveis adequados destes micronutrientes é fundamental para a saúde. 0 cálcio participa da manutenção óssea, regulação da atividade muscular e nervosa, enquanto o ferro é indispensável para o transporte de oxigênio e síntese de DNA, em contrapartida, o excesso pode ser prejudicial e está relacionado com risco de alterações pró-oxidativas e acúmulo de ferro nos tecidos.\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Homeostase de cálcio | CaSR | rs17251221 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs6776158 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs7652589 | A | G/G |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs1501899 | A | G/G |\n| Absorção de ferro | HFE | rs1799945 | G | C/G |\n| Absorção de ferro | HFE | rs1800562 | A | G/G |\n| Transferrina, responsável pelo transporte de ferro | TF | rs1049296 | TT | C/C |\n| Transferrina, responsável pelo transporte de ferro | TF | rs3811647 | AA | G/G |\n| Captação celular de ferro | TRF | rs3817672 | TT | C/C |\n| Regulador da síntese de hepcidina | TMPRSS6 | rs4820268 | GG | G/A |\n\n## COMENTÁRIOS\n\nSeu resultado indica baixo risco para alterações no metabolismo minerais. Ainda que, em linhas gerais, a genética seja favorável, deve-se ter atenção em relação a eventuais alterações na atividade de receptores de cálcio e no metabolismo do ferro.",
+            "texto": "# Minerais \n\n0 conhecimento do perfil genético de cálcio e ferro é importante para elucidar as necessidades individuaisdesses nutrientes e avaliar o risco para deficiência ou excesso. A manutenção de níveis adequados destes micronutrientes é fundamental para a saúde. 0 cálcio participa da manutenção óssea, regulação da atividade muscular e nervosa, enquanto o ferro é indispensável para o transporte de oxigênio e síntese de DNA, em contrapartida, o excesso pode ser prejudicial e está relacionado com risco de alterações pró-oxidativas e acúmulo de ferro nos tecidos.\n\n| CaSR | HFE | TF |\n| :--: | :--: | :--: |\n| TRF | TMPRSS6 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Homeostase de cálcio | CaSR | rs17251221 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs6776158 | G | A/A |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs7652589 | A | G/G |\n| Homeostase de cálcio/Reabsorção de cálcio nos <br> rins | CaSR | rs1501899 | A | G/G |\n| Absorção de ferro | HFE | rs1799945 | G | C/G |\n| Absorção de ferro | HFE | rs1800562 | A | G/G |\n| Transferrina, responsável pelo transporte de ferro | TF | rs1049296 | TT | C/C |\n| Transferrina, responsável pelo transporte de ferro | TF | rs3811647 | AA | G/G |\n| Captação celular de ferro | TRF | rs3817672 | TT | C/C |\n| Regulador da síntese de hepcidina | TMPRSS6 | rs4820268 | GG | G/A |\n\n## COMENTÁRIOS\n\nSeu resultado indica baixo risco para alterações no metabolismo minerais. Ainda que, em linhas gerais, a genética seja favorável, deve-se ter atenção em relação a eventuais alterações na atividade de receptores de cálcio e no metabolismo do ferro.",
             "imagens": [
                 {
                     "id": "img_42_1",
                     "posicao": {
                         "top_left_x": 620,
-                        "top_left_y": 853,
-                        "bottom_right_x": 1043,
-                        "bottom_right_y": 1026
+                        "top_left_y": 1258,
+                        "bottom_right_x": 1045,
+                        "bottom_right_y": 1377
                     }
                 }
             ]
@@ -695,7 +677,7 @@
                         "top_left_x": 688,
                         "top_left_y": 837,
                         "bottom_right_x": 982,
-                        "bottom_right_y": 1012
+                        "bottom_right_y": 1008
                     }
                 }
             ]
@@ -769,7 +751,7 @@
                     "posicao": {
                         "top_left_x": 691,
                         "top_left_y": 858,
-                        "bottom_right_x": 969,
+                        "bottom_right_x": 967,
                         "bottom_right_y": 1036
                     }
                 }
@@ -800,7 +782,7 @@
                         "top_left_x": 620,
                         "top_left_y": 1216,
                         "bottom_right_x": 1043,
-                        "bottom_right_y": 1344
+                        "bottom_right_y": 1347
                     }
                 }
             ]
@@ -847,15 +829,15 @@
         },
         {
             "numero": 60,
-            "texto": "# Saúde Cutânea \n\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n\n\n|  |  |  |  |\n| :-- | :-- | :-- | :-- |\n|  |  |  |  |\n|  |  |  |  |\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de melanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
+            "texto": "# Saúde Cutânea \n\n## Envelhecimento Cutâneo\n\n0 processos de envelhecimento cutâneo se dá pela interação de fatores ambientais como a exposição excessiva ao sol, falta de nutrientes, entre outros, e os fatores genéticos, que podem explicar os motivos pelos quais alguns indivíduos parecem envelhecer mais rápido, mesmo tendo cuidados frequentes na modulação do ambiente. Essas alterações são avaliadas neste eixo, permitindo a personalização do tratamento da pele, alimentação e suplementação.\n\n| IRF4 | MACROH2A | MCIR |\n| :--: | :--: | :--: |\n| MARP | SLC23A1 |  |\n\n\n\n## Tabela de Genótipos relevantes\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação da resposta imune | IRF4 | rs12203592 | T | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs16927253 | CC | C/C |\n| Regulação do envelhecimento celular | MACROH2A2 | rs4746957 | GG | G/G |\n| Regulação da produção de melanina | MC1R | rs4268748 | CC | T/T |\n| Regulação da produção de prelanina | MC1R | rs2228479 | C | G/G |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Transportador de vitamina C ativa | SLC23A1 | rs33972313 | T | C/C |\n\n## COMENTÁRIOS\n\nSua genética indica um risco moderado de envelhecimento cutâneo precoce. É importante estabelecer uma rotina de cuidados com a pele, evitar exposição excessiva ao sol, com o uso frequente de cremes com fator de proteção e otimizar o consumo de alimentos fonte de micronutrientes e compostos bioativos que estimulem a atividade antioxidante e atuam na pele, visando a redução do risco associado para manutenção de uma pele saudável e viçosa.",
             "imagens": [
                 {
                     "id": "img_60_1",
                     "posicao": {
-                        "top_left_x": 618,
-                        "top_left_y": 902,
+                        "top_left_x": 620,
+                        "top_left_y": 1312,
                         "bottom_right_x": 1043,
-                        "bottom_right_y": 1082
+                        "bottom_right_y": 1433
                     }
                 }
             ]
@@ -867,7 +849,7 @@
                 {
                     "id": "img_61_1",
                     "posicao": {
-                        "top_left_x": 635,
+                        "top_left_x": 631,
                         "top_left_y": 1146,
                         "bottom_right_x": 1043,
                         "bottom_right_y": 1274
@@ -885,7 +867,7 @@
                         "top_left_x": 688,
                         "top_left_y": 856,
                         "bottom_right_x": 970,
-                        "bottom_right_y": 1038
+                        "bottom_right_y": 1036
                     }
                 }
             ]

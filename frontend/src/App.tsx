@@ -6,6 +6,7 @@ import UploadSection from './components/UploadSection';
 import SlideContainer from './components/SlideContainer';
 import SlideViewer from './components/SlideViewer'; 
 import LocalSlideViewer from './components/LocalSlideViewer'
+import { generateSlidesFromStructuredJSON } from './utils/SlideGenerator';
 
 interface SlideData {
   id: string;
@@ -54,6 +55,7 @@ function App() {
   const [useLocalViewer, setUseLocalViewer] = useState(false);
   const [processStatus, setProcessStatus] = useState<ProcessStatus>({ stage: 'UPLOADING' });
   const [wsRetries, setWsRetries] = useState(0);
+  const [structuredSlides, setStructuredSlides] = useState<any[]>([]);
   const MAX_RETRIES = 3;
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -203,6 +205,24 @@ function App() {
     }
   };
 
+  const handleStructuredJsonUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const jsonData = JSON.parse(e.target?.result as string);
+        const slides = generateSlidesFromStructuredJSON(jsonData);
+        setStructuredSlides(slides);
+        setUseLocalViewer(true);
+        setSlides(slides); // Para manter compatibilidade com LocalSlideViewer
+      } catch (err) {
+        setError('Erro ao ler arquivo JSON estruturado');
+      }
+    };
+    reader.readAsText(file);
+  };
+
   const toggleViewerMode = () => {
     setUseLocalViewer(!useLocalViewer);
   };
@@ -254,6 +274,21 @@ function App() {
             loading={loading}
             error={error}
           />
+
+          {/* Botão para carregar JSON estruturado */}
+          <div className="mt-4 flex items-center space-x-2">
+            <label className="bg-blue-100 text-blue-700 px-3 py-1 rounded cursor-pointer hover:bg-blue-200 transition-colors">
+              Carregar JSON Estruturado
+              <input
+                type="file"
+                accept=".json"
+                className="sr-only"
+                onChange={handleStructuredJsonUpload}
+                disabled={loading}
+              />
+            </label>
+            <span className="text-xs text-gray-500">ou gere slides a partir do JSON já estruturado</span>
+          </div>
 
           {renderProgress()}
 
