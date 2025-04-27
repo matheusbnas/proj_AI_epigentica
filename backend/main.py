@@ -23,6 +23,7 @@ async def lifespan(app: FastAPI):
     # Initialize services
     slides_client = GoogleSlidesClient(
         credentials_path=".credentials/credentials.json",
+        template_presentation_id=os.getenv("TEMPLATE_PRESENTATION_ID")  # Corrigido para usar o ID do template
     )
     app.state.slides_client = slides_client
     
@@ -131,6 +132,7 @@ async def notify_client(process_id: str, message: dict):
 # Inicializar Google Slides Client
 slides_client = GoogleSlidesClient(
     credentials_path=".credentials/credentials.json",
+    template_presentation_id=os.getenv("TEMPLATE_PRESENTATION_ID")  # Corrigido para usar o ID do template
 )
 
 class DataProcessor:

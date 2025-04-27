@@ -6,102 +6,239 @@ import time
 from typing import List, Dict, Any
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+import pdfplumber
+from PIL import Image
+import io
+import base64
 
 logger = logging.getLogger(__name__)
 
+def get_service(credentials, scopes, service_build, service_version):
+    creds = service_account.Credentials.from_service_account_file(
+        credentials, scopes=[scopes] if isinstance(scopes, str) else scopes
+    )
+    return build(service_build, service_version, credentials=creds)
+
 class GoogleSlidesClient:
-    def __init__(self, credentials_path, template_presentation_id=None):
-        if not os.path.exists(credentials_path):
-            raise FileNotFoundError(
-                f"Google credentials file not found at: {credentials_path}. "
-                "Make sure the credentials file exists and the path is correct."
-            )
-        self.credentials_path = credentials_path
+    def __init__(self, credentials_path, template_presentation_id):
+        # Adiciona checagem para evitar uso do client_id como template_id
+        if template_presentation_id and len(template_presentation_id) < 30:
+            raise ValueError("O template_presentation_id parece inválido. Use o ID de uma apresentação do Google Slides, não o client_id das credenciais.")
+        if not template_presentation_id:
+            raise ValueError("Você deve fornecer um template_presentation_id válido ao instanciar GoogleSlidesClient.")
+        self.credentials = credentials_path
         self.template_presentation_id = template_presentation_id
-        self.scopes = [
-            'https://www.googleapis.com/auth/presentations',
-            'https://www.googleapis.com/auth/drive'
-        ]
-        self.service = self._get_service('slides', 'v1')
-        self.drive_service = self._get_service('drive', 'v3')
-        
-    def _get_service(self, service_name, version):
-        creds = service_account.Credentials.from_service_account_file(
-            self.credentials_path, scopes=self.scopes
+        # Inicializa os serviços Google Slides e Drive
+        self.service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
         )
-        return build(service_name, version, credentials=creds)
+        self.drive_service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/drive',
+            service_build='drive',
+            service_version='v3'
+        )
 
     def create_new_slide_by_template(self):
-        """Create a new presentation instead of copying a template"""
-        slides_service = self._get_service('slides', 'v1')
-        drive_service = self._get_service('drive', 'v3')
-        
-        # Create a new blank presentation
-        presentation = slides_service.presentations().create(
-            body={'title': f"Relatório Genético - {uuid.uuid4()}"}
-        ).execute()
-        
-        # Set permissions to anyone with the link can view
+        if not self.template_presentation_id:
+            raise ValueError("template_presentation_id não definido. Defina um ID de template válido ao instanciar GoogleSlidesClient.")
+        name_new_presentation = str(uuid.uuid4())
+        drive_service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/drive',
+            service_build='drive',
+            service_version='v3'
+        )
+        dict_new_presentation = {"name": name_new_presentation}
+        print(f"Copying template {self.template_presentation_id} and creating new the presentation {name_new_presentation}")
+        new_presentation_id = drive_service.files().copy(body=dict_new_presentation, fileId=self.template_presentation_id).execute()['id']
+
+        permissions_request_body = {
+            "role": "reader",
+            "type": "anyone"
+        }
         drive_service.permissions().create(
-            fileId=presentation['presentationId'],
-            body={'type': 'anyone', 'role': 'reader'}
+            fileId=new_presentation_id,
+            body=permissions_request_body
         ).execute()
-        
-        # Add initial slides and content
+        print(f"New presentation id {new_presentation_id}")
+        return new_presentation_id
+
+    def text_replace(self, key: str, replace_text: str, presentation_id: str, pages: list = []):
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+        service.presentations().batchUpdate(
+            body={
+                "requests": [
+                    {
+                        "replaceAllText": {
+                            "containsText": {
+                                "text": '{{' + key + '}}'
+                            },
+                            "replaceText": replace_text,
+                            "pageObjectIds": pages,
+                        }
+                    }
+                ]
+            },
+            presentationId=presentation_id
+        ).execute()
+
+    def replace_shape_with_image(self, url: str, presentation_id: str, key: str = None, pages: list = []):
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+        service.presentations().batchUpdate(
+            body={
+                "requests": [
+                    {
+                        "replaceAllShapesWithImage": {
+                            "imageUrl": url,
+                            "replaceMethod": "CENTER_INSIDE",
+                            "containsText": {
+                                "text": "{{" + key + "}}",
+                            },
+                            "pageObjectIds": pages
+                        }
+                    }
+                ]
+            },
+            presentationId=presentation_id
+        ).execute()
+
+    def duplicate_slide(self, presentation_id: str, page_id: str, new_page_ids: list):
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+        requests = []
+        for id in new_page_ids[::-1]:
+            obj = {page_id: id}
+            requests.append({'duplicateObject': {'objectId': page_id, 'objectIds': obj}})
+        # Uncomment the following line if you want to delete the original slide
+        # requests.append({'deleteObject': {'objectId': page_id}})
+        service.presentations().batchUpdate(presentationId=presentation_id, body={'requests': requests}).execute()
+
+    def move_slide(self, presentation_id: str, num_page_target: str, list_page_id_to_move: list):
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+        requests = []
+        requests.append({
+            "updateSlidesPosition": {
+                "slideObjectIds": list_page_id_to_move,
+                "insertionIndex": num_page_target
+            }
+        })
+        service.presentations().batchUpdate(presentationId=presentation_id, body={'requests': requests}).execute()
+
+    def add_speaker_notes(self, presentation_id: str, slide_id: str, speaker_notes_text: str):
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+        presentation = service.presentations().get(presentationId=presentation_id).execute()
+        slides = presentation.get('slides')
+        speaker_notes_id = None
+        for slide in slides:
+            if slide['objectId'] == slide_id:
+                speaker_notes_id = slide['slideProperties']['notesPage']['notesProperties']['speakerNotesObjectId']
+                break
         requests = [
             {
-                'createSlide': {
-                    'objectId': 'titleSlide',
-                    'insertionIndex': '0',
-                    'slideLayoutReference': {
-                        'predefinedLayout': 'TITLE'
-                    }
-                }
-            },
-            {
                 'insertText': {
-                    'objectId': 'titleSlide',
+                    'objectId': speaker_notes_id,
                     'insertionIndex': 0,
-                    'text': 'Relatório de Análise Genética'
+                    'text': speaker_notes_text,
                 }
             }
         ]
-        
-        # Create the slide first
-        response = slides_service.presentations().batchUpdate(
-            presentationId=presentation['presentationId'],
-            body={'requests': requests[:1]}  # Only create slide first
+        service.presentations().batchUpdate(
+            presentationId=presentation_id,
+            body={'requests': requests}
         ).execute()
-        
-        # Get the title element ID from the created slide
-        slide = slides_service.presentations().pages().get(
-            presentationId=presentation['presentationId'],
-            pageObjectId='titleSlide'
-        ).execute()
-        
-        # Find the title element ID
-        title_element_id = None
-        for element in slide.get('pageElements', []):
-            if element.get('shape', {}).get('shapeType') == 'TEXT_BOX':
-                title_element_id = element['objectId']
-                break
-        
-        if title_element_id:
-            # Now insert the text into the title element
-            text_request = {
-                'insertText': {
-                    'objectId': title_element_id,
-                    'insertionIndex': 0,
-                    'text': 'Relatório de Análise Genética'
-                }
-            }
-            
-            slides_service.presentations().batchUpdate(
-                presentationId=presentation['presentationId'],
-                body={'requests': [text_request]}
+
+    def create_slides_from_structured_json(self, json_path: str) -> str:
+        """
+        Cria slides no Google Slides a partir de um arquivo JSON estruturado (dados_estruturado.json).
+        Cada página do JSON vira um slide, com título, texto, tabelas e imagens.
+        """
+        with open(json_path, encoding="utf-8") as f:
+            dados = json.load(f)
+        paginas = dados["paginas"]
+
+        # Cria nova apresentação a partir do template
+        presentation_id = self.create_new_slide_by_template()
+
+        service = get_service(
+            credentials=self.credentials,
+            scopes='https://www.googleapis.com/auth/presentations',
+            service_build='slides',
+            service_version='v1'
+        )
+
+        # Recupera slides existentes (para saber o id do slide inicial)
+        presentation = service.presentations().get(presentationId=presentation_id).execute()
+        slides = presentation.get('slides', [])
+        if slides:
+            first_slide_id = slides[0]['objectId']
+        else:
+            first_slide_id = None
+
+        # Para cada página do JSON, duplica o slide do template e faz replace
+        for idx, pagina in enumerate(paginas):
+            # Duplicar slide base (primeiro slide do template)
+            new_slide_id = f"slide_{uuid.uuid4().hex[:8]}"
+            self.duplicate_slide(presentation_id, first_slide_id, [new_slide_id])
+
+            # Substituir textos
+            if pagina.get("titulo"):
+                self.text_replace("TITULO", pagina["titulo"], presentation_id, [new_slide_id])
+            if pagina.get("texto"):
+                self.text_replace("TEXTO", pagina["texto"], presentation_id, [new_slide_id])
+
+            # Substituir tabelas (como texto formatado)
+            if pagina.get("tabelas"):
+                for tabela in pagina["tabelas"]:
+                    tabela_txt = ""
+                    if tabela.get("cabecalho"):
+                        tabela_txt += " | ".join(tabela["cabecalho"]) + "\n"
+                        tabela_txt += "-|-".join(["-" for _ in tabela["cabecalho"]]) + "\n"
+                    for linha in tabela.get("linhas", []):
+                        tabela_txt += " | ".join(str(x) for x in linha) + "\n"
+                    self.text_replace("TABELA", tabela_txt, presentation_id, [new_slide_id])
+
+            # Substituir imagens (se houver URL pública ou lógica para upload)
+            # for img_idx, img in enumerate(pagina.get("imagens", [])):
+            #     image_url = img.get("url")  # Adapte para sua lógica de URL
+            #     if image_url:
+            #         self.replace_shape_with_image(image_url, presentation_id, key="IMAGEM", pages=[new_slide_id])
+
+        # Opcional: remover slide base/template do início
+        if first_slide_id:
+            service.presentations().batchUpdate(
+                presentationId=presentation_id,
+                body={'requests': [{'deleteObject': {'objectId': first_slide_id}}]}
             ).execute()
-        
-        return presentation['presentationId']
+
+        return presentation_id
 
     def add_slide(self, presentation_id, template_page_id):
         slides_service = self._get_service('slides', 'v1')
@@ -400,3 +537,240 @@ class GoogleSlidesClient:
         except Exception as e:
             logger.error(f"Error getting first slide ID: {str(e)}")
             return ''
+
+    def create_presentation_from_pdf(self, pdf_path: str) -> str:
+        """
+        Cria uma apresentação no Google Slides replicando cada página do PDF como um slide.
+        """
+        slides_service = self._get_service('slides', 'v1')
+        drive_service = self._get_service('drive', 'v3')
+
+        # Cria uma nova apresentação
+        presentation = slides_service.presentations().create(
+            body={'title': f"Apresentação PDF - {uuid.uuid4()}"}
+        ).execute()
+
+        # Permite acesso por link
+        drive_service.permissions().create(
+            fileId=presentation['presentationId'],
+            body={'type': 'anyone', 'role': 'reader'}
+        ).execute()
+
+        # Remove slide inicial em branco
+        first_slide_id = presentation['slides'][0]['objectId']
+        slides_service.presentations().batchUpdate(
+            presentationId=presentation['presentationId'],
+            body={'requests': [{'deleteObject': {'objectId': first_slide_id}}]}
+        ).execute()
+
+        with pdfplumber.open(pdf_path) as pdf:
+            for idx, page in enumerate(pdf.pages):
+                slide_id = f"slide_{uuid.uuid4().hex[:8]}"
+                # Cria slide em branco
+                slides_service.presentations().batchUpdate(
+                    presentationId=presentation['presentationId'],
+                    body={'requests': [{
+                        "createSlide": {
+                            "objectId": slide_id,
+                            "insertionIndex": idx,
+                            "slideLayoutReference": {"predefinedLayout": "BLANK"}
+                        }
+                    }]}
+                ).execute()
+
+                # Extrai texto
+                text = page.extract_text() or ""
+                if text.strip():
+                    # Adiciona caixa de texto centralizada
+                    text_box_id = f"{slide_id}_text"
+                    slides_service.presentations().batchUpdate(
+                        presentationId=presentation['presentationId'],
+                        body={'requests': [
+                            {
+                                "createShape": {
+                                    "objectId": text_box_id,
+                                    "shapeType": "TEXT_BOX",
+                                    "elementProperties": {
+                                        "pageObjectId": slide_id,
+                                        "size": {"height": {"magnitude": 300, "unit": "PT"}, "width": {"magnitude": 600, "unit": "PT"}},
+                                        "transform": {
+                                            "scaleX": 1, "scaleY": 1, "translateX": 50, "translateY": 100, "unit": "PT"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "insertText": {
+                                    "objectId": text_box_id,
+                                    "insertionIndex": 0,
+                                    "text": text
+                                }
+                            }
+                        ]}
+                    ).execute()
+
+                # Extrai imagens
+                for img_idx, img in enumerate(page.images):
+                    x0, top, x1, bottom = img["x0"], img["top"], img["x1"], img["bottom"]
+                    # Recorta imagem da página
+                    pil_img = page.to_image(resolution=200).original.crop((x0, top, x1, bottom))
+                    buffered = io.BytesIO()
+                    pil_img.save(buffered, format="PNG")
+                    img_b64 = base64.b64encode(buffered.getvalue()).decode()
+                    image_url = f"data:image/png;base64,{img_b64}"
+
+                    image_id = f"{slide_id}_img_{img_idx}"
+                    slides_service.presentations().batchUpdate(
+                        presentationId=presentation['presentationId'],
+                        body={'requests': [
+                            {
+                                "createImage": {
+                                    "objectId": image_id,
+                                    "url": image_url,
+                                    "elementProperties": {
+                                        "pageObjectId": slide_id,
+                                        "size": {"height": {"magnitude": 200, "unit": "PT"}, "width": {"magnitude": 300, "unit": "PT"}},
+                                        "transform": {
+                                            "scaleX": 1, "scaleY": 1, "translateX": 100 + img_idx*320, "translateY": 420, "unit": "PT"
+                                        }
+                                    }
+                                }
+                            }
+                        ]}
+                    ).execute()
+
+        return presentation['presentationId']
+
+    def create_slides_from_structured_json(self, json_path: str) -> str:
+        """
+        Cria slides no Google Slides a partir de um arquivo JSON estruturado (dados_estruturado.json).
+        Cada página do JSON vira um slide, com título, texto, tabelas e imagens.
+        """
+        # Carregar o JSON estruturado
+        with open(json_path, encoding="utf-8") as f:
+            dados = json.load(f)
+        paginas = dados["paginas"]
+
+        slides_service = self._get_service('slides', 'v1')
+        drive_service = self._get_service('drive', 'v3')
+
+        # Cria uma nova apresentação
+        presentation = slides_service.presentations().create(
+            body={'title': f"Relatório Genético Estruturado - {uuid.uuid4()}"}
+        ).execute()
+
+        # Permite acesso por link
+        drive_service.permissions().create(
+            fileId=presentation['presentationId'],
+            body={'type': 'anyone', 'role': 'reader'}
+        ).execute()
+
+        # Remove slide inicial em branco
+        first_slide_id = presentation['slides'][0]['objectId']
+        slides_service.presentations().batchUpdate(
+            presentationId=presentation['presentationId'],
+            body={'requests': [{'deleteObject': {'objectId': first_slide_id}}]}
+        ).execute()
+
+        # Cria slides para cada página do JSON
+        for idx, pagina in enumerate(paginas):
+            slide_id = f"slide_{uuid.uuid4().hex[:8]}"
+            # Escolhe layout: título + corpo se houver texto, senão só título
+            layout = "TITLE_AND_BODY" if pagina.get("texto") else "TITLE"
+            slides_service.presentations().batchUpdate(
+                presentationId=presentation['presentationId'],
+                body={'requests': [{
+                    "createSlide": {
+                        "objectId": slide_id,
+                        "insertionIndex": idx,
+                        "slideLayoutReference": {"predefinedLayout": layout}
+                    }
+                }]}
+            ).execute()
+
+            # Busca elementos do slide para inserir texto
+            slide = slides_service.presentations().pages().get(
+                presentationId=presentation['presentationId'],
+                pageObjectId=slide_id
+            ).execute()
+
+            title_id = None
+            body_id = None
+            for el in slide.get("pageElements", []):
+                shape = el.get("shape", {})
+                if shape.get("shapeType") == "TITLE":
+                    title_id = el["objectId"]
+                elif shape.get("shapeType") in ["BODY", "TEXT_BOX"]:
+                    body_id = el["objectId"]
+
+            # Insere título
+            if title_id and pagina.get("titulo"):
+                slides_service.presentations().batchUpdate(
+                    presentationId=presentation['presentationId'],
+                    body={'requests': [{
+                        "insertText": {
+                            "objectId": title_id,
+                            "insertionIndex": 0,
+                            "text": pagina["titulo"]
+                        }
+                    }]}
+                ).execute()
+
+            # Insere texto
+            if body_id and pagina.get("texto"):
+                slides_service.presentations().batchUpdate(
+                    presentationId=presentation['presentationId'],
+                    body={'requests': [{
+                        "insertText": {
+                            "objectId": body_id,
+                            "insertionIndex": 0,
+                            "text": pagina["texto"]
+                        }
+                    }]}
+                ).execute()
+
+            # Insere tabelas (como texto formatado, para simplicidade)
+            if body_id and pagina.get("tabelas"):
+                for tabela in pagina["tabelas"]:
+                    tabela_txt = ""
+                    if tabela.get("cabecalho"):
+                        tabela_txt += " | ".join(tabela["cabecalho"]) + "\n"
+                        tabela_txt += "-|-".join(["-" for _ in tabela["cabecalho"]]) + "\n"
+                    for linha in tabela.get("linhas", []):
+                        tabela_txt += " | ".join(str(x) for x in linha) + "\n"
+                    slides_service.presentations().batchUpdate(
+                        presentationId=presentation['presentationId'],
+                        body={'requests': [{
+                            "insertText": {
+                                "objectId": body_id,
+                                "insertionIndex": 0,
+                                "text": tabela_txt + "\n"
+                            }
+                        }]}
+                    ).execute()
+
+            # Insere imagens (apenas se URLs públicas ou data URI, ajuste conforme necessário)
+            for img_idx, img in enumerate(pagina.get("imagens", [])):
+                image_id = f"{slide_id}_img_{img_idx}"
+                # Aqui espera-se que você tenha a URL da imagem ou data URI
+                # Exemplo: image_url = img["url"]
+                # Se não tiver, pule ou adapte para buscar a imagem localmente e fazer upload para um bucket público
+                # slides_service.presentations().batchUpdate(
+                #     presentationId=presentation['presentationId'],
+                #     body={'requests': [{
+                #         "createImage": {
+                #             "objectId": image_id,
+                #             "url": image_url,
+                #             "elementProperties": {
+                #                 "pageObjectId": slide_id,
+                #                 "size": {"height": {"magnitude": 200, "unit": "PT"}, "width": {"magnitude": 300, "unit": "PT"}},
+                #                 "transform": {
+                #                     "scaleX": 1, "scaleY": 1, "translateX": 100 + img_idx*320, "translateY": 420, "unit": "PT"
+                #                 }
+                #             }
+                #         }
+                #     }]}
+                # ).execute()
+                pass  # Implemente se tiver URLs de imagens
+
+        return presentation['presentationId']
