@@ -42,6 +42,23 @@ const SlideViewer = ({ presentationUrl }: SlideViewerProps) => {
       }
       
       setPresentationId(id);
+
+      // Add retry logic
+      const retryInterval = setInterval(() => {
+        if (presentationId) {
+          const iframe = document.querySelector('iframe');
+          if (iframe && !loading) {
+            clearInterval(retryInterval);
+          } else {
+            setLoading(true);
+            iframe?.remove();
+            loadIframe();
+          }
+        }
+      }, 2000);
+
+      return () => clearInterval(retryInterval);
+
     } catch (err) {
       if (err instanceof Error) {
         setError(err.message);
@@ -75,6 +92,22 @@ const SlideViewer = ({ presentationUrl }: SlideViewerProps) => {
       
       setPresentationId(extractId(presentationUrl));
     }, 500);
+  };
+
+  const loadIframe = () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.allowFullscreen = true;
+    iframe.onload = () => setLoading(false);
+    iframe.onerror = () => setError('Error loading presentation');
+    
+    const container = document.getElementById('slide-container');
+    if (container) {
+      container.innerHTML = '';
+      container.appendChild(iframe);
+    }
   };
   
   if (error) {
@@ -122,7 +155,7 @@ const SlideViewer = ({ presentationUrl }: SlideViewerProps) => {
   
   return (
     <div className="w-full flex flex-col">
-      <div className="w-full aspect-[16/9] bg-white rounded-lg shadow overflow-hidden">
+      <div id="slide-container" className="w-full aspect-[16/9] bg-white rounded-lg shadow overflow-hidden">
         <iframe
           src={embedUrl}
           frameBorder="0"

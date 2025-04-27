@@ -369,3 +369,18 @@ class GoogleSlidesClient:
         except Exception as e:
             logger.error(f"Erro ao obter informações do template: {str(e)}")
             raise
+
+    def get_first_slide_id(self, presentation_id: str) -> str:
+        """Get the ID of the first slide in the presentation"""
+        try:
+            presentation = self.service.presentations().get(
+                presentationId=presentation_id
+            ).execute()
+            
+            if presentation.get('slides'):
+                return presentation['slides'][0]['objectId']
+            return ''
+            
+        except Exception as e:
+            logger.error(f"Error getting first slide ID: {str(e)}")
+            return ''

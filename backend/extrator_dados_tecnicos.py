@@ -129,73 +129,106 @@ class ExtratorDadosTecnicos:
             Dicionário com os dados processados
         """
         logger.info("Processando resultado do OCR...")
-
-        # Extrair informações básicas
-        nome_arquivo = os.path.basename(arquivo_pdf)
-
-        # Estrutura para armazenar os dados processados
-        dados_processados = {
-            "arquivo": nome_arquivo,
-            "data_processamento": time.strftime("%Y-%m-%d %H:%M:%S"),
-            "paginas": []
+        
+        sections = []
+        current_section = {
+            "type": "section",
+            "title": "",
+            "content": "",
+            "images": []
         }
 
-        # Processar cada página
-        for page_idx, page in enumerate(ocr_result.get("pages", [])):
-            logger.info(f"Processando página {page_idx+1}")
-
+        for page in ocr_result.get("pages", []):
             # Extrair texto da página
-            texto_pagina = ""
-            if "markdown" in page:
-                # Remover referências a imagens do markdown
-                texto_pagina = re.sub(r'!\[.*?\]\(.*?\)', '', page["markdown"])
-
-            # Estrutura para armazenar informações da página
-            info_pagina = {
-                "numero": page_idx + 1,
-                "texto": texto_pagina.strip(),
-                "imagens": []
-            }
+            text = page.get("markdown", "")
+            
+            # Processar seções
+            lines = text.split("\n")
+            for line in lines:
+                # Detectar títulos (texto em maiúsculas ou com ## no início)
+                if line.isupper() or line.startswith("#"):
+                    # Se já temos uma seção atual com conteúdo, salvá-la
+                    if current_section["content"].strip() or current_section["title"]:
+                        sections.append(current_section.copy())
+                    
+                    # Iniciar nova seção
+                    current_section = {
+                        "type": "section",
+                        "title": line.replace("#", "").strip(),
+                        "content": "",
+                        "images": []
+                    }
+                else:
+                    # Adicionar linha ao conteúdo da seção atual
+                    if line.strip():
+                        current_section["content"] += "\n" + line
 
             # Processar imagens da página
             for img_idx, img in enumerate(page.get("images", [])):
-                # Extrair informações da imagem
-                img_info = {
-                    "id": f"img_{page_idx+1}_{img_idx+1}",
-                    "posicao": {
-                        "top_left_x": img.get("top_left_x", 0),
-                        "top_left_y": img.get("top_left_y", 0),
-                        "bottom_right_x": img.get("bottom_right_x", 0),
-                        "bottom_right_y": img.get("bottom_right_y", 0)
+                if img.get("top_left_x"):
+                    img_info = {
+                        "id": f"img_{len(sections)+1}_{img_idx+1}",
+                        "posicao": {
+                            "top_left_x": img.get("top_left_x"),
+                            "top_left_y": img.get("top_left_y"),
+                            "bottom_right_x": img.get("bottom_right_x"),
+                            "bottom_right_y": img.get("bottom_right_y")
+                        }
                     }
-                }
+                    current_section["images"].append(img_info)
 
-                # Se a imagem tiver dados base64, salvar a imagem e extrair texto
-                if img.get("image_base64"):
-                    # Salvar a imagem
-                    img_path = self.salvar_imagem(
-                        img["image_base64"],
-                        os.path.splitext(nome_arquivo)[0],
-                        page_idx,
-                        img_idx
-                    )
+        # Adicionar última seção se houver
+        if current_section["content"].strip() or current_section["title"]:
+            sections.append(current_section)
 
-                    if img_path:
-                        img_info["caminho_arquivo"] = os.path.relpath(
-                            img_path, start=os.getcwd())
+        return sections
 
-                        # Extrair texto da imagem
-                        texto_imagem = self.extrair_texto_imagem(img_path)
-                        if texto_imagem:
-                            img_info["texto_extraido"] = texto_imagem
+    def processar_tabelas(self, texto: str) -> str:
+        """
+        Processa e formata tabelas no texto.
 
-                # Adicionar informações da imagem à página
-                info_pagina["imagens"].append(img_info)
+        Args:
+            texto: Texto contendo tabelas
 
-            # Adicionar informações da página aos dados processados
-            dados_processados["paginas"].append(info_pagina)
+        Returns:
+            Texto com tabelas formatadas
+        """
+        linhas = texto.split("\n")
+        tabela = []
+        in_table = False
+        
+        for linha in linhas:
+            if "|" in linha:
+                if not in_table:
+                    in_table = True
+                tabela.append(linha)
+            elif in_table:
+                in_table = False
+                if tabela:
+                    # Formatar tabela
+                    tabela_formatada = "\n".join(tabela)
+                    texto = texto.replace("\n".join(tabela), tabela_formatada)
+                tabela = []
 
-        return dados_processados
+        return texto
+
+    def formatar_texto_cientifico(self, texto: str) -> str:
+        """
+        Formata notação científica e fórmulas matemáticas.
+
+        Args:
+            texto: Texto a ser formatado
+
+        Returns:
+            Texto formatado
+        """
+        # Preservar fórmulas matemáticas entre $
+        texto = re.sub(r'\$([^$]+)\$', r'$\1$', texto)
+        
+        # Formatar porcentagens
+        texto = re.sub(r'(\d+)%', r'$\1\\%$', texto)
+        
+        return texto
 
     def salvar_imagem(self, image_base64: str, nome_base: str, page_idx: int, img_idx: int) -> Optional[str]:
         """

@@ -24,5 +24,18 @@ export interface SlideSection {
     status: 'pending' | 'processing' | 'complete' | 'error';
     message?: string;
     processId?: string;
-    progress?: number;
+    progress: number;
+    stage: string;
+    details?: {
+      currentPage?: number;
+      totalPages?: number;
+      currentOperation?: string;
+    };
+  }
+
+  export interface ProcessResult {
+    processId: string;
+    status: ProcessStatus;
+    slides?: SlideSection[];
+    presentationUrl?: string;
   }

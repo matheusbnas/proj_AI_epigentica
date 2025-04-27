@@ -5,18 +5,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 from datetime import datetime
 from extrator_dados_tecnicos import ExtratorDadosTecnicos
+from google_slides_client import GoogleSlidesClient
 from dotenv import load_dotenv, find_dotenv
 
-# Add these imports at the top
-from google_slides_client import GoogleSlidesClient
-from config import Config
-from utils.data_processor import DataProcessor
-
-# Initialize new components
-from utils.router_llm import LLMRouter
-from utils.slides_processor import SlidesProcessor
-
-# Load environment variables 
+# Load environment variables
 _ = load_dotenv(find_dotenv())
 
 app = FastAPI()
@@ -81,9 +73,20 @@ slides_client = GoogleSlidesClient(
     credentials_path=".credentials/credentials.json",
 )
 
-# Initialize components
-llm_router = LLMRouter()  # Remove api_key parameter since it will use environment variable
-slides_processor = SlidesProcessor(llm_router)
+class DataProcessor:
+    @staticmethod
+    def transform_to_slides(data):
+        sections = []
+        for item in data:
+            if isinstance(item, dict):
+                section = {
+                    "type": "section",
+                    "title": item.get("title", ""),
+                    "content": item.get("content", ""),
+                    "images": item.get("images", [])
+                }
+                sections.append(section)
+        return sections
 
 @app.post("/process-pdf")
 async def process_pdf(file: UploadFile):
@@ -180,37 +183,20 @@ async def process_pdf(file: UploadFile):
                 "slides": initial_slides
             })
 
-        # Process enhanced slides with LLM
-        async def progress_callback(progress, message):
-            actual_progress = 60 + int(progress * 0.4)  # Scale progress from 60-100%
-            await notify_client(process_id, {
-                "type": "progress",
-                "progress": actual_progress,
-                "message": message
-            })
-
-        logger.info(f"[{process_id}] Starting LLM processing")
-        final_slides = await slides_processor.process_report_data(
-            result, 
-            progress_callback=progress_callback
-        )
-        logger.info(f"[{process_id}] LLM processing completed")
-        
         # Save processed slides
         slides_json_path = os.path.join(output_dir, "slides_data.json")
-        logger.info(f"[{process_id}] Saving final slides to {slides_json_path}")
         with open(slides_json_path, "w", encoding="utf-8") as f:
-            json.dump(final_slides, f, ensure_ascii=False, indent=2)
+            json.dump(initial_slides, f, ensure_ascii=False, indent=2)
         
         await notify_client(process_id, {
             "type": "complete",
             "progress": 100,
-            "slides": final_slides
+            "slides": initial_slides
         })
 
         return {
             "process_id": process_id,
-            "slides": final_slides
+            "slides": initial_slides
         }
 
     except HTTPException as e:
@@ -248,24 +234,27 @@ async def create_google_slides(process_id: str):
         
         logger.info(f"[{process_id}] Creating Google Slides presentation")
         # Create Google Slides presentation
-        presentation_url = slides_client.create_slides_from_json(slides_json_path)
-        logger.info(f"[{process_id}] Presentation created successfully: {presentation_url}")
+        presentation_id = slides_client.create_slides_from_json(slides_json_path)
+        presentation_url = f"https://docs.google.com/presentation/d/{presentation_id}/edit"
+        
+        # Get first slide ID
+        first_slide = slides_client.get_first_slide_id(presentation_id)
         
         await notify_client(process_id, {
             "type": "complete",
             "progress": 100,
             "message": "Apresentação criada com sucesso!",
-            "presentation_url": presentation_url
+            "presentation_url": presentation_url,
+            "slide_id": first_slide
         })
         
-        return {"presentation_url": presentation_url}
+        return {
+            "presentation_url": presentation_url,
+            "slide_id": first_slide
+        }
         
     except Exception as e:
-        logger.error(f"[{process_id}] Error creating Google Slides: {str(e)}", exc_info=True)
-        await notify_client(process_id, {
-            "type": "error",
-            "message": f"Error creating presentation: {str(e)}"
-        })
+        logger.error(f"Error creating Google Slides: {str(e)}", exc_info=True)
         raise HTTPException(500, str(e))
 
 if __name__ == "__main__":
