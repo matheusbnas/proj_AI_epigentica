@@ -1,0 +1,341 @@
+{
+    "arquivo": "apresentacao.pdf",
+    "data_processamento": "2025-04-27 23:22:51",
+    "paginas": [
+        {
+            "numero": 1,
+            "texto": "# Seja bem vinda, Gisele Xarão Ferreira à uma nova forma de viver <br> \\author{ \\author{ A. A. G. G. \n\n}",
+            "imagens": []
+        },
+        {
+            "numero": 2,
+            "texto": "# Índice \n\n03 INTRODUÇÃO\n04 SEU CASO CLÍNICO\n06 EXAMES LABORATORIAIS\n09 MAPEAMENTO E DIRECIONAMENTO NUTRIGENÉTICO\n12 GASTO ENERGÉTICO\n15 COMPORTAMENTO ALIMENTAR\n\n18 METABOLISMO DA GLICOSE\n\n21 HIPERTENSÃO\n24 METABOLISMO DE ÔMEGA 3\n27 ENVELHECIMENTO\n30 CAPACIDADE ANTIOXIDANTE\n33 TRATO INTESTINAL.\nINFLAMAÇÃO E INTOLERÂNCIAS\n38 RITMO CIRCADIANO\n41 DEFICIÊNCAS NUTRICIONAIS\n46 HABILIDADES ESPORTIVAS",
+            "imagens": []
+        },
+        {
+            "numero": 3,
+            "texto": "# Genética, individualidade \\& Nutrição de precisão \n\nO que são genes?\nGenes são segmentos de DNA que contêm o \"manual de instruções\" das nossas células - e ele que define desde a nossa cor de cabelo à nossa produção hormonal.\n\nPor que Reprogramar é a chave para viver bem? A Reprogramação Epigenética nada mais é que utilizarmos estratégias do estilo de vida para \"ligar\" e \"desligar\" nossos genes. Isto é, silenciarmos genes que podem afetar nossa qualidade de vida e nos aproximar de doenças e ligarmos genes que aumentam nosso bem estar, saúde e longevidade.",
+            "imagens": [
+                {
+                    "id": "img_3_1",
+                    "posicao": {
+                        "top_left_x": 2032,
+                        "top_left_y": 137,
+                        "bottom_right_x": 3520,
+                        "bottom_right_y": 2054
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 4,
+            "texto": "# Caso clínico e exames laboratoriais",
+            "imagens": []
+        },
+        {
+            "numero": 5,
+            "texto": "# Nome: Gisele Xarão Ferreira \n\nIdade: 27 anos\n\n## Frequência de prática de exercícios físicos: 5-6x na semana\n\nObservações clínicas: vontade de comer doces, teve pneumonia e aparecimento de alergias intensas nas pernas. Tem autoimunidade. Faz uso de anticoncepcional e fez uso de antibiótico recentemente.\n\nObjetivo: Otimizar a saúde de modo geral, controle inflamatório e recomposição corporal\n\nHistórico familiar: Diabetes, hipertensão e câncer\nTestes avaliados: Exames de sangue; Ciera nutrigenético",
+            "imagens": []
+        },
+        {
+            "numero": 6,
+            "texto": "| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| Hemácias | 4,33 | 4,09 | 3,8 a 4,8 milhões/mm ${ }^{3}$ |\n| Hemoglobina | 14,3 | 13,8 | 13,5 a $15,0 \\mathrm{~g} / \\mathrm{dL}$ |\n| Hematócrito | 41,3 | 41,1 | 38,0 a $43,0 \\%$ |\n| VCM | 90 | 100 | 88,0 a 92,0 fL |\n| HCM | 33 | 34 | 27,0 a 32,0pg |\n| RDW | 10,2 | 11,3 | 11,6 a $12,5 \\%$ |\n| Leucócitos | 4.800 | 5.730 | 4 a $6 \\mathrm{ml} / \\mathrm{mm}^{3}$ |\n| Neutrófilos | 50 | 55 | 45 a $60 \\%$ |\n| Eosinófilos | 1 | 2 | 0 a $2 \\%$ |\n| Basófilos | 1 | 0 | 0 a $1 \\%$ |\n| Linfócitos | 39 | 37 | 20 a $45 \\%$ |\n| Monócitos | 9 | 6 | Abaixo de $9 \\%$ |\n\n\n| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| Plaquetas | 233.900 | 313.000 | 150 a $310 \\mathrm{ml} / \\mathrm{mm}^{3}$ |\n| Relação N/L | 1,28 | 2,7 | $<3$ |\n| Glicose | 81 | 87 | 70 a $85 \\mathrm{mg} / \\mathrm{dL}$ |\n| Glicemia média estimada | 105 | 94 | $<95 \\mathrm{mg} / \\mathrm{dL}$ |\n| Insulina | 12,4 | 7,9 | Abaixo de 6,5uU/ mL |\n| Hemoglobina glicada | 5,3 | 4,9\\% | Menor que 5,3\\% |\n| Colesterol total | 220 | 191 | $<230 \\mathrm{mg} / \\mathrm{dL}$ |\n| LDL | 146 | 122 | $<120 \\mathrm{mg} / \\mathrm{dL}$ |\n| HDL | 61 | 61 | $>60 \\mathrm{mg} / \\mathrm{dL}$ |\n| ApoA1 | - | 143 | $>150 \\mathrm{mg} / \\mathrm{dL}$ |\n| ApoB | - | 87 | $<90 \\mathrm{mg} / \\mathrm{dL}$ |\n| ApoB/ApoA-1 | - | 0,6 | $>0.6$ |",
+            "imagens": []
+        },
+        {
+            "numero": 7,
+            "texto": "| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| Lipoproteína-A | 10 | - | $<30,0 \\mathrm{mg} / \\mathrm{dL}$ |\n| Triglicerídeos | 71 | 45 | $<100 \\mathrm{mg} / \\mathrm{dL}$ |\n| Relacao triglicerides/ HDL | 1,16 | 0,73 | $<1,6$ |\n| Relacao Monócito/ HDL | 5 | 5,63 | $<8$ |\n| Ferritina | 48,61 | 34,5 | 70 a 150ng/ mL |\n| Ferro | 125 | 90 | 50 a 170 ug/ dL |\n| Transferrina | 217 | 220 | 250 a 380mg/ dL |\n| Sat. Transferrina | 40 | 29 | 20 a 50\\% |\n| Fibrinogênio | - | 327 | $<300 \\mathrm{mg} / \\mathrm{dL}$ |\n| VHS | - | 50 | $<15 \\mathrm{~mm} / \\mathrm{h}$ |\n| Ureia | 19 | 31 | 19 a $40 \\mathrm{mg} / \\mathrm{dL}$ |\n| Creatinina | 0,81 | 0,66 | 0,5 a $1,1 \\mathrm{mg} / \\mathrm{dL}$ |\n\n\n| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| Taxa Filtração Glomerular | 100 | 121 | $>\\mathrm{ou}=60 \\mathrm{~mL} / \\mathrm{min}$ |\n| Ácido úrico | 2,5 | 2 | $<5 \\mathrm{mg} / \\mathrm{dL}$ |\n| Sódio | 137 | 139 | 135 a 146mEqL |\n| Potássio | 4 | 4,1 | 3,5 a 5,3mEqL |\n| Cálcio sérico | 9,8 | 10,6 | 8,3 a 10,6mg/ dL |\n| TGO/ AST | 21 | 15 | Até 20 U/L |\n| TGP/ ALT | 21 | 18 | Até 20 U/L |\n| Gama GT | 29 | 15 | Inferior 20 U/L |\n| Fosfatase Alcalina | - | 154 | até 306 U/L |\n| TSH | 0,81 | 0,739 | 0,40 a 4,5uUI/mL |\n| T4 livre | 1 | 0,97 | 0,8 a 1,8ng/dL |\n| T3 livre | 3,84 | 3,44 | 2,3 a 4,2 pg/ dL |\n| Anti TPO | - | 48 | $<60 \\mathrm{UI} / \\mathrm{mL}$ |",
+            "imagens": []
+        },
+        {
+            "numero": 8,
+            "texto": "| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| Anti-tireoglobulina | Inferior a 0,09 | 1,3 | Inferior a $4 \\mathrm{UI} / \\mathrm{mL}$ |\n| Vitamina D 25 OH | 29,1 | 35,5 | Superior a $40 \\mathrm{ng} / \\mathrm{mL}$ |\n| Vitamina D 1,25 OH | - | - | Superior a $40 \\mathrm{ng} / \\mathrm{mL}$ |\n| PTH | 15,3 | 38,4 | 18 a $88 \\mathrm{pg} / \\mathrm{mL}$ |\n| Vitamina B12 | 693 | 657 | 500 a $1000 \\mathrm{pg} / \\mathrm{mL}$ |\n| Homocisteína | 10,96 | 10,79 | $<9 \\mathrm{umol} / \\mathrm{L}$ |\n| Leptina | - | 32 | $<10 \\mathrm{ng} / \\mathrm{mL}$ |\n| Folato | - | 15,21 | $>5,4 \\mathrm{ng} / \\mathrm{mL}$ |\n| Proteína C Reativa | $<2,0$ | 1,1 | $<5 \\mathrm{mg} / \\mathrm{L}$ |\n| Cortisol basal | - | 6,5 | $<22,45 \\mathrm{ug} / \\mathrm{dL}$ |\n| Fator Reumatóide | Inferior a 8 | Inferior a 8 | Inferior ou igual a $14 \\mathrm{UI} / \\mathrm{mL}$ |\n| FAN | Não reagente | - | Não reagente |\n\n\n| MARCADORES | 16/04/24 | 09/08/24 | VALORES IDEIAIS |\n| :--: | :--: | :--: | :--: |\n| CA 15-3 | - | 14 | $<32 \\mathrm{U} / \\mathrm{mL}$ |\n| CA 125 | - | 7,7 | $<30,2 \\mathrm{U} / \\mathrm{mL}$ |\n| CA 19-9 | - | 9 | $<37,0 \\mathrm{U} / \\mathrm{mL}$ |\n| CEA | - | 1 | $<2.5 \\mathrm{ng} / \\mathrm{mL}$ |\n| Anti Gliadina IgG | 0,9 | - | Neg: Inferior a $7 / \\mathrm{mL}$ |\n| Anti Gliadina IgA | 1,2 | - | Neg: Inferior a $7 / \\mathrm{mL}$ |\n| Endomísio IgA | Não reagente | - | Não reagente |\n| Endomísio Anti-IgG | Não reagente | - | Não reagente |",
+            "imagens": []
+        },
+        {
+            "numero": 9,
+            "texto": "# Mapeamento e Direcionamento baseado em seu DNA",
+            "imagens": []
+        },
+        {
+            "numero": 10,
+            "texto": "# Resumo dos resultados encontrados: \n\nGasto energético:\nSeu resultado indica predisposição moderada à redução do gasto energético.\n\nComportamento alimentar:\nBaixa predisposição genética para um comportamento alimentar disfuncional.\n\nMetabolismo da glicose:\nRisco moderado ao desenvolvimento de resistência à insulina e diabetes do tipo 2.\n\nHipertensão:\nSeu genótipo indica risco moderado para hipertensão arterial.\n\nMetabolismo de ômega 3 e resposta à suplementação: Risco risco moderado para prejuízos na metabolização do ômega 3.\n\nEnvelhecimento:\nRisco genético moderado para alterações que podem influenciar negativamente a longevidade.",
+            "imagens": []
+        },
+        {
+            "numero": 11,
+            "texto": "# Resumo dos resultados encontrados: \n\nCapacidade antioxidante:\nBaixo risco de prejuízos na capacidade antioxidante e nos processos de destoxificação.\n\nTrato intestinal, inflamação e intolerâncias:\nRisco baixo para alterações pró-inflamatórias e doenças inflamatórias intestinais. Ausência de intolerância primária à lactose. Alto risco para desenvolvimento de doença celíaca, doenças autoimunes e alergias alimentares.\n\nRitmo circadiano:\nRisco moderado para disfunções no ciclo circadiano e distúrbios do sono.\n\nDeficiências nutricionais:\nRisco moderado para alteração no metabolismo da vitamina A, D, B6 e para alterações metabolismo de colina.\n\nHabilidades esportivas:\nSeu genótipo sugere predisposição genética a um melhor desempenho de força. Risco alto para lesões tendineas, ligamentares e articulares.",
+            "imagens": []
+        },
+        {
+            "numero": 12,
+            "texto": "O que seus genes falam sobre seu\n\n# Gasto energético \n\n\n\nResultado encontrado\nSeu resultado indica predisposição moderada à redução do gasto energético, sobretudo por influência das alterações associadas com a atividade hormonal, regulação central do gasto calórico e termogênese.",
+            "imagens": [
+                {
+                    "id": "img_12_1",
+                    "posicao": {
+                        "top_left_x": 1912,
+                        "top_left_y": 585,
+                        "bottom_right_x": 3068,
+                        "bottom_right_y": 823
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 13,
+            "texto": "# Caracteristicas \n\ndescobertas em seu DNA\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Receptores de catecolaminas | ADRB2 | rs1042713 | A | G/A |\n| Receptores de catecolaminas | ADRB2 | rs1042714 | G | G/C |\n| Ativação de hormônios esteroidogênicos | ETVS | rs7647305 | CC | T/C |\n| Ativação de hormônios | PCSK1 | rs6234 | G | G/G |\n| Termogênese | UCP1 | rs1800592 | T | T/C |\n| Termogênese | UCP2 | rs659366 | T | C/T |\n| Regulação do apetite e gasto energético | MC4R | rs17782313 | C | T/T |\n| Regulação do apetite e gasto energético | MC4R | rs12970134 | A | G/A |\n| Controle central da saciedade e do gasto energético | BDNF | rs925946 | T | T/G |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | G | C/C |\n\nADRB2/ UCP1/ UCP2/ MC4R/ BDNF: Você tem tendência à menor capacidade de oxidação de gordura e maior facilidade de acúmulo de gordura (abdominal). Seu corpo tende à ter menor número e tamanho de mitocôndrias, as quais são as usinas onde nosso corpo gera energia e calor (termogênese) - o que faz você tender à um metabolismo mais lento.\n\nPCSK1: você tem tendência à ganho de peso associada à atividade hormonal.",
+            "imagens": []
+        },
+        {
+            "numero": 14,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Fracionar o consumo de proteínas em 4 refeições com proteínas e fibras\n- Atividade física em jejum, banho gelado\n- HIIT\n- Acompanhar seus hormônios\n\nEstratégias alimentares-chave:\n\n- Jejum Intermitente 14-15 horas\n- Evitar refeições com alta carga glicêmica (aquelas que causam pico de açúcar no seu sangue)\n- Evitar gordura saturada (laticinios, carne vermelha)\n\nSuplementos-chave:\n\n- Citrus aurantium/laranja moro/ EGCG\n- Acido alfa lipoico",
+            "imagens": []
+        },
+        {
+            "numero": 15,
+            "texto": "O que seus genes falam sobre seu Comportamento alimentar\n\n| BDNF | FTO | LEP | LEPR |\n| :--: | :--: | :--: | :--: |\n| SLC2A2 | TAS1R3 | SH2B1 | TAS2R3B |\n\nResultado encontrado\nO resultado deste perfil sugere baixa predisposição genética para um comportamento alimentar disfuncional. Variantes associadas com maior predileção pelo sabor doce e desequilibrio nos niveis fome e saciedade, com tendência à necessidade de comer maiores volumes de comida quando não moduladas.",
+            "imagens": []
+        },
+        {
+            "numero": 16,
+            "texto": "| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Controle central da saciedade e do gasto <br> energético | BDNF | rs6265 | T | C/T |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Supressão de Grelina | FTO | rs8050136 | A | C/A |\n| Leptina / Controle da saciedade | LEP | rs7799039 | AA | G/A |\n| Receptor de leptina / Controle da saciedade | LEPR | rs1805094 | GG | G/C |\n| Transportador de glicose/Predileção por doces | SLL2A2 | rs5400 | A | G/A |\n| Receptor de sabor/Percepção do sabor doce | TAS1R3 | rs35744813 | CC | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Receptor de sabor/Percepção do sabor amargo | TAS2R38 | rs1726866 | AA | G/A |\n| Receptor de sabor/Percepção do sabor amargo | TAS2R38 | rs10246939 | TT | T/C |\n\n## Caracteristicas\n\ndescobertas em seu DNA\n\nBDNF/ FTO/ SH2B1: você tende à ter desregulação dos seus níveis de fome e saciedade. Isso significa que, se não modulados, pode ter dificuldade de se sentir saciada ou sentir fome o tempo todo.\n\nSLC2A2/ TAS1R3: estes são os \"super degustadores\" de doces. Isso significa que você tem uma grande tendência de preferir e ter um grande amor pelo sabor doce.",
+            "imagens": []
+        },
+        {
+            "numero": 17,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- A ordem da sua refeição faz a diferença: fibras, proteínas e por último carboidratos\n- Capriche sempre na quantidade de vegetais\n- Evite pular refeições\n\nEstratégias alimentares-chave:\n\n- Estimule o paladar amargo: vegetais verde escuros e chás amargos ou azedos\n- Café da manhã com boas proteínas e gorduras - evite refeições que causam pico de açúcar pela manhã\n- Jejum Intermitente 14-15 horas\n\nSuplementos-chave:\n\n- Gymnemma sylvestre\n- Goma acácia antes das refeições",
+            "imagens": []
+        },
+        {
+            "numero": 18,
+            "texto": "O que seus genes falam sobre seu Metabolismo da glicose\n\n| ADIPOQ | CLOCK | CPY | FABP2 | FTO | IGF2BP2 | MTNR1B |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| IRS1 | KCNJ11 | SH2B1 | SLC30A8 | TCF7L2 | ENPP1 | PPARG |\n\nResultados encontrados\nSeu perfil genético indica risco moderado ao desenvolvimento de resistência à insulina e diabetes do tipo 2. Atenção às variantes associadas com prejuízo na produção e sinalização da insulina, além de tender à maiores níveis de açúcar no seu sangue.",
+            "imagens": []
+        },
+        {
+            "numero": 19,
+            "texto": "| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Produção de adiponectina/Homeostase de glicose | ADIPOQ | rs17300539 | A | G/G |\n| Regulador do ciclo circadiano | CLOCK | rs1801260 | G | A/A |\n| Regulador do ciclo circadiano | CRY1 | rs2287161 | CC | C/C |\n| Regulação do metabolismo lipídico e absorção de gorduras | FABP2 | rs1799883 | T | C/C |\n| Supressão de Grelina | FTO | rs9939609 | A | T/T |\n| Fator de crescimento semelhante a insulina | IGF2BP2 | rs4402960 | TT | G/T |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1B | rs10830963 | G | C/C |\n| Substrato do Receptor de Insulina | IRS1 | rs2943641 | C | C/C |\n| Regulação da secreção de insulina | KCNJ11 | rs5219 | T | C/C |\n| Regula a sensibilidade a leptina | SH2B1 | rs7498665 | G | A/G |\n| Transportador de zinco, regula secreção de insulina | SLC30A8 | rs13266634 | C | C/C |\n| Homeostase de glicose | TCF7L2 | rs7903146 | T | T/T |\n| Homeostase de glicose | TCF7L2 | rs12255372 | TT | T/T |\n| Regula a sensibilidade à insulina | ENPP1 | rs1044498 | CC | A/A |\n| Adipogênese e homeostase de glicose | PPARG | rs1801282 | CC | C/C |\n\n## Caracteristicas descobertas em seu DNA\n\nCRY1: você tem tendência à maior ganho de peso e desregulação do controle da glicemia quando altera seu ritmo circadiano ou quando tem problemas relacionados ao seu sono.\n\nIRS1/SLC30A8/TCF7L2/ PPARG: seu corpo tende à ter prejuízo no controle da glicemia, na produção e sinalização de insulina - isso significa que, se não regulados, você tende a ter maiores níveis de açúcar no sangue ( maior hba1c e glicemia média) - gerando cansaço e sensação de queda de pressão e no longo prazo risco para diabetes.",
+            "imagens": []
+        },
+        {
+            "numero": 20,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Higiene do sono\n- Evite comer em excesso à noite\n- Atividade física pela manhã ou contato pelo sol pela manhã\n\nEstratégias alimentares-chave:\n\n- Evite gordura saturada (laticinios, carne vermelha)\n- Vinagre de maçã antes das refeições\n- Jejum Intermitente 14-15 horas, cetogênica\n- Priorize carboidratos ricos em fibras\n- Se for comer doces, sempre após refeição completa\n\nSuplementos-chave:\n\n- Zinco\n- Berberina/ Ácido alfa lipóico",
+            "imagens": []
+        },
+        {
+            "numero": 21,
+            "texto": "O que seus genes falam sobre seu risco para Hipertensão\n\n\nResultado encontrado\nSeu genótipo indica risco moderado para hipertensão arterial.",
+            "imagens": [
+                {
+                    "id": "img_21_1",
+                    "posicao": {
+                        "top_left_x": 1984,
+                        "top_left_y": 454,
+                        "bottom_right_x": 2528,
+                        "bottom_right_y": 778
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 22,
+            "texto": "# Características \n\ndescobertas em seu DNA\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Receptor tipo I da angiotensina II | AGTR1 | rs5186 | C | A/C |\n| Enzima conversora de angiotensina | ECA | rs4343 | G | G/A |\n| Endotelina-1/Vasoconstrição | EDN | rs5370 | T | G/G |\n| Síntese de óxido nítrico/Vasodilatação | ENOS | rs1799983 | T | T/G |\n\nAGTR1/ECA/ENOS: você tem tendência à maior vasoconstrição, redução da perfusão sanguínea e menor oxigenação além de ter menor vasodilatação - isso significa que pode perceber problemas relacionados à circulação. Se não modulados, estes genes são associados à risco cardiovascular e dores de cabeça.",
+            "imagens": []
+        },
+        {
+            "numero": 23,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Tenha uma boa hidratação\n- Drenagens podem ser bons estímulos\n- Mantenha-se ativa: atividade física é essencial para você\n\nEstratégias alimentares-chave:\n\n- Evite alimentos ricos em sódio processados e ultraprocessados - seu corpo precisa de uma alimentação \"limpa\", com comida de verdade\n- Shots vasodilatadores: com extrato de beterraba em pó ou nitrato\n- Alimentos vasodilatadores: melancia, beterraba e cacau são ótimos para você\n- Troque seu café por bebida à base de cacau\n\nSuplementos-chave:\n\n- Nitroto/ citrulina/ arginina",
+            "imagens": []
+        },
+        {
+            "numero": 24,
+            "texto": "O que seus genes falam sobre seu Metabolismo de ômega 3 e resposta à suplementação\n\n| APOE | CD36 | FAD51 | FAD52 |\n| :--: | :--: | :--: | :--: |\n| MYRF | ELOVL2 | ENOS | PPARG |\n\n\n\nResultado encontrado\nSeu genótipo indica risco moderado para prejuízos na metabolização do ômega 3.",
+            "imagens": [
+                {
+                    "id": "img_24_1",
+                    "posicao": {
+                        "top_left_x": 1904,
+                        "top_left_y": 456,
+                        "bottom_right_x": 3320,
+                        "bottom_right_y": 751
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 25,
+            "texto": "| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica para glicoproteína plaquetária/Resposta à suplementação de ômega-3 | CD36 | rs1527483 | A | G/A |\n| Atividade de dessaturases de ácidos gravos | FADS1 | rs174546 | T | C/T |\n| Atividade de dessaturases de ácidos gravos | FADS2 | rs174616 | A | G/A |\n| Codifica fator de transcrição | MYRF | rs174537 | G | G/T |\n| Atividade de Elongase | ELOVL2 | rs953413 | A | G/A |\n| Resposta à suplementação de ômega-3 | ENOS | rs1799983 | T | T/G |\n| Regula adipogênese/Influencia a resposta ao ômega-3 | PPARG | rs1801282 | G | C/C |\n\n## Caracteristicas\n\ndescobertas em seu DNA\n\nAPOE E3/E3/ CD36/ MYRF/ ELOVL2/ ENOS: seu corpo tem uma necessidade aumentada de ômega-3.\n\nFADS1/ FADS2: você tem uma tendência inflamatória e seu corpo tem mais dificuldade de utilizar o ômega 3 - por isso, você tem uma necessidade aumentada de ômega 3 para modular inflamação e cuidar da saúde do seu cérebro.",
+            "imagens": []
+        },
+        {
+            "numero": 26,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Mantenha sempre a suplementação de ômega 3\n\n\n## Estratégias alimentares-chave:\n\n- Evite gordura saturada (laticinios, carne vermelha)\n\nSuplementos-chave:\n\n- Ômega 3 em doses acima de 2 g - para uma melhor eficiência, associe ao Krill Oil - um \"tipo\" de ômega 3.",
+            "imagens": []
+        },
+        {
+            "numero": 27,
+            "texto": "O que seus genes falam sobre seu Envelhecimento\n\n| APOE | APOL1 | CETP | FOXO3A | KL | LINC01 | MAOB |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| NRF2 | RTEL1 | SIRT3 | SIRT6 | TOMMAD | UNC73A | XRCC1 |\n\n\n\nResultado encontrado\nSeu resultado sugere risco genético moderado para alterações que podem influenciar negativamente a longevidade, por alterações associadas ao reparo de DNA e neurodegeneração.",
+            "imagens": [
+                {
+                    "id": "img_27_1",
+                    "posicao": {
+                        "top_left_x": 1912,
+                        "top_left_y": 456,
+                        "bottom_right_x": 3996,
+                        "bottom_right_y": 753
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 28,
+            "texto": "| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Clearance de remanescentes de VLDL | APOE | rs429358 |  | T/T |\n| Clearance de remanescentes de VLDL | APOE | rs7412 |  | C/C |\n|  | APOE |  | E4 | E3/E3 |\n| Codifica Apolipoproteína 1/Regula função glomerular | APOL1 | rs73885319 | G | A/A |\n| Transferência de éster de colesterol do HDL | CETP | rs5882 | AA | A/A |\n| Regulação de apoptose celular | FOXO3A | rs2882292 | TT | G/T |\n| Regulação de apoptose celular | FOXO3A | rs2764264 | TT | T/T |\n| Codifica proteína relacionada às B-glucosidases | KL | rs9536314 | GG | T/T |\n| Regula atividade neuronal e mielinização axonal | LINGO1 | rs9652490 | A | A/A |\n| Monoamina oxidase, catalisa reações de aminas biogênicas | MAOB | rs1799836 | TT | T/C |\n| Regula expressão de genes ligados a ação antioxidante | NRF2 | rs6721961 | TT | G/G |\n| Proteção e estabilidade de telômeros | RTEL1 | rs755017 | AA | A/G |\n| Regulação mitocondrial da atividade antioxidante | SIRT3 | rs11555236 | C | C/C |\n| Reparo de DNA e envelhecimento celular | SIRT6 | rs107251 | TT | T/T |\n| Translocase de membrana mitocondrial externa | TOMM40 | rs2075650 | G | A/A |\n| Liberação de neurotransmissores, atua na vesícula sináptica | UNC13A | rs12608932 | C | A/C |\n| Reparo de DNA | XRCC1 | rs25487 | C | C/C |\n\n## Caracteristicas\n\ndescobertas em seu DNA\n\n## APOE E3/E3: você tem risco padrão para Alzheimer.\n\nLINGO1/ CETP: você tende à desregulação na atividade neuronal e menores níveis de HDL - essencial para a saúde cognitiva. Se não modulados, estes genes causam um leve risco para Parkinson e doenças neurodegenerativas.\n\nRTEL1/SIRT3/ SIRT6/ XRCC1 : você tende à ter tendência à maior dano ao seu DNA- isso significa que pode ter um envelhecimento mais acelerado, causando prejuízo nas funções hormonais, no seu sistema imunológico e controle inflamatório.",
+            "imagens": []
+        },
+        {
+            "numero": 29,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Consuma pelo menos 1-2 chás ao dia e shots: eles são antioxidantes\n- Tenha uma boa qualidade de sono\n- Evite comer em excesso à noite\n- Faça gestão do estresse- boas ideias são yoga, meditação\n\n\n## Estratégias alimentares-chave:\n\n- Dieta mediterrânea\n- Azeite de oliva extra virgem\n- Gorduras saudáveis como abacate, nozes e amêndoas\n- Prefira alimentos orgânicos sempre que possível- eles são ricos em antioxidantes e vão retardar seu envelhecimento\n- Alto consumo de frutas vermelhas e vegetais verde escuros - orgânicos\n\nSuplementos-chave:\n\n- Resveratrol/ Ácido alfa lipóico",
+            "imagens": []
+        },
+        {
+            "numero": 30,
+            "texto": "O que seus genes falam sobre sua\n\n## Capacidade <br> antioxidante\n\n| EPHXI | GSTMI | GSTP1 | GSTT1 | NAT2 |\n| :--: | :--: | :--: | :--: | :--: |\n| CAT | GPXI | NQO1 | SOD2 | SOD3 |\n\nResultado encontrado\nSeu resultado sugere baixo risco de prejuízos na capacidade antioxidante e nos processos de destoxificação.",
+            "imagens": []
+        },
+        {
+            "numero": 31,
+            "texto": "| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Destroxificação de epóxidos | EPHX1 | rs1051740 | C | T/C |\n| Destroxificação de epóxidos | EPHX1 | rs2234922 | GG | A/G |\n| Destroxificação de xenobióticos | GSTM1 | rs2071487 | C | T/T |\n| Destroxificação de xenobióticos | GSTM1 | rs74837985 | C | G/G |\n| Destroxificação de xenobióticos | GSTP1 | rs1695 | GG | A/G |\n| Destroxificação de xenobióticos | GSTP1 | rs1138272 | T | C/T |\n| Destroxificação de xenobióticos | GSTT1 | rs2266633 | T | C/C |\n| Destroxificação de xenobióticos | GSTT1 | rs2266637 | T | T/T |\n| Ativação e desativação de fármacos | NAT2 | rs1495741 | A | A/A |\n| Catalase, regula atividade antioxidante | CAT | rs1001179 | TT | C/C |\n| Glutationa Peroxidase 1, regula atividade antioxidante | GPX1 | rs1050450 | A | G/G |\n| Conversão da coenzima Q10 em Ubiquinol | NQO1 | rs1131341 | A | G/G |\n| Conversão da coenzima Q10 em Ubiquinol | NQO1 | rs1800566 | A | G/G |\n| Conversão de ânions superóxido | SOD2 | rs4880 | AA | A/G |\n| Conversão de ânions superóxido | SOD3 | rs1799895 | G | C/C |\n| Conversão de ânions superóxido | SOD3 | rs8192288 | TT | G/G |\n\n## Caracteristicas descobertas em seu DNA\n\nEPHX1: seu corpo tende à ter falha na eliminação de fumaça.\n\nGSTP1/ GSTT1: você tem tendência à capacidade reduzida de eliminação (desfoxificação) de pesticidas, poluição, plástico, produtos de limpeza. Estas \"falhas\" no sistema detox também pode influenciar em seus hormônios e no risco para asma e Doença Pulmonar Obstrutiva Crônica (DPOC). Modular essa característica é essencial para evitar excesso de estresse oxidativo em seu corpo e inflamação.",
+            "imagens": []
+        },
+        {
+            "numero": 32,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Evite o consumo frequente de churrasco, refeições feitas na churrasqueira e embutidos\n- Evite tabagismo\n- Troque potes plásticos convencionais por BPA free\n- Priorize produtos de beleza e produtos de limpeza mais naturais\n- Diminua o consumo de cafeina e álcool\n- Sauna seca\n\nEstratégias alimentares-chave:\n\n- Vegetais verde escuros e salsão são ótimos para você\n- Prefira alimentos orgânicos\n- Chás: alecrim, alcachofra, gengibre, hibisco, cavalinha, boldo ou carqueja são ótimos para você\n\nSuplementos-chave:\n\n- Spirulina/ Chorella\n- NAC",
+            "imagens": []
+        },
+        {
+            "numero": 33,
+            "texto": "O que seus genes falam sobre seu\n\n# Trato intestinal, inflamação e intolerâncias \n\n\n\nResultado encontrado\nSeu genótipo sugere risco baixo para alterações próinflamatórias e doenças inflamatórias intestinais. Ausência de intolerância primária à lactose. Alto risco para desenvolvimento de doença celíaca, doenças autoimunes e alergias alimentares.",
+            "imagens": [
+                {
+                    "id": "img_33_1",
+                    "posicao": {
+                        "top_left_x": 1872,
+                        "top_left_y": 452,
+                        "bottom_right_x": 3268,
+                        "bottom_right_y": 909
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 34,
+            "texto": "Genes associados à inflamação e doenças inflamatórias intestinais\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Absorção de vitamina B12 | FUT2 | rs602662 | A | G/A |\n| Mediação de diferenciação celular e apoptose | IL1-beta | rs1143634 | A | G/G |\n| Mediação de diferenciação celular e apoptose | IL1-beta | rs1143643 | T | C/C |\n| Conduz resposta imunológica | IL12B | rs2082412 | GG | G/G |\n| Resposta aguda à infecções e imunidade inata e adaptativa | IL23R | rs2201841 | G | A/G |\n| Regulação de resposta pró-inflamatória | IL6 | rs1800795 | G | G/G |\n| Regulação da resposta imune a LPS | NOD2 | rs2066845 | C | G/G |\n| Regulação da resposta inflamatória e diferenciação de células T CD4+ | STAT3 | rs744166 | AA | A/G |\n| Regulação da resposta inflamatória | TNF-alfa | rs1800629 | A | G/G |\n| Regulação da resposta inflamatória | TNF-alfa | rs361525 | A | G/G |\n\n## Curacterísticas descobertas em seu DNA\n\nFUT2: você tende à ter um maior aumento da permeabilidade intestinal e disbiose. Isso significa que precisa ter atenção em sua saúde intestinal, quando não modulada pode aumentar inflamação em seu corpo.\n\nIL1B/ IL12B/ IL23R/ IL6: seu corpo tende à ter maior estímulo inflamatório - isso significa que você pode ter maior risco para doenças crônicas como as cardiovasculares e autoimunes. Fazer um controle inflamatório é essencial para que você fortaleça seu corpo e seu sistema imune.",
+            "imagens": []
+        },
+        {
+            "numero": 35,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Faça uma boa gestão do estresse - atividades ao ar livre, tempo com a natureza e amigos, grounding ou meditação são ótimas formas de cuidar da sua saúde mental\n- Tenha uma boa qualidade de sono\n- Atenção à sua saúde intestinal\n\nEstratégias alimentares-chave:\n\n- Dieta mediterrânea (anti-inflamatória)\n- Evite o consumo de glúten, gordura saturada e açúcar\n- Priorize comida de verdade\n\nSuplementos-chave:\n\n- Curcumina\n- Ômega 3\n- Boswellia Serrata/Butirato",
+            "imagens": []
+        },
+        {
+            "numero": 36,
+            "texto": "Gene associado à intolerância à lactose\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula o gene LCT, atuante na codificação da <br> lactase | MCM6 | rs4988235 | GG | A/A |\n\nGenes associados à intolerância ao glúten e doença celiaca\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regulação do sistema imunológico | HLA | rs2187668 | T | C/C |\n| Regulação do sistema imunológico | HLA | rs2395182 | T | T/T |\n| Regulação do sistema imunológico | HLA | rs7775228 | C | T/T |\n| Regulação do sistema imunológico | HLA | rs4639334 | A | G/G |\n| Regulação do sistema imunológico | HLA | rs7454108 | C | T/C |\n\n## Caracteristicas\n\ndescobertas em seu DNA\nMCM6: baixa probabilidade para desenvolvimento de intolerância à lactose na vida adulta.\n\nHLA: alto risco de desenvolvimento de doença celiaca e suscetibilidade à alergias alimentares.",
+            "imagens": []
+        },
+        {
+            "numero": 37,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Acompanhar saúde intestinal - microbiota e permeabilidade intestinal\n- Evite o tabagismo\n\nEstratégias alimentares-chave:\n\n- Busque rotar os alimentos que consome - evite consumir todos os dias a mesma coisa\n- Evite o consumo de glúten e álcool\n\nSuplementos-chave:\n\n- Todos citados na sessão anterior",
+            "imagens": []
+        },
+        {
+            "numero": 38,
+            "texto": "O que seus genes falam sobre seu\n\n# Ritmo circadiano \n\n\n\nResultado encontrado\nSeu genótipo sugere risco moderado para disfunções no ciclo circadiano e distúrbios do sono.",
+            "imagens": [
+                {
+                    "id": "img_38_1",
+                    "posicao": {
+                        "top_left_x": 1912,
+                        "top_left_y": 486,
+                        "bottom_right_x": 3268,
+                        "bottom_right_y": 758
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 39,
+            "texto": "Genes associados ao ritmo circadiano\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Regulação dos ritmos circadianos | CLOCK | rs1801260 | G | A/A |\n| Regulação do padrão de sono | CRY1 | rs2287161 | CC | C/C |\n| Regulação do padrão de sono | CRY2 | rs11605924 | C | A/C |\n| Regulação do padrão de sono | CRY2 | rs7123390 | A | G/G |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1A | rs12506228 | A | A/A |\n| Receptor de Melatonina/Regulador do ciclo circadiano | MTNR1B | rs10830963 | G | C/C |\n| Marca-passo circadiano | PER2 | rs4663302 | TT | T/T |\n| Marca-passo circadiano | PER2 | rs934945 | C | C/T |\n| Marca-passo circadiano | PER3 | rs228697 | G | C/C |\n\n## Caracteristicas\n\ndescobertas em seu DNA\nCRY1/CRY2/MTNR1A/ PER2: você tende a ter alterações no seu padrão de sono e desregulação no seu \"relógio biológico\".\n\nEssa característica genética está associada à maior facilidade de acúmulo de gordura, redução de massa magra e transtornos de humor quando não modulada.",
+            "imagens": []
+        },
+        {
+            "numero": 40,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Atividade física pela manhã e/ou contato com o sol pela manhã\n- Higiene do sono\n- Evitar atividade física à noite\n- Evitar comer após as 20 horas\n\nEstratégias alimentares-chave:\n\n- Chás da noite: mulungu, folhas de maracujá, melissa, lavanda ou magnésio\n\nSuplementos-chave:\n\n- L-teanina/ magnésio",
+            "imagens": []
+        },
+        {
+            "numero": 41,
+            "texto": "O que seus genes falam sobre suas Deficiências nutricionais\n\n\nResultado encontrado\nSeu resultado sugere risco moderado para alteração no metabolismo da vitamina A, D, B6 e para alterações metabolismo de colina.",
+            "imagens": [
+                {
+                    "id": "img_41_1",
+                    "posicao": {
+                        "top_left_x": 1840,
+                        "top_left_y": 243,
+                        "bottom_right_x": 3352,
+                        "bottom_right_y": 1104
+                    }
+                }
+            ]
+        },
+        {
+            "numero": 42,
+            "texto": "Genes associados à alterações no metabolismo de vitamina A\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs7501331 | T | C/C |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs12934922 | T | A/T |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs11645428 | G | G/A |\n| Conversão de Betacaroteno em Vitamina A | BCMO1 | rs6420424 | A | G/A |\n\nGenes associados à alterações no metabolismo de vitamina D\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Conversão biológica em Vitamina D ativa | CYP27B1 | rs10877012 | G | G/G |\n| Transporte de Vitamina D para tecidos-alvo | GC | rs2282679 | G | T/T |\n| Codifica para receptor de Vitamina D | VDR FokI | rs2228570 | A | G/G |\n| Codifica para receptor de Vitamina D | VDR TaqI | rs731236 | GG | A/G |\n| Codifica para receptor de Vitamina D | VDR BsmI | rs1544410 | T | C/T |\n| Codifica para receptor de Vitamina D | VDR ApaI | rs7975232 | A | A/A |\n\n## Caracteristicas descobertas em seu DNA\n\nBCMO1: seu corpo tem menor capacidade de utilizar a vitamina A fornecida pela alimentação (betacaroteno). Quando não modulado, está associado à risco para hipotireoidismo, permeabilidade intestinal e menor capacidade antioxidante.\n\nCYP27B1/VDR: seu corpo tem alteração metabolismo da vitamina D - por isso você tem uma demanda aumentada desta vitamina para evitar fragilidade imunológica e cuidar da sua saúde mental.",
+            "imagens": []
+        },
+        {
+            "numero": 43,
+            "texto": "Genes associados à deficiência de vitamina B6\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Regula concentrações de vitamina B6 | NBPF3 | rs4654748 | C | C/C |\n| Absorção de vitamina B6 | ALPL | rs1697421 | TT | C/C |\n\nGenes associados à deficiência de colina\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Biossintese de fosfatidilcolina | CHKA | rs10791957 | A | C/A |\n| Biossintese de fosfolipidios | CHKB | rs1557502 | T | C/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs9001 | T | T/T |\n| Colina Desidrogenase, converte colina em betaina | CHDH | rs12676 | A | C/C |\n| Conversão de fosfatidiletanolamina em <br> fosfatidilcolina | PEMT | rs7946 | T | C/C |\n| Transporte transmembrana de colina | SLC44A1 | rs3199966 | T | T/T |\n\n## Caracteristicas\n\ndescobertas em seu DNA\n\nNBPF3 : seu corpo tem demanda aumentada das vitamina B6 - você tende ter mais ansiedade, agitação mental, irritabilidade, dificuldade de relaxar para dormir e problemas relacionados à foco.\n\nCHDH/SLC44A1/PEMT: você tende à ter alterações em colina - quando não modulado, causa névoa mental, problemas cognitivos, memória, fadiga e ansiedade. Você tem necessidade aumentada de colina.",
+            "imagens": []
+        },
+        {
+            "numero": 44,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Acompanhar os níveis de vitamina D\n- Acompanhar saúde tireoidiana\n- Manter sempre a suplementação de vitamina D, retinol, B6 + metilfolato/ SAMe e colina (citicolina)\n\n\n## Estratégias alimentares-chave:\n\n- Sementes: abóbora, gergelim\n- Ovos, salmão\n\nSuplementos-chave:\n\n- Citicolina (colina)\n- B6 + metilfolato/ SAMe\n- Retinol + vitamina D",
+            "imagens": []
+        },
+        {
+            "numero": 45,
+            "texto": "Genes associados à alterações no metabolismo do folato\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Conversão de homocisteína em cistationina | CBS | rs234706 | GG | G/G |\n| Absorção intestinal de folato dietético | FOLH1 | rs61886492 | AA | G/G |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801131 | GG | T/G |\n| Conversão de ácido fólico em metilfolato | MTHFR | rs1801133 | A | G/A |\n| Codifica a enzima C1-Tetrahidrofolato Sintase | MTHFD1L | rs6922269 | A | G/A |\n| Remetilação de homocisteína em metionina | MTR | rs1805087 | AA | A/G |\n| Biossintese de metionina | MTRR | rs1801394 | GG | A/G |\n| Transporte de folato | SLC19A1 | rs1051266 | T | T/T |\n\n## Características descobertas em seu DNA\n\nCBS/ MTHFR/ MTHFD1L/SLC19A1: seu corpo tem uma demanda aumentada de folato e falha na conversão do folato em metilfolato forma que nosso corpo utiliza. Isso significa que é mais eficiente para você suplementar metilfolato - essencial para evitar com maiores níveis de homocisteína e cuidar do equilíbrio dos seus neurotransmissores.",
+            "imagens": []
+        },
+        {
+            "numero": 46,
+            "texto": "O que seus genes falam sobre suas Habilidades esportivas\n\n| COLUM | COLUM | MMP1 |  |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: |\n| MMP3 | MMP3 | MMP2 |  |  |  |\n| ACTH3 | AST | AGP1 | BDKRB2 | CNTF | ENOG |\n| CAMKRI | GALNTL6 | MSTN | NR1A-AS2 | NRF2 | TFAM |\n\nResultado encontrado\nSeu genótipo sugere predisposição genética a um melhor desempenho de força. Risco alto para lesões tendineas, ligamentares e articulares.",
+            "imagens": []
+        },
+        {
+            "numero": 47,
+            "texto": "Genes relacionados à aptidão física\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :--: | :--: | :--: | :--: | :--: |\n| Codifica para alfa-actinina 3, expressa em fibras de contração rápida | ACTN3 | rs1815739 | C | C/C |\n| Regulação da pressão arterial | AGT | rs699 | G | G/G |\n| Transporte de fluidos no meio celular | AQP1 | rs1049305 | G | G/C |\n| Regulação da vasodilatação | BDKRB2 | rs1799722 | C | C/T |\n| Síntese de neurotransmissores e manutenção de neurônios motores | CNTF | rs1800169 | A | G/A |\n| Síntese de óxido nítrico | ENOS | rs2070744 | T | C/C |\n| Controle da função mitocondrial | GABPB1 | rs7181866 | AA | A/A |\n| Regulação da atividade de N acetilgalactosaminiltransferase | GALNTL6 | rs558129 | A | G/G |\n| Codifica para Miostatina, reguladora de hipertrofia muscular | MSTN | rs1805086 | C | T/T |\n| Eritropoiese | NFIA-AS2 | rs1572312 | T | G/G |\n| Fator de transcrição de proteínas antioxidantes | NRF2 | rs12594956 | C | C/A |\n| Fator de transcrição de proteínas antioxidantes | NRF2 | rs8031031 | C | C/C |\n| Estabilidade mitocondrial | TFAM | rs1937 | G | G/G |\n\n## Caracteristicas descobertas em seu DNA\n\nACTN3/ AGT/ AQP1/ BDKRB2/ CNTF/ GABPB1/ NRF2/ TFAM: genes associados à maior aptidão para esportes de força - seu perfil com maior aptidão.\n\nGALNTL6/ MSTN/ NFIA-AS2: genes associados à maior aptidão para esportes de resistência - seu perfil com menor aptidão.",
+            "imagens": []
+        },
+        {
+            "numero": 48,
+            "texto": "Genes associados à lesões tendineas, ligamentares e articulares\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Produção de colágeno | COL1A1 | rs1800012 | C | C/C |\n| Produção de colágeno | COL5A1 | rs12722 | T | T/T |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Remodelação tecidual | MMP3 | rs679620 | C | T/T |\n| Remodelação tecidual | MMP10 | rs486055 | CC | C/C |\n| Remodelação tecidual | MMP12 | rs2276109 | TT | T/T |\n\n## Caracteristicas\n\ndescobertas em seu DNA\nCOL1A1/ COL5A1/MMP10/ MMP12: você tem tendência à lesões tendineas, ligamentares e articulares. Respeitar seu corpo e modular essas características com as estratégias eficientes é essencial para evitar lesões.",
+            "imagens": []
+        },
+        {
+            "numero": 49,
+            "texto": "Genes associados à lesões tendineas, ligamentares e articulares\n\n| FUNÇÃO | GENE | dbSNP | RISCO | RESULTADO |\n| :-- | :--: | :--: | :--: | :--: |\n| Produção de colágeno | COL1A1 | rs1800012 | C | C/C |\n| Produção de colágeno | COL5A1 | rs12722 | T | T/T |\n| Remodelação tecidual | MMP1 | rs1799750 | TC | TCT |\n| Remodelação tecidual | MMP3 | rs679620 | C | T/T |\n| Remodelação tecidual | MMP10 | rs486055 | CC | C/C |\n| Remodelação tecidual | MMP12 | rs2276109 | TT | T/T |\n\nCOL1A1/ MMP1/ MMP3/ MMP12: tendência à lesões tendineas, ligamentares e articulares.",
+            "imagens": []
+        },
+        {
+            "numero": 50,
+            "texto": "# Estratégias-chave \n\nbaseadas em seu DNA\n\nHábitos-chave:\n\n- Periodização de treino\n- Alongamento, mobilidade\n- Descanso adequado entre os treinos\n\nEstratégias alimentares-chave:\n\n- Dieta mediterrânea\n- Evitar alimentação inflamatória (excesso de açúcar, farinhas) etc\n\nSuplementos-chave:\n\n- Tart cherry/ômega 3",
+            "imagens": []
+        },
+        {
+            "numero": 51,
+            "texto": "Um novo capítulo da sua história começa aqui.\nnova estilo de vida.\nnova mente.\nnova forma\nde viver.\n$A u$,\nRafaela Lesseux",
+            "imagens": []
+        }
+    ]
+}

@@ -157,7 +157,70 @@ const renderTable = (tabela: { cabecalho: string[]; linhas: any[][] }) => {
   `;
 };
 
-export const generateSlidesFromStructuredJSON = (jsonData: any): any[] => {
+/**
+ * Converte markdown básico (títulos, listas, negrito, itálico, fórmulas, tabelas) em HTML.
+ */
+function markdownToHtml(text: string): string {
+  let html = text;
+
+  // Títulos
+  html = html.replace(/^### (.+)$/gm, '<h3 class="text-lg font-semibold mb-2">$1</h3>');
+  html = html.replace(/^## (.+)$/gm, '<h2 class="text-xl font-bold mb-3">$1</h2>');
+  html = html.replace(/^# (.+)$/gm, '<h1 class="text-2xl font-bold mb-4">$1</h1>');
+
+  // Listas
+  html = html.replace(/^\s*-\s(.+)$/gm, '<li>$1</li>');
+  html = html.replace(/(<li>.*<\/li>)/gms, '<ul class="list-disc ml-6 mb-2">$1</ul>');
+
+  // Negrito e itálico
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+  // Fórmulas ($...$)
+  html = html.replace(/\$([^\$]+)\$/g, '<span class="text-blue-600">$1</span>');
+
+  // Parágrafos
+  html = html.replace(/\n{2,}/g, '</p><p class="mb-4">');
+  html = html.replace(/\n/g, '<br />');
+  html = `<p class="mb-4">${html}</p>`;
+
+  // Tabelas markdown
+  html = html.replace(/((?:\|.*\n)+)/g, (match) => {
+    return markdownTableToHtml(match);
+  });
+
+  return html;
+}
+
+/**
+ * Converte uma tabela markdown em HTML estilizado.
+ */
+function markdownTableToHtml(tableText: string): string {
+  const rows = tableText.trim().split('\n').filter(Boolean);
+  if (rows.length < 2) return tableText; // Não é tabela válida
+
+  const header = rows[0].split('|').map(cell => cell.trim()).filter(Boolean);
+  const aligns = rows[1].split('|').map(cell => cell.trim()).filter(Boolean);
+  const bodyRows = rows.slice(2);
+
+  let html = `<table class="min-w-full divide-y divide-gray-200 my-4 border"><thead><tr>`;
+  header.forEach(cell => {
+    html += `<th class="px-4 py-2 bg-gray-100 text-xs font-semibold text-gray-700 border">${cell}</th>`;
+  });
+  html += `</tr></thead><tbody>`;
+  bodyRows.forEach(row => {
+    const cells = row.split('|').map(cell => cell.trim()).filter(Boolean);
+    html += `<tr>`;
+    cells.forEach(cell => {
+      html += `<td class="px-4 py-2 border">${cell}</td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table>`;
+  return html;
+}
+
+export const generateSlidesFromStructuredJSON = (jsonData: any, manualImagesMap?: Record<number, any[]>): any[] => {
   if (!jsonData || !jsonData.paginas) return [];
 
   const slides: any[] = [];
@@ -177,19 +240,27 @@ export const generateSlidesFromStructuredJSON = (jsonData: any): any[] => {
   jsonData.paginas.forEach((pagina: any, idx: number) => {
     let content = '';
 
+    // Título
     if (pagina.titulo) {
       content += `<h2 class="text-2xl font-bold text-blue-800 mb-4">${pagina.titulo}</h2>`;
     }
+
+    // Texto formatado
     if (pagina.texto) {
-      // Parágrafos
-      content += `<div class="prose prose-lg max-w-none mb-4">${pagina.texto.replace(/\n/g, '<br/>')}</div>`;
+      content += `<div class="prose prose-lg max-w-none mb-4">${markdownToHtml(pagina.texto)}</div>`;
     }
+
+    // Tabelas JSON (se houver)
     if (pagina.tabelas && pagina.tabelas.length > 0) {
       pagina.tabelas.forEach((tabela: any) => {
         content += renderTable(tabela);
       });
     }
+
+    // Imagens automáticas
+    let images = [];
     if (pagina.imagens && pagina.imagens.length > 0) {
+      images = [...pagina.imagens];
       content += `<div class="flex flex-wrap gap-4 mt-4">`;
       pagina.imagens.forEach((img: any) => {
         content += `
@@ -206,10 +277,28 @@ export const generateSlidesFromStructuredJSON = (jsonData: any): any[] => {
       content += `</div>`;
     }
 
+    // Imagens manuais (adicionadas pelo usuário)
+    if (manualImagesMap && manualImagesMap[pagina.numero]) {
+      images = images.concat(manualImagesMap[pagina.numero]);
+      content += `<div class="flex flex-wrap gap-4 mt-4">`;
+      manualImagesMap[pagina.numero].forEach((img: any) => {
+        content += `
+          <div class="flex flex-col items-center">
+            <img src="${img.url}" class="w-48 h-32 object-contain rounded bg-gray-100" alt="Imagem manual" />
+            <div class="text-xs text-gray-500 mt-1">
+              (Manual)
+            </div>
+          </div>
+        `;
+      });
+      content += `</div>`;
+    }
+
     slides.push({
       id: `slide-${idx + 1}`,
       content: `<div class="slide-content p-6">${content}</div>`,
-      type: 'content'
+      type: 'content',
+      images // para SlideContainer exibir
     });
   });
 

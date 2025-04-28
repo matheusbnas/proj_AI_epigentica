@@ -1,5 +1,5 @@
-import React from 'react';
-import { Upload, File, CheckCircle, Loader2 } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Upload, File, X, FileText } from 'lucide-react';
 
 interface UploadSectionProps {
   fileName: string;
@@ -7,8 +7,7 @@ interface UploadSectionProps {
   handleUpload: (event: React.FormEvent) => void;
   loading: boolean;
   error: string | null;
-  progress?: number;
-  processingStatus?: string;
+  acceptedFileTypes?: string;
 }
 
 const UploadSection: React.FC<UploadSectionProps> = ({
@@ -17,77 +16,116 @@ const UploadSection: React.FC<UploadSectionProps> = ({
   handleUpload,
   loading,
   error,
-  progress,
-  processingStatus
+  acceptedFileTypes = ".pdf,.json"
 }) => {
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleResetFile = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+      handleFileChange({ target: { files: null } } as React.ChangeEvent<HTMLInputElement>);
+    }
+  };
+
+  const getFileIcon = () => {
+    if (fileName.toLowerCase().endsWith('.pdf')) {
+      return <FileText className="h-5 w-5 text-red-500" />;
+    } else if (fileName.toLowerCase().endsWith('.json')) {
+      return <FileText className="h-5 w-5 text-blue-500" />;
+    }
+    return <File className="h-5 w-5 text-gray-500" />;
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-sm p-6">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900">
-          Crie apresentações a partir de relatórios nutrigenéticos
-        </h2>
-        <p className="mt-2 text-gray-600">
-          Faça upload do seu arquivo PDF para gerar uma apresentação profissional automaticamente
+      <div className="max-w-xl mx-auto">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Gerar Apresentação</h2>
+        <p className="text-gray-600 mb-6">
+          Carregue um arquivo PDF ou JSON para gerar uma apresentação de slides interativa com chatbot.
         </p>
-      </div>
 
-      <form onSubmit={handleUpload} className="space-y-4">
-        <div className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-8 transition hover:border-blue-500">
-          <div className="p-3 rounded-full bg-blue-50 mb-3">
-            <Upload className="h-6 w-6 text-blue-600" />
-          </div>
-          <p className="text-sm text-gray-500 mb-2">
-            Arraste e solte o arquivo PDF ou clique para selecionar
-          </p>
-          <label className="relative cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition">
-            Selecionar Arquivo
+        <form onSubmit={handleUpload} className="space-y-6">
+          <div className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-6 hover:bg-gray-50 transition-colors cursor-pointer">
             <input
+              ref={fileInputRef}
               type="file"
-              className="sr-only"
-              accept=".pdf"
+              className="hidden"
               onChange={handleFileChange}
+              accept={acceptedFileTypes}
               disabled={loading}
             />
-          </label>
-        </div>
+            <Upload className="h-10 w-10 text-gray-400 mb-3" />
+            <p className="text-sm font-medium text-gray-900 mb-1">
+              Clique para selecionar ou arraste um arquivo
+            </p>
+            <p className="text-xs text-gray-500">
+              Arquivos suportados: PDF e JSON (máx. 30MB)
+            </p>
 
-        <div className="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
-          <File className="h-5 w-5 text-gray-400" />
-          <span className="text-sm text-gray-600 truncate flex-1">
-            {fileName}
-          </span>
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              disabled={loading}
+            >
+              Selecionar Arquivo
+            </button>
+          </div>
+
           {fileName !== 'Selecione um arquivo PDF' && (
-            <CheckCircle className="h-5 w-5 text-green-500" />
+            <div className="flex items-center justify-between bg-blue-50 rounded-md p-3">
+              <div className="flex items-center">
+                {getFileIcon()}
+                <span className="ml-2 text-sm font-medium text-gray-700 truncate max-w-xs">
+                  {fileName}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={handleResetFile}
+                className="text-gray-500 hover:text-gray-700"
+                disabled={loading}
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
           )}
-        </div>
 
-        <button
-          type="submit"
-          disabled={loading || fileName === 'Selecione um arquivo PDF'}
-          className={`w-full py-3 px-4 rounded-md font-medium transition ${
-            loading || fileName === 'Selecione um arquivo PDF'
-              ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-              : 'bg-blue-600 text-white hover:bg-blue-700'
-          }`}
-        >
-          {loading ? 'Processando...' : 'Gerar Apresentação'}
-        </button>
-      </form>
-
-      {loading && progress !== undefined && (
-        <div className="mt-4">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-gray-700">{processingStatus}</span>
-            <span className="text-sm text-gray-500">{progress}%</span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-2.5">
-            <div 
-              className="bg-blue-600 h-2.5 rounded-full transition-all duration-300"
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-        </div>
-      )}
+          <button
+            type="submit"
+            className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={loading || fileName === 'Selecione um arquivo PDF'}
+          >
+            {loading ? (
+              <span className="flex items-center justify-center">
+                <svg
+                  className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                Processando...
+              </span>
+            ) : (
+              'Gerar Apresentação'
+            )}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -4,8 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import UploadSection from './components/UploadSection';
 import SlideContainer from './components/SlideContainer';
-import SlideViewer from './components/SlideViewer'; 
-import LocalSlideViewer from './components/LocalSlideViewer'
+import SlideViewer from './components/SlideViewer';
 import { generateSlidesFromStructuredJSON } from './utils/SlideGenerator';
 
 interface SlideData {
@@ -45,6 +44,7 @@ interface ProcessStatus {
 
 function App() {
   const [file, setFile] = useState<File | null>(null);
+  const [fileType, setFileType] = useState<'pdf' | 'json' | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [slides, setSlides] = useState<SlideData[]>([]);
@@ -52,17 +52,47 @@ function App() {
   const [progress, setProgress] = useState(0);
   const [ws, setWs] = useState<WebSocket | null>(null);
   const [presentationUrl, setPresentationUrl] = useState<string | null>(null);
-  const [useLocalViewer, setUseLocalViewer] = useState(false);
+  const [useLocalViewer, setUseLocalViewer] = useState(true);
   const [processStatus, setProcessStatus] = useState<ProcessStatus>({ stage: 'UPLOADING' });
   const [wsRetries, setWsRetries] = useState(0);
   const [structuredSlides, setStructuredSlides] = useState<any[]>([]);
+  const [manualImagesMap, setManualImagesMap] = useState<Record<number, any[]>>({});
   const MAX_RETRIES = 3;
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files?.[0]) {
-      setFile(event.target.files[0]);
+      const file = event.target.files[0];
+      setFile(file);
       setError(null);
+      
+      // Determine file type
+      if (file.name.toLowerCase().endsWith('.pdf')) {
+        setFileType('pdf');
+      } else if (file.name.toLowerCase().endsWith('.json')) {
+        setFileType('json');
+        handleJsonFile(file);
+      } else {
+        setError('Formato de arquivo não suportado. Por favor, selecione um arquivo PDF ou JSON.');
+        setFileType(null);
+      }
     }
+  };
+
+  const handleJsonFile = (file: File) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const jsonData = JSON.parse(e.target?.result as string);
+        // Passa manualImagesMap para permitir imagens manuais
+        const generatedSlides = generateSlidesFromStructuredJSON(jsonData, manualImagesMap);
+        setStructuredSlides(generatedSlides);
+        setSlides(generatedSlides);
+        setUseLocalViewer(true);
+      } catch (err) {
+        setError('Erro ao processar o arquivo JSON. Certifique-se de que é um arquivo JSON válido.');
+      }
+    };
+    reader.readAsText(file);
   };
 
   const handleWebSocketMessage = async (message: WebSocketMessage) => {
@@ -164,7 +194,14 @@ function App() {
   const handleUpload = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!file) {
-      setError('Por favor, selecione um arquivo PDF');
+      setError('Por favor, selecione um arquivo');
+      return;
+    }
+
+    if (fileType === 'json') {
+      // JSON files are processed client-side
+      setProcessStatus({ stage: 'COMPLETE' });
+      setProgress(100);
       return;
     }
 
@@ -205,26 +242,12 @@ function App() {
     }
   };
 
-  const handleStructuredJsonUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      try {
-        const jsonData = JSON.parse(e.target?.result as string);
-        const slides = generateSlidesFromStructuredJSON(jsonData);
-        setStructuredSlides(slides);
-        setUseLocalViewer(true);
-        setSlides(slides); // Para manter compatibilidade com LocalSlideViewer
-      } catch (err) {
-        setError('Erro ao ler arquivo JSON estruturado');
-      }
-    };
-    reader.readAsText(file);
-  };
-
   const toggleViewerMode = () => {
-    setUseLocalViewer(!useLocalViewer);
+    setUseLocalViewer((prev) => !prev);
+    // Quando alternar para visualizador local, garanta que os slides locais estejam visíveis
+    if (!useLocalViewer && structuredSlides.length > 0) {
+      setSlides(structuredSlides);
+    }
   };
 
   useEffect(() => {
@@ -232,6 +255,10 @@ function App() {
       ws?.close();
     };
   }, [ws]);
+
+  const handleSlideChange = (index: number) => {
+    setCurrentSlide(index);
+  };
 
   const renderProgress = () => {
     if (!loading) return null;
@@ -268,27 +295,13 @@ function App() {
       <main className="flex-grow">
         <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <UploadSection
-            fileName={file?.name || 'Selecione um arquivo PDF'}
+            fileName={file?.name || 'Selecione um arquivo PDF ou JSON'}
             handleFileChange={handleFileChange}
             handleUpload={handleUpload}
             loading={loading}
             error={error}
+            acceptedFileTypes=".pdf,.json"
           />
-
-          {/* Botão para carregar JSON estruturado */}
-          <div className="mt-4 flex items-center space-x-2">
-            <label className="bg-blue-100 text-blue-700 px-3 py-1 rounded cursor-pointer hover:bg-blue-200 transition-colors">
-              Carregar JSON Estruturado
-              <input
-                type="file"
-                accept=".json"
-                className="sr-only"
-                onChange={handleStructuredJsonUpload}
-                disabled={loading}
-              />
-            </label>
-            <span className="text-xs text-gray-500">ou gere slides a partir do JSON já estruturado</span>
-          </div>
 
           {renderProgress()}
 
@@ -309,7 +322,15 @@ function App() {
               {presentationUrl && !useLocalViewer ? (
                 <SlideViewer presentationUrl={presentationUrl} />
               ) : (
-                slides.length > 0 && <LocalSlideViewer slides={slides} />
+                slides.length > 0 && (
+                  <SlideContainer
+                    slides={slides}
+                    currentSlide={currentSlide}
+                    onSlideChange={handleSlideChange}
+                    manualImagesMap={manualImagesMap}
+                    setManualImagesMap={setManualImagesMap}
+                  />
+                )
               )}
             </div>
           )}
